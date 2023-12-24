@@ -63,7 +63,7 @@
 }
 
 .home_nav .nav_wrap ul li:hover a::after {
-	content: 'o';
+	content: 'Q';
 	display: inline-block;
 	width: 18px;
 	height: 17px;
@@ -199,3 +199,13 @@
 	font-weight: 700;
 }
 /* 푸터 끝 */
+
+/* 본문 공통 시작 */
+
+.ml-10 {
+	margin-left: 10px;
+}
+.txt_blod {
+	display: inline-block;
+	font-weight: 700;
+}
