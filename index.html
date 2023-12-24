@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+
+  <!-- plagin.js -->
+  <!-- 제이쿼리 플러그인 -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../resources/js/jquery-ui.js"></script>
+
+  <!-- plagin.css -->
+
+  <!-- script.js -->
+  <script src="../resources/js/scrpit.js"></script>
+
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="../resources/css/mobile/mobile.css">
+  <link rel="stylesheet" href="../resources/css/common.css">
+  <link rel="stylesheet" href="../resources/css/reset.css">
+  <link rel="stylesheet" href="../resources/css/index.css">
+
+  <script>
+    var rand = Math.floor((Math.random() * 10000));
+    document.write('<link rel="stylesheet" href="./css/style.css?' + rand + '">');
+    document.write('<link rel="stylesheet" href="./css/common.css?' + rand + '">');
+  </script>
+</head>
+
+<body>
+
+  <!-- 헤더 공통 시작 -->
+  <header class="header" id="header"></header>
+  <!-- 헤더 공통 끝 -->
+
+  <!-- 본문 시작 -->
+  <div class="Home_wrap_img"></div>
+  <!-- 본문 끝 -->
+
+  <!-- 푸터 공통 시작 -->
+  <footer class="footer" id="footer"></footer>
+  <!-- 푸터 공통 끝 -->
+</body>
+
+</html>
