@@ -23,7 +23,7 @@
 	transition: none;
 }
 
-/* 메인 페이지 네비게이션 */
+/* 메인페이지 네비게이션 */
 #Home_nav {
 	max-width: 1920px;
 	width: 100%;
@@ -93,3 +93,109 @@
 .home_nav .nav_wrap ul li:first-child a {
 	color: rgba(124, 190, 18);
 }
+
+/* 푸터 시작*/
+.footer {
+	display: block;
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.footer_wrap {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.foo_area {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+.txt_box {
+	line-height: 1.75;
+}
+
+.foo_inner .foo_txt {
+	display: inline-block;
+}
+
+.foo_inner .foo_txt + .foo_txt {
+	margin-left: 15px;
+}
+
+.foo_inner .foo_txt span.blod {
+	font-weight: 700;
+}
+
+.foo_inner .foo_txt span {
+	size: 14px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.foo_sns .youtube {
+	display: inline-block;
+	background: url(../images/pc/w_youtube.png) no-repeat center;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.foo_sns .blog {
+	display: inline-block;
+	background: url(../images/pc/w_blog.png) no-repeat center;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.foo_sns .instagram {
+	display: inline-block;
+	background: url(../images/pc/w_instagram.png) no-repeat center;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.foo_sns span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-indent: -9999px;
+}
+
+.foo_btn {
+	padding-bottom: 30px;
+}
+
+.foo_btn button {
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+	background-color: #000;
+	border: 0;
+}
+
+.foo_btn button span {
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	border: 1px solid rgb(183 183 183 / 74%);
+	border-radius: 20px;
+	padding: 8px 20px;
+}
+
+.copyright {
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.copyright span {
+	font-weight: 700;
+}
+/* 푸터 끝 */
