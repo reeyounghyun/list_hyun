@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.home_nav .nav_wrap ul li:first-child a {
+	color: #333;
+}
+.home_nav .nav_wrap ul li:nth-child(2) a {
+	color: rgba(124, 190, 18);
+}

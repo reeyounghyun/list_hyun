@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 메인페이지 이미지 */
+.Home_wrap_img {
+	margin: 20px auto;
+}
+.Home_wrap_img .Home_inner {
+	width: 100%;
+	max-width: 1289px;
+	margin: 0 auto;
+	height: 1vh;
+}
+
+.Home_wrap_img .Home_inner img {
+	display: block;
+	text-align: center;
+	border-radius: 15px;
+}

@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
 div,
 p,
 span,
@@ -36,6 +44,7 @@ h6 {
 	padding: 0;
 	list-style: none;
 	font-family: 'Spoqa Han Sans', 'Noto Sans KR', 맑은 고딕, sans-serif, 微软雅黑;
+	font-family: 'Pretendard-Regular';
 	transition: transform 0.5s, top 0.5s, right 0.5s, bottom 0.5s, left 0.5s, margin 0.5s,
 		padding 0.5s, width 0.5s, height 0.5s, border 0.5s, background 0.5s, color 0.5s, opacity 0.5s,
 		line-height 0.5s;
