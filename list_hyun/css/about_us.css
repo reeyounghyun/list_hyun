@@ -19,7 +19,6 @@
 	display: block;
 	width: 100%;
 	padding: 30px 0 0 30px;
-	height: 100vw;
 	border-radius: 31px;
 	box-shadow: 4px 12px 20px 0 rgba(74, 75, 77, 0.2);
 	box-sizing: border-box;
@@ -41,6 +40,7 @@
 	background-color: #7cbe12;
 	border-radius: 0 13px 13px 0;
 }
+
 .about_inner .title h2 {
 	display: block;
 	margin-left: 23px;
@@ -140,7 +140,7 @@
 	display: flex;
 	max-width: 1000px;
 	width: 100%;
-	padding-top: 30px;
+	padding: 30px 0;
 }
 
 .company_wrap::before {
@@ -155,7 +155,7 @@
 }
 
 .company_title {
-	width: 10%;
+	width: 20%;
 	max-width: 150px;
 }
 
@@ -169,12 +169,12 @@
 	position: relative;
 }
 
-.company_list .list {
+.company_wrap .company_list .list {
 	display: flex;
 	position: relative;
 }
 
-.company_list .list ::after {
+.company_wrap:nth-child(1) .company_list .list::after {
 	position: absolute;
 	display: block;
 	content: '';
@@ -185,11 +185,50 @@
 	background-color: rgb(183 183 183 / 74%);
 }
 
-.company_list .list + .list {
+.company_wrap:nth-child(1) .company_list .list:last-child:after {
+	content: none;
+}
+
+.company_wrap:nth-child(2) .company_list .list::after {
+	position: absolute;
+	display: block;
+	content: '';
+	top: -34px;
+	left: 0;
+	width: 100%;
+	height: 0.5px;
+	background-color: rgb(183 183 183 / 74%);
+}
+
+.company_wrap:nth-child(2) .company_list .list:first-child:after {
+	content: none;
+}
+
+.company_wrap:nth-child(3) .company_list .list::after {
+	position: absolute;
+	display: block;
+	content: '';
+	top: -20px;
+	left: 0;
+	width: 100%;
+	height: 0.5px;
+	background-color: rgb(183 183 183 / 74%);
+}
+
+.company_wrap:nth-child(3) .company_list .list + .list {
+	margin-top: 35px;
+}
+
+.company_wrap:nth-child(3) .company_list .list:first-child:after {
+	content: none;
+}
+.company_wrap .company_list .list + .list {
 	margin-top: 57px;
 }
+
 .company_list .com_inner {
 	flex: 0.5 auto;
+	width: 40%;
 }
 
 .company_list .com_inner h5 {
@@ -201,8 +240,21 @@
 	line-height: 1.75;
 }
 
-.list .com_inner .main_text p span {
+.list .com_inner .main_text > div {
+	margin-top: 15px;
+}
+
+.list .com_inner .main_text div span {
 	font-size: 15px;
+}
+
+.list .com_inner .main_text div span.smail_tit {
+	display: block;
+	margin-left: 10px;
+}
+
+.list .com_inner .main_text div span.font-13 {
+	font-size: 13px;
 }
 
 .list .com_inner .main_text strong {
@@ -222,6 +274,5 @@
 }
 
 .company_list .com_day span {
-	font-size: 18px;
-	margin-bottom: 15px;
+	font-size: 15px;
 }
