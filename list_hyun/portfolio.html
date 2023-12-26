@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>포트폴리오</title>
 
-  <!-- plagin.js -->
   <!-- 제이쿼리 플러그인 -->
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="../resources/js/jquery-ui.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./js/jquery-ui.js"></script>
 
   <!-- plagin.css -->
 
@@ -23,22 +23,326 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/Portfolio.css">
 
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
     var rand = Math.floor((Math.random() * 10000));
     document.write('<link rel="stylesheet" href="./css/style.css?' + rand + '">');
     document.write('<link rel="stylesheet" href="./css/common.css?' + rand + '">');
   </script>
+
+
 </head>
 
 <body>
   <!-- 헤더 공통 시작 -->
   <header class="header" id="header"></header>
   <!-- 헤더 공통 끝 -->
+  <div class="portfolio_wrap">
+    <div class="portfolio_inner">
+      <div class="title">
+        <h2>portfolio</h2>
+
+      </div>
+      <div class="tenance_wrap question">
+        <h5>유지보수<span>(10)</span></h5>
+        <p class="arrow_box">현업에서 맡았던 프로젝트</p>
+        <div class="slider_wrap">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 4 -->
+            </div>
+            <div class="swiper-button-next btn-left"></div>
+            <div class="swiper-button-prev btn-right"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="make_wrap question">
+        <h5>구축<span>(5)</span></h5>
+        <p class="arrow_box">현업에서 맡았던 프로젝트</p>
+        <div class="slider_wrap">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div class="">
+                  <img src="./images/pc/slide_img.jpg" alt="">
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                  <p>설명을 입력하세요</p>
+                </div>
+              </div>
+              <!-- 6 -->
+            </div>
+            <div class="swiper-button-next btn-left"></div>
+            <div class="swiper-button-prev btn-right"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clone_wrap question">
+        <h5>클론코딩<span>(3)</span></h5>
+        <p class="arrow_box">직접 제작한 웹사이트</p>
+      </div>
+      <div class="slider_wrap">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="">
+                <img src="./images/pc/slide_img.jpg" alt="">
+              </div>
+              <div class="explan_txt">
+                <span>프로젝트 제목을 입력하세요</span>
+                <p>설명을 입력하세요</p>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="swiper-slide">
+              <div class="">
+                <img src="./images/pc/slide_img.jpg" alt="">
+              </div>
+              <div class="explan_txt">
+                <span>프로젝트 제목을 입력하세요</span>
+                <p>설명을 입력하세요</p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+              <div class="">
+                <img src="./images/pc/slide_img.jpg" alt="">
+              </div>
+              <div class="explan_txt">
+                <span>프로젝트 제목을 입력하세요</span>
+                <p>설명을 입력하세요</p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+              <div class="">
+                <img src="./images/pc/slide_img.jpg" alt="">
+              </div>
+              <div class="explan_txt">
+                <span>프로젝트 제목을 입력하세요</span>
+                <p>설명을 입력하세요</p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+              <div class="">
+                <img src="./images/pc/slide_img.jpg" alt="">
+              </div>
+              <div class="explan_txt">
+                <span>프로젝트 제목을 입력하세요</span>
+                <p>설명을 입력하세요</p>
+              </div>
+            </div>
+            <!-- 5 -->
+          </div>
+          <div class="swiper-button-next btn-left"></div>
+          <div class="swiper-button-prev btn-right"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
   <!-- 푸터 공통 시작 -->
   <footer class="footer" id="footer"></footer>
   <!-- 푸터 공통 끝 -->
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesOffsetBefore: 0,
+      slidesPerView: 'auto', // 한 슬라이드에 보여줄 갯수
+      cssMode: true,
+      navigation: {
+        nextEl: ".btn-left",
+        prevEl: ".btn-right",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 </body>
 
-</html>
+</html>`
