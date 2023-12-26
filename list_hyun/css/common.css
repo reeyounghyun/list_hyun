@@ -90,10 +90,6 @@
 	font-weight: bold;
 }
 
-.home_nav .nav_wrap ul li:first-child a {
-	color: rgba(124, 190, 18);
-}
-
 /* 푸터 시작*/
 .footer {
 	display: block;
@@ -211,4 +207,8 @@
 .txt_blod {
 	display: inline-block;
 	font-weight: 700;
+}
+
+.block {
+	display: block;
 }
