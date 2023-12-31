@@ -76,19 +76,11 @@
 	display: inline-block;
 	width: 20px;
 	height: 22px;
-	right: 9px;
+	right: -21px;
 	top: -15px;
 	background: url(../images/pc/question.svg) no-repeat center;
 	background-size: contain;
 	z-index: 100;
-}
-
-.question:nth-child(2) h5::before {
-	right: 0px;
-}
-
-.question:nth-child(3) h5::before {
-	right: 0px;
 }
 
 .question p {
@@ -112,8 +104,8 @@
 	position: absolute;
 	width: auto;
 	padding: 8px;
-	left: 74px;
-	top: -2px;
+	left: 100px;
+	top: -7px;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -232,4 +224,10 @@ h5:hover + p.arrow_box {
 
 .slider_wrap .swiper-pagination {
 	bottom: 12px;
+}
+
+.slider_wrap .mySwiper .swiper-pagination-bullet-active {
+	width: 34px;
+	background-color: #7cbe12;
+	border-radius: 16px;
 }
