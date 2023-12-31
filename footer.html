@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+
+  <!-- plagin.js -->
+  <!-- 제이쿼리 플러그인 -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../resources/js/jquery-ui.js"></script>
+
+  <!-- plagin.css -->
+
+  <!-- script.js -->
+  <script src="./js/scrpit.js"></script>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/mobile/mobile.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+    var rand = Math.floor((Math.random() * 10000));
+    document.write('<link rel="stylesheet" href="./css/about_us.css' + rand + '">');
+    document.write('<link rel="stylesheet" href="./css/common.css' + rand + '">');
+  </script>
+</head>
+
+<body>
+  <!-- 푸터 공통 -->
+  <footer class="footer" id="footer">
+    <div class="footer_wrap">
+      <div class="foo_area">
+        <div class="txt_box">
+          <div class="foo_inner">
+            <div class="foo_txt">
+              <span class="blod">대표자:</span>
+              <span>이영현</span>
+            </div>
+            <div class="foo_txt">
+              <span class="blod"> 개인정보관리 책임자 |</span>
+              <span>이영현</span>
+            </div>
+          </div>
+          <div class="foo_inner">
+            <div class="foo_txt">
+              <span class="blod">email:</span>
+              <span>naem77716@gmail.com</span>
+            </div>
+          </div>
+          <p class="copyright">
+            COPYRIGHT 2023 <span>이영현포트폴리오</span> . ALL RIGHTS RESERVED
+          </p>
+        </div>
+        <div class="foo_sns">
+          <div class="sns_link youtube"><a href="#" title="유튜브"><span>유튜브</span></a></div>
+          <div class="sns_link blog"><a href="#" title="네이버블로그"><span>네이버블로그</span></a></div>
+          <div class="sns_link instagram"><a href="#" title="인스타그램"><span>인스타그램</span></a></div>
+        </div>
+      </div>
+      <div class="foo_btn">
+        <button type="footer" title="이력서버튼"><span>이력서 다운로드</span></button>
+      </div>
+    </div>
+  </footer>
+  <!-- 푸터 공통 -->
+</body>
+
+</html>

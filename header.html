@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+
+  <!-- plagin.js -->
+  <!-- 제이쿼리 플러그인 -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../resources/js/jquery-ui.js"></script>
+
+  <!-- plagin.css -->
+
+  <!-- script.js -->
+  <script src="./js/scrpit.js"></script>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="./css/mobile/mobile.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script>
+    var rand = Math.floor((Math.random() * 10000));
+    document.write('<link rel="stylesheet" href="./css/about_us.css' + rand + '">');
+    document.write('<link rel="stylesheet" href="./css/common.css' + rand + '">');
+  </script>
+</head>
+
+<body>
+  <!-- 헤더 공통 -->
+  <header class="header" id="header">
+    <nav id="skip">
+      <ul>
+        <li><a href="#">콘텐츠 바로가기</a></li>
+      </ul>
+    </nav>
+    <div id="Home_nav" class="home_nav">
+      <div class="nav_inner">
+        <div class="home_logo">
+          <h1>
+            <img src="" alt="로고">
+          </h1>
+        </div>
+        <div class="nav_wrap">
+          <ul>
+            <li><a href="./index.html" title="메인 페이지"><span>Home</span></a></li>
+            <li><a href="./about_us.html" title="나를 소개하는 페이지"><span>About us</span></a></li>
+            <li><a href="./portfolio.html" title="내가 했던 결과물"><span>Portfolio</span></a></li>
+            <li><a href="./other.html" title="마무리 페이지"><span>Other</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 헤더 공통 -->
+</body>
+
+</html>
