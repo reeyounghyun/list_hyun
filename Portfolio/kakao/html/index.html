@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+
+  <!-- plagin.js -->
+  <!-- 제이쿼리 플러그인 -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../resources/js/jquery-ui.js"></script>
+
+  <!-- plagin.css -->
+
+  <!-- script.js -->
+  <script src="../resources/js/scrpit.js"></script>
+
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="../resources/css/reset.css">
+  <link rel="stylesheet" href="../resources/css/comm.css">
+  <link rel="stylesheet" href="../resources/css/style.css">
+
+  <script>
+    var rand = Math.floor((Math.random() * 10000));
+    document.write('<link rel="stylesheet" href="./css/about_us.css' + rand + '">');
+    document.write('<link rel="stylesheet" href="./css/common.css' + rand + '">');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header_wrap">
+      <div class="header-inner">
+        <nav>
+          <div class="logo"><a href="#"><span>kakao</span></a></div>
+          <ul>
+            <li><a href="#"><span>소개</span></a></li>
+            <li><a href="#"><span>이야기</span></a></li>
+            <li><a href="#"><span>뉴스</span></a></li>
+            <li><a href="#"><span>기술과서비스</span></a></li>
+            <li><a href="#"><span>약속과책임</span></a></li>
+          </ul>
+          <div class="icon-link">
+            <div><a href="#"><span>검색</span></a></div>
+            <div><a href="#"><span>언어</span></a></div>
+            <div><a href="#"><span>태마</span></a></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="contants-wrap">
+    <div class="cont-inner">
+      <div class="cont-tit">
+        <em>1월1일에 전하는</em>
+        <span>카카오소식입니다</span>
+      </div>
+      <div class="cont-inpot">
+        <div class="inpot-txt">
+          <span class="scroll-cont">
+            <span class="scroll-aera">
+              <img src="../resources/imaeg/check.webp" alt="">
+              <span>공동체 기술윤리 보고서</span>
+            </span>
+            <span><strong class="tit_card">기술에 책임을 더하는 카카오의 실천</strong></span>
+            <span role="text" class="info_card"><span class="txt_keyword">#AI</span><span
+                class="txt_keyword">#공동체기술윤리보고서</span><span class="txt_keyword">#책임</span><span
+                class="txt_keyword">#카카오의다짐</span><span class="txt_keyword">#투명성</span></span>
+          </span>
+          <span class="comm-cont">
+            <div class="cont-item">
+              <span>약속과책임</span>
+              <span><strong>ESQ보고서,카카오톡의 약속과책임</strong></span>
+              <span class="info_card">
+                <span class="txt_keyword">#카카오ESG</span>
+                <span class="txt_keyword">#ESG보고서</span>
+              </span>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+</body>
+
+</html>

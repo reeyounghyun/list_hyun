@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 100;
+	src: url(AppleSDGothicNeoT.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 200;
+	src: url(AppleSDGothicNeoUL.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 300;
+	src: url(AppleSDGothicNeoL.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 400;
+	src: url(AppleSDGothicNeoR.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 500;
+	src: url(AppleSDGothicNeoM.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 600;
+	src: url(AppleSDGothicNeoSB.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 700;
+	src: url(AppleSDGothicNeoB.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 800;
+	src: url(AppleSDGothicNeoEB.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: AppleSDGothicNeo;
+	font-weight: 900;
+	src: url(AppleSDGothicNeoH.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: KakaoSmall;
+	font-weight: 300;
+	src: local('☺'), url(/page/_nuxt/fonts/KakaoSmall-Light-v1.0.ef99f33.woff2) format('woff2'),
+		url(/page/_nuxt/fonts/KakaoSmall-Light-v1.0.1e071e3.woff) format('woff');
+}
+
+@font-face {
+	font-family: KakaoSmall;
+	font-weight: 400;
+	src: local('☺'), url(/page/_nuxt/fonts/KakaoSmall-Regular-v1.0.5c6e996.woff2) format('woff2'),
+		url(/page/_nuxt/fonts/KakaoSmall-Regular-v1.0.0bbac94.woff) format('woff');
+}
+
+@font-face {
+	font-family: KakaoSmall;
+	font-weight: 700;
+	src: local('☺'), url(/page/_nuxt/fonts/KakaoSmall_Bold_OTF.b852aad.woff2) format('woff2'),
+		url(/page/_nuxt/fonts/KakaoSmall_Bold_OTF.ff0833f.woff) format('woff');
+}
+
+@font-face {
+	font-family: KakaoBig;
+	font-weight: 400;
+	src: local('☺'), url(/page/_nuxt/fonts/KakaoBig-Regular-v1.0.4bf7d77.woff2) format('woff2'),
+		url(/page/_nuxt/fonts/KakaoBig-Regular-v1.0.0e86a57.woff) format('woff');
+}
+
+@font-face {
+	font-family: KakaoBig;
+	font-weight: 700;
+	src: local('☺'), url(/page/_nuxt/fonts/KakaoBig-Bold-v1.0.335a95e.woff2) format('woff2'),
+		url(/page/_nuxt/fonts/KakaoBig-Bold-v1.0.79780f8.woff) format('woff');
+}
+
+@font-face {
+	font-family: KakaoBig;
+	font-weight: 800;
+	src: local('☺'), url(/page/_nuxt/fonts/KakaoBig_ExtraBold_OTF.2612e28.woff2) format('woff2'),
+		url(/page/_nuxt/fonts/KakaoBig_ExtraBold_OTF.b330e0d.woff) format('woff');
+}
+
+:root {
+	/* CSS 지역 변수 선언 */
+	--main-family: 'AppleSDGothicNeo';
+	--baseBackground: #fff;
+	--baseBackground1: rgba(255, 255, 255, 0.9);
+	--baseForeground: #000;
+	--colorBg1: #eee;
+	--colorBg2: #eee;
+	--colorBg3: #fff;
+	--colorBg4: #111;
+	--colorBg5: #eee;
+	--colorBg6: #f4f4f4;
+	--colorBg7: #f7f7f7;
+	--colorBg8: #fcfcfc;
+	--colorBg9: #333;
+	--colorBg10: #fff;
+	--colorBg11: #1a1a1a;
+	--colorBg12: #444;
+	--colorBg13: #dfdfdf;
+	--colorBg14: #333;
+	--colorBg15: #000;
+	--colorBg16: #000;
+	--colorBg17: #000;
+	--colorBg18: #f7f7f7;
+	--colorFg1: #333;
+	--colorFg2: #111;
+	--colorFg3: #000;
+	--colorFg4: #000;
+	--colorFg5: #666;
+	--colorFg6: #666;
+	--colorFg7: #333;
+	--colorFg8: #ededed;
+	--colorFg9: #333;
+	--colorFg10: #333;
+	--colorFg11: #666;
+	--colorFg12: #666;
+	--colorFg13: #888;
+	--colorFg14: #888;
+	--colorFg15: #bbb;
+	--colorFg16: #e6e6e6;
+	--colorFg17: #ebebeb;
+	--colorFg18: #666;
+	--colorFg19: #ededed;
+	--colorFg20: #d8d8d8;
+	--colorFg21: #fff;
+	--colorFg22: #d8d8d8;
+	--colorFg23: #888;
+	--colorFg24: #666;
+	--colorFg25: #666;
+	--colorFg26: #333;
+	--colorFg27: #666;
+	--colorFg28: #333;
+	--colorFg29: #000;
+	--colorFg30: #ebebeb;
+	--colorFg31: #666;
+	--colorFg32: #333;
+	--colorFg33: #e0e0e0;
+	--colorFg34: #f7f7f7;
+	--colorFg35: #666;
+	--colorFg36: #333;
+	--colorFg37: #000;
+	--colorFg38: #434443;
+	--colorFg39: #000;
+	--colorFg40: #666;
+}
+
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+table:not([cellpadding]) td,
+table:not([cellpadding]) th,
+textarea,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+dl,
+li,
+menu,
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none;
+}
+
+button,
+input,
+select,
+textarea {
+	vertical-align: middle;
+	font-size: 100%;
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+input:checked[type='checkbox'] {
+	background-color: #666;
+	-webkit-appearance: checkbox;
+}
+
+html input[type='button'],
+input[type='email'],
+input[type='password'],
+input[type='reset'],
+input[type='search'],
+input[type='submit'],
+input[type='tel'],
+input[type='text'] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+body {
+	background: var(--baseBackground);
+}
+
+body,
+button,
+input,
+select,
+td,
+textarea,
+th {
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: KakaoSmall, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+a {
+	color: #333;
+}
+
+a,
+a:active,
+a:hover {
+	text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+	font-style: normal;
+	font-weight: 400;
+}

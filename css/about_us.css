@@ -316,6 +316,10 @@
 	margin-left: 10px;
 }
 
+.list .com_inner .main_text > div b {
+	display: block;
+	margin-top: 10px;
+}
 .list .com_inner .main_text div span.font-13 {
 	font-size: 13px;
 }

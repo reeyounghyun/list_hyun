@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* 헤더 시작 */
+.header_wrap {
+	overflow: hidden;
+	position: relative;
+}
+.header-inner {
+	max-width: 1296px;
+	margin: 0 auto;
+}
+.header-inner nav {
+	display: flex;
+	justify-content: space-between;
+}
+.header-inner nav .logo span {
+	display: inline-block;
+	padding: 0 28px;
+	line-height: 72px;
+	font-weight: 700;
+	font-size: 32px;
+	letter-spacing: -0.5px;
+}
+.header-inner nav ul {
+	display: flex;
+}
+.header-inner nav ul li a span {
+	display: inline-block;
+	padding: 0 28px;
+	line-height: 72px;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: -0.5px;
+}
+
+.header-inner nav .icon-link {
+	display: flex;
+}
+
+/* 컨탠츠 시작 */
+
+.contants-wrap {
+	padding-top: 72px;
+}
+
+.cont-inner {
+	position: relative;
+	max-width: 1296px;
+	margin: 0 auto;
+	padding-bottom: 182px;
+}
+
+.cont-tit {
+	font-family: KakaoBig, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+	font-size: 46px;
+	line-height: 66px;
+	color: var(--baseForeground);
+	letter-spacing: -1px;
+	padding-left: 144px;
+	font-weight: bold;
+}
+
+.cont-tit {
+	background: url(../imaeg/ico_date31.gif) no-repeat;
+	background-size: 132px;
+}
+
+.cont-tit em {
+	display: block;
+	font-weight: bold;
+}
+
+.cont-tit span {
+	display: block;
+}
+
+.inpot-txt {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cont-inpot {
+	margin: 0 -18px;
+	padding: 96px 0 0;
+}
+.scroll-cont {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	max-width: 666px;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+
+.scroll-cont {
+	min-width: 666px;
+}
