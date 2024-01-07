@@ -13,6 +13,7 @@
 }
 
 .portfolio_inner {
+	position: relative;
 	display: block;
 	width: 100%;
 	padding: 30px 0 40px 30px;
@@ -84,7 +85,6 @@
 }
 
 .question p {
-	display: none;
 	height: auto;
 	background-color: #fff;
 	border: 1px solid #7cbe12;
@@ -143,15 +143,6 @@ h5:hover + p.arrow_box {
 	width: 100%;
 }
 
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .swiper-slide img {
 	display: block;
 	width: 100%;
@@ -188,32 +179,41 @@ h5:hover + p.arrow_box {
 }
 
 .slider_wrap .swiper .swiper-slide {
-	position: relative;
 	max-width: 214px;
 	width: 100%;
 	height: auto;
-	border-radius: 8px;
-	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	border: 1px solid rgb(72 71 71 / 29%);
 	margin-left: 18px;
 	cursor: pointer;
 	overflow: hidden;
 }
-
+.slider_wrap .swiper .swiper-slide div {
+	overflow: hidden;
+	transition: all 0.3s;
+}
+.slider_wrap .swiper .swiper-slide:hover {
+	border: 2px solid #7cbe12;
+	transition: all 0.3;
+	box-sizing: border-box;
+}
+.slider_wrap .swiper .swiper-slide:hover img {
+	transform: scale(1.2);
+	transition: all 0.5s;
+}
 .slider_wrap .swiper .swiper-slide img {
 	display: block;
 }
-
 .slider_wrap .explan_txt {
 	display: block;
 	margin: 15px 0;
 }
-
 .slider_wrap .explan_txt span {
 	display: block;
-	padding-bottom: 10px;
+	text-align: center;
 	color: #333;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 16px;
 }
 .slider_wrap .explan_txt p {
 	display: block;
@@ -221,13 +221,33 @@ h5:hover + p.arrow_box {
 	border: 0;
 	font-weight: 400;
 }
-
 .slider_wrap .swiper-pagination {
 	bottom: 12px;
 }
-
 .slider_wrap .mySwiper .swiper-pagination-bullet-active {
 	width: 34px;
 	background-color: #7cbe12;
 	border-radius: 16px;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 99;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #fff;
+	z-index: 100;
 }

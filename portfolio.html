@@ -20,8 +20,8 @@
   <!-- style.css -->
   <link rel="stylesheet" href="./css/mobile/mobile.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/Portfolio.css">
+  <!-- <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/Portfolio.css"> -->
 
   <!-- Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -31,7 +31,7 @@
 
   <script>
     var rand = Math.floor((Math.random() * 10000));
-    document.write('<link rel="stylesheet" href="./css/style.css?' + rand + '">');
+    document.write('<link rel="stylesheet" href="./css/Portfolio.css?' + rand + '">');
     document.write('<link rel="stylesheet" href="./css/common.css?' + rand + '">');
   </script>
 
@@ -42,7 +42,10 @@
   <!-- 헤더 공통 시작 -->
   <header class="header" id="header"></header>
   <!-- 헤더 공통 끝 -->
+  <!-- 어두운 배경 -->
+
   <div class="portfolio_wrap">
+
     <div class="portfolio_inner">
       <div class="title">
         <h2>portfolio</h2>
@@ -50,66 +53,95 @@
       <div class="tenance_wrap question">
         <h5>유지보수<span>(10)</span></h5>
         <p class="arrow_box">현업에서 맡았던 프로젝트</p>
+
         <div class="slider_wrap">
           <div class="swiper mySwiper maintenance">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+
+              <div class="swiper-slide slide-popup" onclick="togglePopup('popup1')">
                 <div class="">
-                  <img src="./images/pc/enter_img1.jpg" alt="롯데리조트">
+                  <img src=" ./images/pc/enter_img1.jpg" alt="롯데리조트">
                 </div>
                 <div class="explan_txt">
                   <span>롯데 리조트</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
+              <div id="overlay" class="overlay" onclick="closePopup()"></div>
+              <!-- 팝업1 내용 -->
+              <div id="popup1" class="popup">
+                <span onclick="closePopup()">닫기</span>
+                <p>팝업 1 내용을 입력하세요.</p>
+              </div>
               <!-- 1 -->
-              <div class="swiper-slide">
+
+              <div class="swiper-slide slide-popup" onclick="togglePopup('popup2')">
                 <div class="">
-                  <img src="./images/pc/enter_img2.jpg" alt="롯데스카이힐">
+                  <img src=" ./images/pc/enter_img2.jpg" alt="롯데스카이힐">
                 </div>
                 <div class="explan_txt">
                   <span>롯데 스카이힐</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
+              <!-- 팝업2 내용 -->
+              <div id="popup2" class="popup">
+                <span onclick="closePopup()">닫기</span>
+                <p>팝업 2 내용을 입력하세요.</p>
+              </div>
               <!-- 2 -->
-              <div class="swiper-slide">
+
+              <div class="swiper-slide" onclick="togglePopup('popup3')">
                 <div class="">
                   <img src="./images/pc/enter_img3.jpg" alt="롯데월드 어드벤처">
                 </div>
                 <div class="explan_txt">
                   <span>롯데월드 어드벤처</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
+              <!-- 팝업3 내용 -->
+              <div id="popup3" class="popup">
+                <span onclick="closePopup()">닫기</span>
+                <p>팝업 3 내용을 입력하세요.</p>
+              </div>
               <!-- 3 -->
-              <div class="swiper-slide">
+
+
+              <div class="swiper-slide" onclick="togglePopup('popup4')">
                 <div class="">
                   <img src="./images/pc/enter_img4.jpg" alt="롯데월드 어드벤처동부산">
                 </div>
                 <div class="explan_txt">
                   <span>롯데월드 어드벤처동부산</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
+
+              <div id="popup4" class="popup">
+                <span onclick="closePopup()">닫기</span>
+                <p>팝업 4 내용을 입력하세요.</p>
+              </div>
               <!-- 4 -->
-              <div class="swiper-slide">
+
+
+              <div class="swiper-slide" onclick="togglePopup('popup5')">
                 <div class="">
                   <img src="./images/pc/enter_img5.jpg" alt="세븐일레븐">
                 </div>
                 <div class="explan_txt">
                   <span>세븐일레븐</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
+
+              <div id="popup5" class="popup">
+                <span onclick="closePopup()">닫기</span>
+                <p>팝업 5 내용을 입력하세요.</p>
+              </div>
               <!-- 5 -->
+
               <div class="swiper-slide">
                 <div class="">
                   <img src="./images/pc/enter_img6.jpg" alt="롯데웰푸드">
                 </div>
                 <div class="explan_txt">
                   <span>롯데웰푸드</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
               <!-- 6 -->
@@ -119,7 +151,6 @@
                 </div>
                 <div class="explan_txt">
                   <span>한강-사회적협동조합</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
               <!-- 1 -->
@@ -129,7 +160,6 @@
                 </div>
                 <div class="explan_txt">
                   <span>메디프 상생포럼</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
               <!-- 2 -->
@@ -139,7 +169,6 @@
                 </div>
                 <div class="explan_txt">
                   <span>서울에너지드림</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
               <!-- 3 -->
@@ -149,7 +178,6 @@
                 </div>
                 <div class="explan_txt">
                   <span>박피디와황배우</span>
-                  <p>설명을 입력하세요</p>
                 </div>
               </div>
               <!-- 4 -->
@@ -160,6 +188,32 @@
           </div>
         </div>
       </div>
+
+      <!-- 유지보수 팝업 스크립트 -->
+      <script>
+        function togglePopup(popupId) {
+          var popup = document.getElementById(popupId);
+          var overlay = document.getElementById('overlay');
+          if (popup.style.display === 'block') {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+          } else {
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+          }
+        }
+
+        function closePopup() {
+          var popups = document.querySelectorAll('.popup');
+          var overlay = document.getElementById('overlay');
+          popups.forEach(function (popup) {
+            popup.style.display = 'none';
+          });
+          overlay.style.display = 'none';
+        }
+      </script>
+
+
       <div class="make_wrap question">
         <h5>구축<span>(5)</span></h5>
         <p class="arrow_box">현업에서 맡았던 프로젝트</p>
@@ -248,7 +302,7 @@
       </div>
     </div>
   </div>
-  </div>
+
 
 
   <!-- 푸터 공통 시작 -->
