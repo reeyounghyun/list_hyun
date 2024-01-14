@@ -16,26 +16,11 @@
   <!-- script.js -->
   <script src="./js/scrpit.js"></script>
 
-
   <!-- style.css -->
   <link rel="stylesheet" href="./css/mobile/mobile.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <!-- <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/Portfolio.css"> -->
-
-  <!-- Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    var rand = Math.floor((Math.random() * 10000));
-    document.write('<link rel="stylesheet" href="./css/Portfolio.css?' + rand + '">');
-    document.write('<link rel="stylesheet" href="./css/common.css?' + rand + '">');
-  </script>
-
-
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/Portfolio.css">
 </head>
 
 <body>
@@ -45,273 +30,601 @@
   <!-- 어두운 배경 -->
 
   <div class="portfolio_wrap">
-
     <div class="portfolio_inner">
-      <div class="title">
-        <h2>portfolio</h2>
-      </div>
-      <div class="tenance_wrap question">
-        <div class="maintenance">
-          <span>
-            <div class="slide-item slide-item  slide-popup" onclick="togglePopup('popup1')">
-              <div class="">
-                <img src=" ./images/pc/enter_img1.jpg" alt="롯데리조트">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>롯데 리조트</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup1" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 1 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 1 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup2')">
-              <div class="">
-                <img src=" ./images/pc/enter_img2.jpg" alt="롯데스카이힐">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>롯데 스카이힐</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup2" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 2 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 2 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup3')">
-              <div class="">
-                <img src="./images/pc/enter_img3.jpg" alt="롯데월드 어드벤처">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>롯데월드 어드벤처</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup3" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 3 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 3 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup4')">
-              <div class="">
-                <img src="./images/pc/enter_img4.jpg" alt="롯데월드 어드벤처동부산">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>롯데월드 어드벤처동부산</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup4" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 4 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 4 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup5')">
-              <div class="">
-                <img src="./images/pc/enter_img5.jpg" alt="세븐일레븐">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>세븐일레븐</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup5" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 5 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 5 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup6')">
-              <div class="">
-                <img src="./images/pc/enter_img6.jpg" alt="롯데웰푸드">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>롯데웰푸드</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup6" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 6 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 6 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup7')">
-              <div class="">
-                <img src="./images/pc/enter_img9.jpg" alt="한강">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>한강-사회적협동조합</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup7" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 7 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 7 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup8')">
-              <div class="">
-                <img src="./images/pc/enter_img10.jpg" alt="메디프 상생포럼">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>메디프 상생포럼</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup8" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 8 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 8 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup9')">
-              <div class="">
-                <img src="./images/pc/enter_img11.jpg" alt="서울에너지드림">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>서울에너지드림</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup9" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 0 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 9 end-->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup10')">
-              <div class="">
-                <img src="./images/pc/enter_img12.jpg" alt="박피디와황배우">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>박피디와황배우</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup10" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 10 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 10 end -->
-
-
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup11')">
-              <div class="">
-                <img src="./images/pc/enter_img7.jpg" alt="미트식스">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>미트식스</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup11" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 11 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 1 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup12')">
-              <div class="">
-                <img src="./images/pc/enter_img8.png" alt="와이지앤">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>와이지앤</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup12" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 12 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 2 end-->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup13')">
-              <div class="">
-                <img src="./images/pc/enter_img13.jpg" alt="하나투어가이드">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>하나투어가이드</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup13" class="popup">
-              <span onclick="closePopup()">닫기</span>
-            </div>
-          </span>
-          <!-- 3 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup14')">
-              <div class="">
-                <img src="./images/pc/enter_img14.jpg" alt="하나투어">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>하나투어</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup14" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 14 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 4 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup15')">
-              <div class="">
-                <img src="./images/pc/enter_img15.jpg" alt="하나투어서브페이지">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>하나투어-서브페이지</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup15" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 15 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 5 end -->
-          <span>
-            <div class="slide-item  slide-popup" onclick="togglePopup('popup16')">
-              <div class="">
-                <img src="./images/pc/slide_img.jpg" alt="">
-              </div>
-            </div>
-            <div class="explan_txt">
-              <span>프로젝트 제목을 입력하세요</span>
-            </div>
-            <!-- 팝업 내용 -->
-            <div id="popup16" class="popup">
-              <span onclick="closePopup()">닫기</span>
-              <p>팝업 16 내용을 입력하세요.</p>
-            </div>
-          </span>
-          <!-- 6 end -->
+      <div class="innnr">
+        <!-- 버튼 영역 -->
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="showTab(1)">전체</button>
+          <button class="tab-btn" onclick="showTab(2)">유지보수</button>
+          <button class="tab-btn" onclick="showTab(3)">구축</button>
         </div>
+
+        <div id="tab1" class="tab-content active">
+          <div class="tenance_wrap question">
+            <div class="title">
+              <h2>구축/유지보수</h2>
+            </div>
+            <div class="maintenance">
+              <span>
+                <div class="slide-popup" onclick="togglePopup('popup1')">
+                  <div class="">
+                    <img src=" ./images/pc/enter_img1.png" alt="롯데리조트">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데 리조트</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup1" class="popup">
+                  <div class="poo-tit">
+                    <h4>롯데 리조트</h4>
+                    <span class="close" onclick="closePopup()">닫기</span>
+                  </div>
+                  <div>
+                    <div class="pop-contant">
+                      <div class="img">
+                        <img src="./images/pc/미트식스.png" alt="">
+                      </div>
+                      <div class="">
+                        <strong>수정(기여도)</strong>
+                        <p>
+                          UX그롭 사원 매니저
+
+                          롯데정보통신 파견
+
+                          담당 업무
+                          - 롯데 계열사 서브페이지 html , css(scss) , jquery 작업 진행
+
+                          담당 계열사
+                          - 스카이힐
+                          - 리조트
+                          - 어드밴처 잠실
+                          - 어드밴처 동부산
+                          - 어드밴처 아쿠아리움
+                          - 웰 푸드(제과)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <!-- 1 end -->
+              <span>
+                <div class="slide-popup" onclick="togglePopup('popup2')">
+                  <div class="">
+                    <img src=" ./images/pc/enter_img2.png" alt="롯데스카이힐">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데 스카이힐</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup2" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 2 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 2 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup3')">
+                  <div class="">
+                    <img src="./images/pc/enter_img3.png" alt="롯데월드 어드벤처">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데월드 어드벤처</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup3" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 3 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 3 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup4')">
+                  <div class="">
+                    <img src="./images/pc/enter_img4.png" alt="롯데월드 어드벤처동부산">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데월드 어드벤처동부산</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup4" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 4 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 4 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup5')">
+                  <div class="">
+                    <img src="./images/pc/enter_img5.png" alt="세븐일레븐">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>세븐일레븐</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup5" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 5 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 5 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup6')">
+                  <div class="">
+                    <img src="./images/pc/enter_img6.png" alt="롯데웰푸드">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데웰푸드</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup6" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 6 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 6 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup7')">
+                  <div class="">
+                    <img src="./images/pc/enter_img9.png" alt="한강">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>한강-사회적협동조합</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup7" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 7 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 7 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup8')">
+                  <div class="">
+                    <img src="./images/pc/enter_img10.png" alt="메디프 상생포럼">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>메디프 상생포럼</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup8" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 8 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 8 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup9')">
+                  <div class="">
+                    <img src="./images/pc/enter_img11.png" alt="서울에너지드림">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>서울에너지드림</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup9" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 0 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 9 end-->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup10')">
+                  <div class="">
+                    <img src="./images/pc/enter_img12.png" alt="박피디와황배우">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>박피디와황배우</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup10" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 10 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 10 end -->
+              <span>
+                <div class="  slide-popup popup-item" onclick="togglePopup('popup11')">
+                  <div class="">
+                    <img src="./images/pc/enter_img7.png" alt="미트식스">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>미트식스</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup11" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 11 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 1 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup12')">
+                  <div class="">
+                    <img src="./images/pc/enter_img8.png" alt="와이지앤">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>와이지앤</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup12" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 12 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 2 end-->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup13')">
+                  <div class="">
+                    <img src="./images/pc/enter_img13.png" alt="하나투어가이드">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>하나투어가이드</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup13" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                </div>
+              </span>
+              <!-- 3 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup14')">
+                  <div class="">
+                    <img src="./images/pc/enter_img14.png" alt="하나투어">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>하나투어</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup14" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 14 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 4 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup15')">
+                  <div class="">
+                    <img src="./images/pc/enter_img15.png" alt="하나투어서브페이지">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>하나투어-서브페이지</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup15" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 15 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 5 end -->
+              <span class="width">
+                <div class="  slide-popup" onclick="togglePopup('popup16')">
+                  <div class="">
+                    <img src="./images/pc/enter_img16.png" alt="">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup16" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 16 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 6 end -->
+            </div>
+          </div>
+        </div>
+
+        <div id="tab2" class="tab-content">
+          <div class="tenance_wrap question">
+            <div class="title">
+              <h2>유지보수</h2>
+            </div>
+            <div class="maintenance">
+              <span>
+                <div class="   slide-popup" onclick="togglePopup('popup1')">
+                  <div class="">
+                    <img src=" ./images/pc/enter_img1.png" alt="롯데리조트">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데 리조트</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup1" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 1 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 1 end -->
+              <span>
+                <div class="slide-popup" onclick="togglePopup('popup2')">
+                  <div class="">
+                    <img src=" ./images/pc/enter_img2.png" alt="롯데스카이힐">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데 스카이힐</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup2" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 2 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 2 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup3')">
+                  <div class="">
+                    <img src="./images/pc/enter_img3.png" alt="롯데월드 어드벤처">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데월드 어드벤처</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup3" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 3 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 3 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup4')">
+                  <div class="">
+                    <img src="./images/pc/enter_img4.png" alt="롯데월드 어드벤처동부산">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데월드 어드벤처동부산</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup4" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 4 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 4 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup5')">
+                  <div class="">
+                    <img src="./images/pc/enter_img5.png" alt="세븐일레븐">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>세븐일레븐</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup5" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 5 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 5 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup6')">
+                  <div class="">
+                    <img src="./images/pc/enter_img6.png" alt="롯데웰푸드">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>롯데웰푸드</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup6" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 6 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 6 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup9')">
+                  <div class="">
+                    <img src="./images/pc/enter_img11.png" alt="서울에너지드림">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>서울에너지드림</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup9" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 0 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 7 end-->
+            </div>
+          </div>
+        </div>
+
+        <div id="tab3" class="tab-content">
+          <div class="tenance_wrap question">
+            <div class="title">
+              <h2>구축</h2>
+            </div>
+            <div class="maintenance">
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup7')">
+                  <div class="">
+                    <img src="./images/pc/enter_img9.png" alt="한강">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>한강-사회적협동조합</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup7" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 7 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 7 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup8')">
+                  <div class="">
+                    <img src="./images/pc/enter_img10.png" alt="메디프 상생포럼">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>메디프 상생포럼</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup8" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 8 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 8 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup10')">
+                  <div class="">
+                    <img src="./images/pc/enter_img12.png" alt="박피디와황배우">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>박피디와황배우</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup10" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 10 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 10 end -->
+              <span>
+                <div class="  slide-popup popup-item" onclick="togglePopup('popup11')">
+                  <div class="">
+                    <img src="./images/pc/enter_img7.png" alt="미트식스">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>미트식스</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup11" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 11 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 1 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup12')">
+                  <div class="">
+                    <img src="./images/pc/enter_img8.png" alt="와이지앤">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>와이지앤</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup12" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 12 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 2 end-->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup13')">
+                  <div class="">
+                    <img src="./images/pc/enter_img13.png" alt="하나투어가이드">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>하나투어가이드</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup13" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                </div>
+              </span>
+              <!-- 3 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup14')">
+                  <div class="">
+                    <img src="./images/pc/enter_img14.png" alt="하나투어">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>하나투어</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup14" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 14 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 4 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup15')">
+                  <div class="">
+                    <img src="./images/pc/enter_img15.png" alt="하나투어서브페이지">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>하나투어-서브페이지</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup15" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 15 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 5 end -->
+              <span>
+                <div class="  slide-popup" onclick="togglePopup('popup16')">
+                  <div class="">
+                    <img src="./images/pc/enter_img16.png" alt="">
+                  </div>
+                </div>
+                <div class="explan_txt">
+                  <span>프로젝트 제목을 입력하세요</span>
+                </div>
+                <!-- 팝업 내용 -->
+                <div id="popup16" class="popup">
+                  <span onclick="closePopup()">닫기</span>
+                  <p>팝업 16 내용을 입력하세요.</p>
+                </div>
+              </span>
+              <!-- 6 end -->
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function showTab(tabIndex) {
+            // 모든 탭 내용과 버튼에 대한 'active' 클래스 초기화
+            document.querySelectorAll('.tab-content, .tab-btn').forEach(function (element) {
+              element.classList.remove('active');
+            });
+
+            // 클릭한 탭에 해당하는 탭 내용 보이기
+            var tabId = 'tab' + tabIndex;
+            document.getElementById(tabId).classList.add('active');
+
+            // 클릭한 탭에 'active' 클래스 추가
+            event.currentTarget.classList.add('active');
+          }
+        </script>
+        <div id="overlay" class="overlay" onclick="closePopup()"></div>
       </div>
-      <div id="overlay" class="overlay" onclick="closePopup()"></div>
+
     </div>
   </div>
 
@@ -321,26 +634,7 @@
 
   <!-- 유지보수 팝업 스크립트 -->
   <script>
-    function togglePopup(popupId) {
-      var popup = document.getElementById(popupId);
-      var overlay = document.getElementById('overlay');
-      if (popup.style.display === 'block') {
-        popup.style.display = 'none';
-        overlay.style.display = 'none';
-      } else {
-        popup.style.display = 'block';
-        overlay.style.display = 'block';
-      }
-    }
 
-    function closePopup() {
-      var popups = document.querySelectorAll('.popup');
-      var overlay = document.getElementById('overlay');
-      popups.forEach(function (popup) {
-        popup.style.display = 'none';
-      });
-      overlay.style.display = 'none';
-    }
   </script>
 </body>
 
