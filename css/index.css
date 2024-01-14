@@ -338,7 +338,7 @@ h5:hover + p.arrow_box {
 
 .about_inner .title {
 	position: relative;
-	margin-bottom: 30px;
+	margin: 49px 85px;
 }
 
 .about_info .info_por {
@@ -361,7 +361,7 @@ h5:hover + p.arrow_box {
 	border-radius: 15px;
 }
 
-.about_inner .title::after {
+.title::after {
 	position: absolute;
 	content: '';
 	top: 0px;
@@ -373,16 +373,22 @@ h5:hover + p.arrow_box {
 	border-radius: 0 13px 13px 0;
 }
 
-.about_inner .title h2 {
+.title h2 {
 	display: block;
 	margin-left: 23px;
 	font-size: 30px;
 	font-weight: bold;
 }
+h3.ti {
+	display: block;
+	margin-left: 23px;
+	font-size: 35px;
+	margin: 49px 135px;
+}
 
 .about_info {
 	position: relative;
-	margin: 50px 40px;
+	margin: 49px 135px;
 }
 
 .about_info h3 {
