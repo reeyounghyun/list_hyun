@@ -1,5 +1,5 @@
 // jQuery를 사용하여 클릭 이벤트 핸들링
-$('nav a').click(function (e) {
+$('nav ul li').click(function (e) {
 	e.preventDefault();
 	const targetId = $(this).attr('href');
 	const offsetTop = $(targetId).offset().top - $('header').outerHeight();
@@ -11,9 +11,6 @@ $('nav a').click(function (e) {
 		},
 		1000
 	); // 1000은 애니메이션의 지속시간을 밀리초(ms) 단위로 나타냅니다.
-
-	// showTab 함수 호출 시 event 객체 전달
-	showTab(e, 10000 /* tabIndex 값 넣기 */);
 });
 
 //포폴 탭
@@ -44,7 +41,7 @@ function togglePopup(popupId) {
 	}
 }
 
-function closePopup(e) {
+function closePopup() {
 	var popups = document.querySelectorAll('.popup');
 	var overlay = document.getElementById('overlay');
 	popups.forEach(function (popup) {
