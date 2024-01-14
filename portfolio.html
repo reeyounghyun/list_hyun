@@ -38,7 +38,6 @@
           <button class="tab-btn" onclick="showTab(2)">유지보수</button>
           <button class="tab-btn" onclick="showTab(3)">구축</button>
         </div>
-
         <div id="tab1" class="tab-content active">
           <div class="tenance_wrap question">
             <div class="title">
@@ -331,7 +330,6 @@
             </div>
           </div>
         </div>
-
         <div id="tab2" class="tab-content">
           <div class="tenance_wrap question">
             <div class="title">
@@ -453,7 +451,6 @@
             </div>
           </div>
         </div>
-
         <div id="tab3" class="tab-content">
           <div class="tenance_wrap question">
             <div class="title">
@@ -606,36 +603,14 @@
             </div>
           </div>
         </div>
-
-        <script>
-          function showTab(tabIndex) {
-            // 모든 탭 내용과 버튼에 대한 'active' 클래스 초기화
-            document.querySelectorAll('.tab-content, .tab-btn').forEach(function (element) {
-              element.classList.remove('active');
-            });
-
-            // 클릭한 탭에 해당하는 탭 내용 보이기
-            var tabId = 'tab' + tabIndex;
-            document.getElementById(tabId).classList.add('active');
-
-            // 클릭한 탭에 'active' 클래스 추가
-            event.currentTarget.classList.add('active');
-          }
-        </script>
         <div id="overlay" class="overlay" onclick="closePopup()"></div>
       </div>
-
     </div>
   </div>
 
   <!-- 푸터 공통 시작 -->
   <footer class="footer" id="footer"></footer>
   <!-- 푸터 공통 끝 -->
-
-  <!-- 유지보수 팝업 스크립트 -->
-  <script>
-
-  </script>
 </body>
 
 </html>`

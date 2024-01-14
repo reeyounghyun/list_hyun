@@ -118,20 +118,6 @@
 	letter-spacing: 0.02em;
 	color: #333;
 }
-/* .arrow_box:after {
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	width: 0;
-	height: 0;
-	margin-left: -10px;
-	border: solid transparent;
-	border-color: rgba(51, 51, 51, 0);
-	border-bottom-color: #333;
-	border-width: 10px;
-	pointer-events: none;
-	content: ' ';
-} */
 
 h5:hover + p.arrow_box {
 	display: block;
@@ -141,7 +127,6 @@ h5:hover + p.arrow_box {
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
-	/* border: 1px solid rgb(72 71 71 / 29%); */
 	cursor: pointer;
 	overflow: hidden;
 }
@@ -184,6 +169,7 @@ h5:hover + p.arrow_box {
 	display: block;
 	font-size: 15px;
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .poo-tit {
