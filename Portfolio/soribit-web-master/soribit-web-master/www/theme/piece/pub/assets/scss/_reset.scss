@@ -1,0 +1,69 @@
+@forward "font";
+
+html, body{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Pretendard', Sans-serif;
+  font-size: 16px;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+// font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+  padding: 0;
+}
+
+// anchor
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+// list
+ul,
+ol,
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// table
+table{
+  border-collapse: collapse;
+}
+
+// input
+input{
+    margin:0;
+}
+input, select, textarea{
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 0;
+    // font-family: "Noto Sans KR", Helvetica, "malgun gothic", "Apple SD Gothic Neo", "Microsoft NeoGothic", "Droid sans", sans-serif;
+    font-size: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Pretendard', Sans-serif;
+}
+button {
+    box-sizing:border-box;
+    padding:0;
+    border:0;
+    background:transparent;
+    cursor:pointer;
+    font-family: 'Pretendard', Sans-serif;
+}

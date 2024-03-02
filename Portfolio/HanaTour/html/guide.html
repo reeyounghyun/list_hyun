@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어 웹퍼블리싱 가이드</title>
+    <link rel="stylesheet" href="../resources/css/reset.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../resources/css/guide_style.css">
+    <script src="../resources/js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="../resources/js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu_wrap .left_bar>ul>li').on('mouseover' ,function(){
+                $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')  //.in_sub_m on 클레스 제거
+                $('.menu_wrap .left_bar>ul>li').removeClass('active')  //.left_bar ul li active 클래스 제거
+                $(this).children('.in_sub_m').addClass('on') //
+                $('.menu_wrap .left_bar>ul>li').addClass('on')
+            })
+            $('.menu_wrap .left_bar>ul>li').on('mouseout',function(){
+                $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+            })
+
+            // 이동식 클릭 이벤트
+            $('.guide_wrap .lnb_list li a').click(function(){
+                var target_this = $(this)
+                var test = target_this.offset()
+                console.log(test);
+            })
+        })
+    </script>
+
+    <style>
+        .gnb{
+            display: block;
+        }
+        .main_le{
+            display: block;
+        }
+        .main_slider .swiper-button-prev{
+            top: 4px;
+        }
+        .main_slider .swiper-button-next{
+            top: 4px;
+        }
+        .main_slider .btn_play {
+            bottom: 49px!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guide_wrap">
+        <div class="guide_lnb">
+            <h1> <strong>하나투어</strong> 퍼블리싱 가이드</h1>
+            <h2 class="lnb_title">[ 퍼블리싱 메뉴 ]</h2>
+            <ul class="lnb_list">
+                <li><a href="#tit-1">프로젝트 환경</a></li>
+                <li><a href="#tit-2">프로젝트 파일/규칙</a></li>
+                <li><a href="#tit-3">레이아웃 구조</a></li>
+                <li><a href="#tit-4">본문 타이틀</a></li>
+                <li><a href="#tit-5">메뉴</a></li>
+                <li><a href="#tit-6">슬라이드</a></li>
+                <li><a href="#tit-7">탭 메뉴</a></li>
+                <li><a href="#tit-8">달력</a></li>
+            </ul>
+        </div>
+        <div class="guide_area">
+            <div class="markup_guide">
+                <div class="guide_item">
+                    <div class="guide_title">
+                        <h2 class="title" id="tit-1">프로젝트 환경</h2>
+                    </div>
+                    <div class="table_area">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width: 200px;">
+                                <col style="width: 750px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>문서 및 버전</th>
+                                    <td>HTML5, CSS3 , javascript</td>
+                                </tr>
+                                <tr>
+                                    <th>인코딩</th>
+                                    <td>UTF-8</td> 
+                                </tr>
+                                <tr>
+                                    <th>웹 유형</th>
+                                    <td>Responsive(Pc,Mobile)</td>
+                                </tr>
+                                <tr>
+                                    <th>pc 웹 호환성</th>
+                                    <td>Chrome, safari </td>
+                                </tr>
+                                <tr>
+                                    <th>mobile 웹 호환성</th>
+                                    <td>안드로이드, ios 사파리, 크롬, 삼성인터넷</td>
+                                </tr>
+                                <tr>
+                                    <th>해상도 기준&#47;디자인 너비</th>
+                                    <td>1920px&#47;1200px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title" id="tit-2">
+                        <h2 class="title">프로젝트 파일&#47;규칙</h2>
+                    </div>
+                    <div class="table_area">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width: 250px;">
+                                <col style="width: 550px;">
+                                <col style="width: 550px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">분류파일</th>
+                                    <th style="text-align: center;">파일이름</th>
+                                    <th style="text-align: center;">파일설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>fonts</th>
+                                    <td>https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.otf
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>css</th>
+                                    <td>
+                                        common <br>
+                                        reset <br>
+                                        style <br>
+                                        guide_style <br>
+                                        template <br>
+                                    </td> 
+                                    <td>
+                                        common &#45;공통 <br>
+                                        reset &#45;초기화 <br>
+                                        style &#45;메인 <br>
+                                        guide_style &#45;가이드 <br>
+                                        template &#45;서브 <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>js</th>
+                                    <td>
+                                        script <br>
+                                        jquery-3.6.0.min <br>
+                                        jquery-ui <br>
+                                    </td>
+                                    <td>
+                                        script &#45;공통 <br>
+                                        jquery-3.6.0.min &#45;제이쿼리 플러그인 <br>
+                                        jquery-ui &#45;제이쿼리 플러그인 <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>html</th>
+                                    <td>
+                                        guide <br>
+                                        main <br>
+                                        template <br>
+                                        header <br>
+                                        footer <br>
+                                    </td>
+                                    <td>
+                                        guide &#45;가이드 <br>
+                                        main &#45;메인 <br>
+                                        template &#45;서브 템플릿<br>
+                                        header &#45; 헤더 영역<br>
+                                        footer &#45; 푸터 영역<br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title" id="tit-3">
+                        <h2 class="title">레이아웃 구조</h2>
+                    </div>
+                    <!-- <div class="guide-result"></div> -->
+                    <div class="guide_content">
+                        <pre class="prettyprint lang_html">
+                            &lt;body&gt;<br>
+                                &nbsp;&nbsp;&lt;header class="header"&gt;&lt;&#47;header&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="cont_wrap"&gt;...&lt;&#47;div&gt;<br>
+                                &nbsp;&nbsp;&lt;footer class="footer"&gt;&lt;&#47;footer&gt;<br>
+                            &lt;&#47;body&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title" id="tit-4">
+                        <h2 class="title">본문 타이틀</h2>
+                    </div>
+                    <div class="guide_result guide_height">
+                        <span class="main_tit_xl">h2.main_tit_xl 고객님어떤 여행을 꿈꾸시나요?</span>
+                        <span class="main_tit_lg">h3.main_tit_lg 고객님어떤 여행을 꿈꾸시나요?</span>
+                        <span class="main_tit_md">h4.main_tit_md 고객님어떤 여행을 꿈꾸시나요?</span>
+                    </div>
+                    <div class="guide_content">
+                        <!-- 구글 Prettify -->
+                        <pre class="prettyprint lang_html">
+                            &lt;h2 class="main_tit_xl"&gt;문단테스트&lt;/h2&gt; <br>
+                            &lt;h3 class="main_tit_lg"&gt;문단테스트&lt;/h2&gt; <br>
+                            &lt;h4 class="main_tit_md"&gt;문단테스트&lt;/h2&gt; <br>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="guide_item">
+                    <div class="guide_title">
+                        <h2 class="title" id="tit-5">메뉴</h2>
+                    </div>
+                    <div class="guide_result">
+                        <div class="gnb">
+                            <div class="menu_wrap common_cont">
+                                <div class="menu_left">
+                                    <nav class="left_bar">
+                                        <ul>
+                                            <li>
+                                                <a href="#">해외여행</a>
+                                                <div class="in_sub_m">
+                                                    <ul>
+                                                        <li><a href="#">해외여행 홈</a></li>
+                                                        <li><a href="#">동남아/대만/서남아</a></li>
+                                                        <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
+                                                        <li><a href="#">유럽/아프리카</a></li>
+                                                        <li><a href="#">미주/중남이/허와이</a></li>
+                                                        <li><a href="#">일본</a></li>
+                                                        <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
+                                                        <li><a href="#">지방출발</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">제주/국내여행</a>
+                                                <div class="in_sub_m">
+                                                    <ul>
+                                                        <li><a href="#">제주/국내여행</a></li>
+                                                        <li><a href="#">제주도렌트카</a></li>
+                                                        <li><a href="#">울릉도</a></li>
+                                                        <li><a href="#">내나라여행</a></li>
+                                                        <li><a href="#">국내골프</a></li>
+                                                        <li><a href="#">단독여행문의</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">항공</a></li>
+                                            <li><a href="#">호텔</a></li>
+                                            <li><a href="./template.html">투어/입장권</a></li>
+                                            <li><a href="#">허니문</a></li>
+                                            <li><a href="#">골프</a></li>
+                                            <li><a href="#">제우스</a></li>
+                                            <li><a href="#">MICE</a></li>
+                                            <li><a href="#">하나LIVE</a></li>
+                                            <li><a href="./guide.html">가이드</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide_content">
+                        <!-- 구글 Prettify -->
+                        <pre class="prettyprint lang_html">
+                            &lt;div class="gnb"&gt;<br>
+                            &nbsp;&nbsp;&lt;div class="menu_wrap common_cont" &gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="menu_left" &gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="left_bar" &gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="on"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" &gt;메뉴1 &lt;&#47;a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="in_sub_m"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#" &gt;서브1 &lt;&#47;a&gt;&lt;&#47;li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#" &gt;서브2 &lt;&#47;a&gt;&lt;&#47;li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#" &gt;서브3 &lt;&#47;a&gt;&lt;&#47;li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;li&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;nav&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &lt;&#47;div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="guide_item">
+                    <div class="guide_title">
+                        <h2 class="title" id="tit-6">슬라이드</h2>
+                    </div>
+                    <div class="guide_result">
+                            <div class="wrapper">
+                                <div class="main_slider">
+                                    <div class="swiper color_slide" style="width: 300px; height: 300px;">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide" style="height: 300px;">
+                                                <a href="#">
+                                                    <img src="../resources/images/slide01.jpg"
+                                                        alt="막강한 할인 혜택 블랙 프라이데이 #스페셜 상품부터 쿠폰까지 #특가로 떠나는 여행">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide" style="height: 300px;">
+                                                <a href="#">
+                                                    <img src="../resources/images/slide02.jpg"
+                                                        alt="하나LIVE 1주년 페스티벌 총 300만원 이벤트와 방송 특가 매주 수요일 오후8시! 방송 상품 구매 만해도 참여 완료!">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                        <button type="button" class="btn_play"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        <script>      
+                            var swiper = new Swiper(".color_slide", {
+                                spaceBetween: 30,
+                                centeredSlides: true,
+                                loop: true,
+                                autoplay: {
+                                    delay: 2500,
+                                    disableOnInteraction: false,
+                                },
+                                pagination: {
+                                    el: ".swiper-pagination",
+                                    type: "fraction",
+                                },
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                },
+                
+                            });
+
+                        </script>
+                    </div>   
+                    <div class="guide_content">
+                        <!-- 구글 Prettify -->
+                        <pre class="prettyprint lang_html">
+                            &lt;div class="main_slider"&gt;<br>
+                            &nbsp;&nbsp;&lt;div class="swiper color_slide"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-wrapper"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../resources/images/slide01.jpg"
+                            alt="막강한 할인 혜택 블랙 프라이데이 #스페셜 상품부터 쿠폰까지 #특가로 떠나는 여행"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-slide"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../resources/images/slide02.jpg"
+                            alt="하나LIVE 1주년 페스티벌 총 300만원 이벤트와 방송 특가 매주 수요일 오후8시! 방송 상품 구매 만해도 참여 완료!"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-button-next"&gt;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-button-prev"&gt;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="swiper-pagination"&gt;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &lt;&#47;div&gt;<br>
+                            <br>
+                            &lt;script&gt;<br>  
+                            var swiper = new Swiper &#40;".color_slide", &#123;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;spaceBetween: 30, &#47;&#47;슬라이드 사이 간격<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;centeredSlides: true, &#47;&#47;슬라이드 가운데 정렬<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;loop: true,  &#47;&#47;슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;autoplay: &#123;&#47;&#47;자동재생 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delay: 2500, &#47;&#47;재생되는 시간<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disableOnInteraction: false,  &#47;&#47;false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;pagination: &#123;&#47;&#47;pager 여부<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;el: ".swiper-pagination", &#47;&#47;페이저 버튼을 담을 태그 설정<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type:"fraction", &#47;&#47;버튼 모양 결정 "bullets", "fraction" <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;navigation: &#123;&#47;&#47; 버튼 사용자 지정<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextEl: ".swiper-button-next"&#44; &#47;&#47;다음<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prevEl: ".swiper-button-prev"&#44; &#47;&#47;이전<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#125;,<br>
+                            &nbsp;&nbsp;&#125;&#41;<br>
+                            &lt;&#47;script&gt; 
+                        </pre>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title">
+                        <h2 class="title" id="tit-7">탭 메뉴</h2>
+                    </div>
+                    <div class="guide_result">
+                        <div class="main_le">
+                            <div class="top_input guide_input" style="margin-top: 0; padding: 20px;">
+                                <h2 class="main_tit_xl">고객님,<br><span>어떤 여행을 꿈꾸시나요?</span></h2>
+                                <div class="but_tit">
+                                    <a class="btn_primary tab-link acitve" data-tab="tab-10">탭메뉴1</a>
+                                    <a class="btn_primary tab-link" data-tab="tab-20">탭메뉴2</a>
+                                    <a class="btn_primary tab-link" data-tab="tab-30">탭메뉴3</a>
+                                </div>
+                            </div>
+                            <!-- 탭 버튼 -->
+                            <div id="tab-10" class="tab_content package acitve" style="margin: 0; padding: 20px;">
+                                <p>내용1</p>
+                            </div>
+                            <!-- 패키지 탭 -->
+                            <div id="tab-20" class="tab_content" style="margin: 0; padding: 20px;">
+                                <p>내용2</p> 
+                            </div>
+                            <div id="tab-30" class="tab_content" style="margin: 0; padding: 20px;">
+                                <p>내용3</p>
+                            </div>
+                            <!-- 항공 탭 -->
+                        </div>
+
+                        <!-- <script>
+                            $('.but_tit a').click(function () {
+                                var tab_id = $(this).attr('data-tab');
+                                $('.but_tit a').removeClass('acitve');
+                                $('.tab_content').removeClass('acitve');
+                                $(this).addClass('acitve');
+                                $("#" + tab_id).addClass('acitve');
+                            });
+            
+                            $('.but_tits span button').click(function () {
+                                var tab_id = $(this).attr('data-tab');
+                                $('.but_tits span button').removeClass('acitve');
+                                $('.tits_cons').removeClass('acitve');
+                                $(this).addClass('acitve');
+                                $("#" + tab_id).addClass('acitve');
+                            });
+                            //왕복 편도 다구간 탭 버튼
+                        </script> -->
+
+                    </div>
+                    <div class="guide_content">
+                        <!-- 구글 Prettify -->
+                        <pre class="prettyprint lang_html">
+                            &lt;div class="main_le"&gt;<br>
+                            &nbsp;&nbsp;&lt;div class="top_input"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="but_tit"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="btn_primary tab-link acitve" data-tab="tab-10"&gt;탭버튼1&lt;&#47;a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="btn_primary tab-link" data-tab="tab-20"&gt;탭버튼2&lt;&#47;a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="btn_primary tab-link" data-tab="tab-30"&gt;탭버튼3&lt;&#47;a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&lt;div id="tab-10" class="tab_content package acitve"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;내용1&lt;&#47;p&gt;<br>
+                            &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&lt;div id="tab-20" class="tab_content"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;내용2&lt;&#47;p&gt;<br>
+                            &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &nbsp;&nbsp;&lt;div id="tab-30" class="tab_content"&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;내용3&lt;&#47;p&gt;<br>
+                            &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &lt;&#47;div&gt;<br>
+                        </pre>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title">
+                        <h2 class="title" id="tit-8">달력</h2>
+                    </div>
+                    <div class="guide_result">
+                        <div class="le_box">
+                            <ul>
+                                <li>
+                                    <div class="bnt_ri">
+                                        <div class="calendar_button">
+                                            <span class=""><i></i> 여행시작일 선택</span>
+                                        </div>
+                                        <!-- 달력부분 시작 -->
+                                        <div class="card_area off">
+                                            <div class="card_container ">
+                                                <div class="card_calendar">
+                                                    <div class="calendar_container ">
+                                                        <table id="tableCalendar" class="tableCalendar">
+                                                            <caption class="sr_only " style="font-weight:600;">날짜를 선택할 수 있는 달력
+                                                            </caption>
+                                                            <colgroup>
+                                                                <col style="width: 14%;">
+                                                                <col style="width: 14%;">
+                                                                <col style="width: 14%;">
+                                                                <col style="width: 14%;">
+                                                                <col style="width: 14%;">
+                                                                <col style="width: 14%;">
+                                                                <col style="width: 14%;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="text_red">
+                                                                        S
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        M
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        T
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        W
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        T
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        F
+                                                                    </th>
+                                                                    <th scope="col" class="text_navy">
+                                                                        S
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-06-31" class="other_day">31</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-01">1</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-02">2</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-03">3</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-04">4</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-05">5</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-06" class="text-navy">6</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-07" class="text_red">7</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-08">8</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-09">9</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-10">10</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-11">11</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-12">12</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-13" class="text_navy">13</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-14" class="text_red">14</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-15">15</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-16 (오늘)" class="today">16</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-17">17</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-18">18</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-19">19</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-20" class="text-navy">20</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-21" class="text_red">21</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-22">22</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-23">23</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-24">24</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-25">25</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-26">26</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-27" class="text_navy">27</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-07-28" class="text_red other_day">28</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-08-01" class="other_day">1</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-08-02" class="other_day">2</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-08-03" class="other_day">3</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-08-04" class="other_day">4</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-08-05" class="other_day">5</a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#;" title="2022-08-06" class="other_day text_navy">6</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="btn_closed">
+                                                        <a href="#;" class="">닫기</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 달력부분 끝-->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="guide_content">
+                        <pre class="prettyprint lang_html">
+                            &lt;div class="card_container "&gt;<br>
+                                &nbsp;&nbsp;&lt;div class="guide-result"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-container"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-calendar"&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                                &nbsp;&nbsp;&lt;&#47;div&gt;<br>
+                            &lt;&#47;div&gt;<br>
+                        </pre> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

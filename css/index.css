@@ -53,18 +53,20 @@
 }
 
 .nav_wrap ul li:hover a::after {
-	content: 'Q';
+	content: 'click';
 	display: inline-block;
-	width: 18px;
 	height: 17px;
 	position: absolute;
-	right: -5px;
-	top: 2px;
+	right: -23px;
+	top: -10px;
 	background-color: rgba(124, 190, 18);
-	border-radius: 20px;
-	font-size: 16px;
+	border-radius: 15px;
+	padding: 3px 7px;
+	font-size: 14px;
 	text-align: center;
 	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
 
 .nav_wrap ul li + li {
@@ -147,8 +149,8 @@
 .tab-buttons button {
 	background: #fff;
 	/* border: 0; */
-	font-size: 1.25em;
-	font-weight: 600;
+	font-size: 1.8em;
+	font-weight: 500;
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	padding: 10px 20px;
@@ -196,13 +198,9 @@
 }
 
 .question p {
-	height: auto;
-	background-color: #fff;
-	border: 1px solid #7cbe12;
-	box-sizing: border-box;
-	border-radius: 15px;
+	display: block;
 	color: #333;
-	font-size: 14px;
+	font-size: 17px;
 }
 .maintenance {
 	display: flex;
@@ -222,11 +220,15 @@
 	box-sizing: content-box;
 }
 
+.maintenance .explan_txt {
+	cursor: pointer;
+}
+
 .maintenance .explan_txt span {
 	display: block;
 	width: 100%;
 	padding: 15px 10px 13px 12px;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	color: #333;
@@ -265,14 +267,16 @@ h5:hover + p.arrow_box {
 	z-index: 99;
 }
 .popup {
-	width: 50%;
-	height: 800px;
+	/* width: 34%;
+	height: 500px; */
+	width: 47%;
+	height: 700px;
 	display: none;
 	position: fixed;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 20px;
+	padding: 36px;
 	background-color: #fff;
 	z-index: 100;
 	overflow-x: scroll;
@@ -304,17 +308,55 @@ h5:hover + p.arrow_box {
 
 .pop-contant {
 	display: flex;
-	align-items: center;
+}
+.pop-contant .img {
+	display: block;
+	width: 900px;
+}
+.pop-contant .img img {
+	display: block;
+	width: 100%;
+}
+.pop-contant .pop-txt {
+	margin-left: 30px;
+}
+.pop-contant .pop-txt h5 {
+	display: block;
+	margin-bottom: 2rem;
+	padding: 5px 0;
+	font-size: 3rem;
+}
+.pop-contant .pop-txt > p > b {
+	display: block;
+	color: #333;
+	font-size: 2rem;
 }
 
-.pop-contant strong {
-	flex: 1;
+.pop-contant .pop-txt > p > b + b {
+	margin-top: 24px;
 }
 
-.pop-contant div {
-	flex: 1;
+.pop-contant .pop-txt > p > b > span {
+	display: block;
+	margin-left: 13px;
+	padding-top: 10px;
+	font-size: 1.6rem;
+	font-weight: 300;
 }
 
+.pop-contant .pop-txt > p > b > span:hover a {
+	color: #7cbe12;
+	font-weight: bold;
+	text-indent: underline;
+}
+
+.pop-contant .pop-txt > p > b > span:hover img {
+	color: #7cbe12;
+}
+
+.pop-contant .pop-txt > p > b > span a {
+	font-size: 1.6rem;
+}
 /* 포트폴리오 끝 */
 
 /* about_us 시작 */
@@ -364,8 +406,8 @@ h5:hover + p.arrow_box {
 .title::after {
 	position: absolute;
 	content: '';
-	top: 0px;
-	left: 14px;
+	top: -1px;
+	left: 8px;
 	width: 7px;
 	height: 31px;
 	line-height: 16px;
@@ -381,14 +423,13 @@ h5:hover + p.arrow_box {
 }
 h3.ti {
 	display: block;
-	margin-left: 23px;
+	margin: 10px 109px 88px;
 	font-size: 35px;
-	margin: 49px 135px;
 }
 
 .about_info {
 	position: relative;
-	margin: 49px 135px;
+	margin-left: 126px;
 }
 
 .about_info h3 {
@@ -419,11 +460,33 @@ h3.ti {
 	font-weight: 400;
 }
 
+.skill_wrap p.my_skili {
+	position: relative;
+}
+
+.skill_wrap p.my_skili::after {
+	content: '#탐재한 스킬모음집';
+	clear: both;
+	position: absolute;
+	left: -13px;
+	top: -39px;
+	padding: 5px;
+	font-weight: 500;
+	color: #fff;
+	font-size: 1.7rem;
+	background-color: #7cbe12;
+}
+
 .skill_wrap p.my_skili > span {
 	display: inline-block;
 	border: 1px solid #7cbe12;
 	border-radius: 20px;
 	padding: 6px 10px;
+	font-size: 1.3rem;
+}
+
+.skill_wrap p.my_skili > span + span {
+	margin-left: 5px;
 }
 
 .info-txt {
@@ -431,10 +494,11 @@ h3.ti {
 }
 .info-txt span {
 	display: block;
+	font-size: 1.5rem;
 }
 
 .career_wrap {
-	width: 57%;
+	width: 62%;
 	margin: 28px 0;
 }
 .career_inner {
@@ -465,8 +529,9 @@ h3.ti {
 
 .career_inner .career > span {
 	display: block;
-	font-size: 15px;
+	font-size: 17px;
 	padding-bottom: 10px;
+	color: #000;
 }
 
 .career_inner .career > p {
@@ -474,7 +539,17 @@ h3.ti {
 }
 
 .career_inner .career > p > span {
+	display: block;
 	font-size: 17px;
+	color: #000;
+}
+
+.career_inner .career > p > span i {
+	display: inline-block;
+	margin-left: 5px;
+	font-style: normal;
+	font-size: 1.2rem;
+	color: #3c3c3c;
 }
 
 .company_wrap {
@@ -617,6 +692,15 @@ h3.ti {
 	background-size: contain;
 }
 
+.company_list .com_inner h5.einvention::after {
+	top: 3px;
+	left: 77px;
+	width: 82px;
+	height: 21px;
+	background: url(../images/pc/ico_logo.png) no-repeat;
+	background-size: contain;
+}
+
 .list .com_inner .main_text {
 	line-height: 1.75;
 }
@@ -626,7 +710,12 @@ h3.ti {
 }
 
 .list .com_inner .main_text div span {
+	display: block;
 	font-size: 15px;
+}
+
+.list .com_inner .main_text div p {
+	font-size: 16px;
 }
 
 .list .com_inner .main_text div span.smail_tit {
@@ -637,14 +726,27 @@ h3.ti {
 .list .com_inner .main_text > div b {
 	display: block;
 	margin-top: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
 }
+
+.list .com_inner .main_text > div b.txt_blod {
+	display: inline-block;
+	font-weight: 700;
+}
+
 .list .com_inner .main_text div span.font-13 {
 	font-size: 13px;
 }
 
 .list .com_inner .main_text strong {
-	font-size: 15px;
-	display: block;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.list .com_inner .main_text strong.brand {
+	font-size: 2rem;
 }
 
 .list .com_inner .main_text p.list_up {
@@ -660,6 +762,11 @@ h3.ti {
 
 .company_list .com_day span {
 	font-size: 15px;
+}
+
+.divText {
+	display: block;
+	font-size: 14px;
 }
 
 /* about_us 끝 */

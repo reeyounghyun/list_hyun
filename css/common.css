@@ -212,3 +212,7 @@
 .block {
 	display: block;
 }
+
+.ml-12 {
+	margin-left: 12px;
+}

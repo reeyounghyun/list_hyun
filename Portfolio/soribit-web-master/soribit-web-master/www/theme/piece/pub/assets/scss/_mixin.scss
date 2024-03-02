@@ -1,0 +1,53 @@
+/*
+ font-weight
+ 700 : bold
+ 600 : Semi bold
+ 500 : medium
+ 400 : regular
+ 300 : light
+*/
+
+/* BreakPoint */
+$view-breakpoints: (xs: 280);
+
+@function breakpoint-max($name, $breakpoints: $view-breakpoints) {
+  $max: map-get($breakpoints, $name);
+  @return if($max and $max > 0, $max, null);
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $view-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: #{$max}px) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin ellipsis($line: 1) {
+	@if ($line == 1) {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	} @else {
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: $line;
+	}
+}
+
+@mixin blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+}

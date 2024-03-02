@@ -182,7 +182,7 @@ html {
 	overflow-y: scroll;
 	box-sizing: border-box;
 	font-size: 62.5%;
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 400;
 	word-break: keep-all;
 	word-wrap: break-word;
@@ -339,7 +339,7 @@ button {
 }
 body {
 	-webkit-text-size-adjust: none;
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 400;
 	color: #333;
 	word-break: break-all;
@@ -356,7 +356,7 @@ a {
 	text-decoration: none;
 	color: #000;
 	font-size: 62.5%;
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 400;
 }
 

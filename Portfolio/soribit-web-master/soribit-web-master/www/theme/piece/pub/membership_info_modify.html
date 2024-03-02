@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="main-header">
+    <a href="" class="location">
+        <img src="./assets/images/arrow_back.png" alt="뒤로가기" class="icon">
+    </a>
+    <a href="" class="logo_wrap">
+        <img src="./assets/images/logo_color.png" alt="피스" class="logo_page">
+    </a>
+</div>
+
+<div class="content join">
+    <h2 class="list_title join">회원정보 수정</h2>
+    <form action="" class ="form_join" autocomplete="off">
+        <div class="unchanged">
+            <span>이메일</span>
+            <p>lime@naver.com</p>
+        </div>
+        <div class="password_wrap1">
+            <input type="password" class="input-text is-checked" id="userPassword" placeholder="비밀번호" maxlength="15">
+            <p class="guide">8~15자 이상 입력해주세요.</p>
+            <p class="notice"></p>
+        </div>
+        <div class="password_wrap2">
+            <input type="password" class="input-text is-checked" id="userPasswordCheck" placeholder="비밀번호 확인" maxlength="15">
+            <p class="notice"></p>
+        </div>
+        <div class="unchanged">
+            <span>이름</span>
+            <p>이라임</p>
+        </div>
+        <div class="number_wrap">
+            <input type="text" class="input-text is-checked" id="userPhoneNum" placeholder="연락처">
+        </div>
+        <!-- 인증 전 파일 올려야 할 때 -->
+        <div class="file_wrap">
+            <p>장애인등록증/사업자등록증 인증</p>
+            <input type="file" id="file" class="input_file" accept=".pdf, .jpg, .jpeg, .png">
+            <div class="file_box">
+                <button type="button" class="delete_file"></button>
+                <label for="file" class="btn_file">파일찾기</label>
+            </div>
+        </div>
+        <div class="file_guide">
+            <p>(.png, .jpeg, .jpg, .pdf 형식 지원)</p>
+            <p>파일은 5mb 까지 업로드 가능합니다.</p>
+            <p class="notice"></p>
+        </div>
+        <!-- 인증 후 -->
+        <!-- <div class="file_certify">
+            <p>장애인등록증/사업자등록증 인증</p>
+            <div class="file_name">장애인등록증.png</div>
+        </div> -->
+        <button type="button" class="btn_next" disabled>완료</button>
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="assets/js/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/slick.js"></script>
+<script type="text/javascript" src="assets/js/common.js"></script>
+<script>
+    var $nextButton = $('.btn_next');
+    var $passwordInput = $('#userPassword');
+    var $passwordCheckInput = $('#userPasswordCheck');
+    var $numberInput = $('#userPhoneNum');
+    var $input = $('.join .is-checked');
+    function formPassword() {
+        var passwordValue = $passwordInput.val();
+        if(!validation.password.test(passwordValue)){
+            $('.password_wrap1 .notice').text('올바르지 않은 비밀번호입니다.').removeClass('correct').addClass('incorrect');
+            // $passwordInput.focus();
+        } else {
+            $('.password_wrap1 .notice').text('올바른 비밀번호입니다.').removeClass('incorrect').addClass('correct');
+        }
+        if(passwordValue === ''){
+            $('.password_wrap1 .notice').text('')
+        }
+    }
+    function PasswordCorrect() {
+        var passwordValue = $passwordInput.val();
+        var passwordChkValue = $('#userPasswordCheck').val();
+        if ( passwordValue !== passwordChkValue ){
+            $('.password_wrap2 .notice').text('비밀번호가 일치하지 않습니다.').removeClass('correct').addClass('incorrect');
+        } else {
+            $('.password_wrap2 .notice').text('비밀번호가 일치합니다.').removeClass('incorrect').addClass('correct');
+        }
+        if(passwordChkValue === ''){
+            $('.password_wrap2 .notice').text('');
+        }
+    }
+    function formNumber(){
+        var numberValue = $numberInput.val();
+        if(!validation.number.test(numberValue)){
+            $('.number_wrap .notice').text('틀렸음').removeClass('correct').addClass('incorrect');
+        } else {
+            $('.number_wrap .notice').text('맞았음').removeClass('incorrect').addClass('correct');
+        }
+    }
+    function formActive(){
+        var passwordValue = $passwordInput.val();
+        var passwordChkValue = $passwordCheckInput.val();
+        var numberValue = $numberInput.val();
+        var correctCount = 0;
+
+        if(validation.password.test(passwordValue) || passwordValue === '' && passwordChkValue === '') correctCount++;
+        if(passwordValue === passwordChkValue) correctCount++;
+        if(validation.number.test(numberValue) || numberValue == '') correctCount++;
+        
+        if(correctCount === 3){
+            $nextButton.attr('disabled', false);
+        } else {
+            $nextButton.attr('disabled', true);
+        }
+    }
+    $passwordInput.focusout(function(){
+        formPassword();
+        PasswordCorrect();
+    })
+    $passwordCheckInput.focusout(function(){
+        formPassword();
+        PasswordCorrect();
+    })
+    $numberInput.focusout(function(){
+        formNumber()
+    })
+    $input.on('focusout', function() {
+        formActive();
+    });
+</script>
+</html>
