@@ -360,7 +360,16 @@ h5:hover + p.arrow_box {
   width: 100%;
 }
 .about_info .info_por .por_txt {
+  position: relative;
   flex: 1;
+}
+.about_info .info_por .por_txt .por-inner {
+  margin-left: 15px;
+}
+.about_info .info_por .por_txt span.smallText {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #7c7c7c;
 }
 .about_info .info-me {
   display: block;
@@ -414,8 +423,8 @@ h3.ti {
 
 .skill_wrap {
   position: absolute;
-  top: -2px;
-  left: 86px;
+  bottom: -62px;
+  left: 2px;
 }
 .skill_wrap > span {
   display: inline-block;
@@ -426,15 +435,15 @@ h3.ti {
   font-weight: 400;
 }
 
-.skill_wrap p.my_skili {
+.skill_wrap .my_skili {
   position: relative;
 }
 
-.skill_wrap p.my_skili::after {
-  content: "#탐재한 스킬모음집";
+.skill_wrap .my_skili::after {
+  content: "#탐재한 스킬";
   clear: both;
   position: absolute;
-  left: -13px;
+  left: -11px;
   top: -39px;
   padding: 5px;
   font-weight: 500;
@@ -443,47 +452,244 @@ h3.ti {
   background-color: #7cbe12;
 }
 
-.skill_wrap p.my_skili > span {
+.skill_wrap .my_skili p span {
   display: inline-block;
   border: 1px solid #7cbe12;
   border-radius: 20px;
   padding: 6px 10px;
   font-size: 1.3rem;
+  background: #fff;
 }
-.skill_wrap p.my_skili > span + span {
-  margin-left: 5px;
+
+.skill_wrap .my_skili p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #b9b9b9;
+}
+.skill_wrap .my_skili p + p {
+  margin-top: 13px;
+}
+.skill_wrap .my_skili p span {
+  margin-right: 4px;
+}
+.skill_wrap .my_skili p span:nth-child(1) {
+  background: linear-gradient(to right, #cbeb98, transparent 95%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(2) {
+  background: linear-gradient(to right, #cbeb98, transparent 90%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(3) {
+  background: linear-gradient(to right, #cbeb98, transparent 80%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(4) {
+  background: linear-gradient(to right, #cbeb98, transparent 60%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(5) {
+  background: linear-gradient(to right, #cbeb98, transparent 60%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(6) {
+  background: linear-gradient(to right, #cbeb98, transparent 60%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(7) {
+  background: linear-gradient(to right, #cbeb98, transparent 50%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(8) {
+  background: linear-gradient(to right, #cbeb98, transparent 50%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(9) {
+  background: linear-gradient(to right, #cbeb98, transparent 50%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(10) {
+  background: linear-gradient(to right, #cbeb98, transparent 65%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(10) {
+  background: linear-gradient(to right, #cbeb98, transparent 60%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span:nth-child(10) {
+  background: linear-gradient(to right, #cbeb98, transparent 85%);
+  color: #323232;
+}
+.skill_wrap .my_skili p span + span {
+  margin-left: 23px;
 }
 
 .info-txt {
   line-height: 1.75;
+}
+.info-txt > div {
+  margin-bottom: 9px;
+}
+.info-txt .info-inner {
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-txt .info-inner .gender {
+  display: flex;
+  align-items: center;
+}
+.info-txt .info-inner .gender > span {
+  display: inline-block;
+  margin-right: 18px;
+  font-size: 1.6rem;
+}
+.info-txt .info-inner .gender p {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 190, 190, 0.639);
+}
+.info-txt .info-inner .gender p span {
+  display: inline-block;
+  width: 32px;
+  font-size: 1.4rem;
+  color: #cdcdcd;
+  text-align: center;
+}
+.info-txt .info-inner .gender p span.boldText {
+  color: #646464;
+}
+.info-txt .info-inner .gender p span + span {
+  border-left: 1px solid rgba(255, 190, 190, 0.639);
 }
 .info-txt span {
   display: block;
   font-size: 1.5rem;
 }
 
+.birth {
+  position: relative;
+}
+.birth p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 220px;
+}
+.birth p span {
+  text-align: center;
+}
+.birth p .order {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 1.4rem;
+  color: #333;
+}
+.birth::after {
+  position: absolute;
+  content: "";
+  clear: both;
+  left: -22px;
+  top: 4px;
+  width: 1.6px;
+  height: 20px;
+  background-color: #a7a7a7;
+}
+
+.address {
+  margin-right: 7px;
+}
+.address p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 170px;
+  font-size: 1.6rem;
+}
+.address p span {
+  font-size: 1.5rem;
+}
+
+.mbti p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 280px;
+  font-size: 1.6rem;
+}
+.mbti p span {
+  font-size: 1.5rem;
+}
+.mbti p span.mbtiText {
+  font-size: 1.2rem;
+}
+.mbti p span.mbtiText b {
+  display: inline-block;
+  text-decoration: underline;
+  letter-spacing: 0.75px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+.mbti p span.mbtiText b + b {
+  margin-left: 3px;
+}
+
 .career_wrap {
-  width: 62%;
-  margin: 28px 0;
+  width: 58%;
+  margin: 112px 0 50px;
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 .career_inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1.5px solid rgba(124, 190, 18, 0.24);
-  padding: 25px 15px;
+  padding: 44px 15px;
   border-radius: 12px;
   background: rgba(124, 190, 18, 0.0784313725);
 }
+.career_inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a), #0f0, #ff0, #0ff, #f0f, #0ff);
+  border-radius: 20px;
+  animation: rotating 4s linear infinite;
+}
+.career_inner::after {
+  opacity: 0.75;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a), #0f0, #ff0, #0ff, #f0f, #0ff);
+  border-radius: 20px;
+  filter: blur(9px);
+  animation: rotating 6s linear infinite;
+}
 .career_inner > div {
   flex: 1 1 auto;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 43%;
+  height: 100px;
+  padding: 11px 17px;
+  border-radius: 20px;
+  z-index: 1000;
+  background: #fff;
 }
 .career_inner .career:nth-child(2) {
-  border-right: 1px solid rgba(183, 183, 183, 0.74);
-  padding-left: 10px;
+  left: 29%;
 }
 .career_inner .career:nth-child(3) {
-  padding-left: 10px;
+  left: 57%;
 }
 .career_inner .career > span {
   display: block;
@@ -501,12 +707,42 @@ h3.ti {
 }
 .career_inner .career > p > span i {
   display: inline-block;
-  margin-left: 5px;
   font-style: normal;
   font-size: 1.2rem;
   color: #3c3c3c;
 }
+.career_inner .career > p .smailText {
+  font-size: 1.3rem;
+}
 
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes rotating {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 630px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 470px) {
+  .container {
+    transform: scale(0.7);
+  }
+}
 .company_wrap {
   position: relative;
   display: flex;
