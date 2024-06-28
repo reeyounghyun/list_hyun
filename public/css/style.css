@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.header-nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  line-height: 39px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  z-index: 100;
+}
+.header-nav .nav {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav .nav .btn-toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+.header-nav .nav .btn-toggle:hover {
+  text-decoration: underline;
+}
+.header-nav .nav .btn-toggle em {
+  padding-bottom: 3px;
+}
+
+.scroll-area {
+  position: fixed;
+  top: 50%;
+  right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-50%);
+}
+.scroll-area .line {
+  width: 10px;
+  height: 100px;
+  background-color: black;
+  transition: height 0.3s ease;
+}
+.scroll-area .dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-indent: -9999px;
+  font-size: 0;
+}
+
+.content {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+.content .filler {
+  height: 800px; /* 각 섹션의 높이를 조정 */
+  margin-bottom: 20px;
+}
+
+.section2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.section2 > div {
+  flex: 1 0 auto;
+}
+
+.sectionComm .proFileCont-inner {
+  line-height: 1.75;
+}
+
+.proFileCont ul {
+  line-height: 1.75;
+}/*# sourceMappingURL=style.css.map */
