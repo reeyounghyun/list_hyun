@@ -8,6 +8,7 @@
   letter-spacing: -0.02em;
   margin:0;
   padding:0;
+  color:#fff;
 }
 li{
   list-style:none;
@@ -16,23 +17,15 @@ span{
   display:block;
 }
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 .titleBlod-sm{
   font-family: "GmarketSansMedium", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-}
-@media screen and (max-width:1280px) {
-  .titleBlod-sm{
-    font-family: "GmarketSansMedium", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: left;
-  }
+  font-size: 12px;
+  font-weight: 100;
 }
 .titleBlod{
   font-family: "GmarketSansMedium", sans-serif;
@@ -47,6 +40,45 @@ span{
     text-align: left;
   }
 }
+.titleBlod-m{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+@media screen and (max-width:768px) {
+  .titleBlod-m{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.titleBasic{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width:768px) {
+  .titleBasic{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.titleMedium{
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+@media screen and (max-width:768px) {
+  .titleMedium{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
 .titleLight{
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -60,18 +92,7 @@ span{
     text-align: left;
   }
 }
-.titleBasic{
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-}
-@media screen and (max-width:768px) {
-  .titleBasic{
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-  }
-}
+
 .titleNormal{
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -82,4 +103,10 @@ span{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
   }
+}
+
+.titleLight-100{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
 }
