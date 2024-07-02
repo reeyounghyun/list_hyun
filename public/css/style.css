@@ -1,4 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
 
+/*font-family: "GmarketSansMedium", sans-serif; */
+.mainTitle {
+  font-weight: bold;
+  font-family: "GmarketSansMedium", sans-serif;
+}
+
+.contants-wrap {
+  background: #000;
+}
+
+.text-xl {
+  font-size: 45px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.text-xl {
+  font-size: 36px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.memoji {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.tag {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+.tag span {
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
