@@ -245,7 +245,8 @@
       }
     }
     .padding{
-      padding: 97px 20px 0 20px;}
+      padding: 100px 100px 0 51px;
+    }
     .AboutMe{
       h3{
         color: #000;
@@ -265,6 +266,23 @@
             padding-top: 15px;
           }
         }
+      }
+      .Educations{
+        .items{
+          strong{
+            display: block;
+            padding-top: 14px;
+            color: #000;
+            font-weight: bold;
+            font-size: 2.2rem;
+          }
+        }
+        .items-1{
+          strong{
+            padding-top: 30px;
+          }
+        }
+
       }
     }
   }

@@ -239,7 +239,7 @@
   width: 100%;
 }
 .Sec4 .padding {
-  padding: 97px 20px 0 20px;
+  padding: 100px 100px 0 51px;
 }
 .Sec4 .AboutMe h3 {
   color: #000;
@@ -255,4 +255,14 @@
 }
 .Sec4 .profileWrap .proFileCont span + span {
   padding-top: 15px;
+}
+.Sec4 .profileWrap .Educations .items strong {
+  display: block;
+  padding-top: 14px;
+  color: #000;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.Sec4 .profileWrap .Educations .items-1 strong {
+  padding-top: 30px;
 }/*# sourceMappingURL=style.css.map */
