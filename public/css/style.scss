@@ -211,16 +211,51 @@
   }
   }
   .sec3{
+    background: url(../images/sc3-bg.png) no-repeat center;
+    width: 100%;
+    min-height: 800px;
+    background-size: cover;
+    .iconBox-item{
+      display:flex;
+      justify-content: space-around;
+      gap: 50px;
+      .items{
+        padding: 0 42px;
+       background-color: #fff;
+        border-radius: 16px;
+        .sec3Title{
+          .strong{
+            display:block;
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+        .imageWrap{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+        }
+      }
+      .itmes-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:30px;
+      }
+    }
+  }
+}
+  .Sec4{
+    background-color: #fff;
     .Gfont-title{
       padding-top: 50px;
       padding-bottom: 20px;
       background-color: #2d2d2d;
       color: #fff;
     }
-    }
-  }
-  .Sec4{
-    background-color: #fff;
+
     .sec4Header{
       padding-top: 100px;
       padding-left: 100px;
