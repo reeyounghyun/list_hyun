@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer Lee Young-hyeon Portfolio</title>
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+  <link rel="stylesheet" href="./node_modules/reset-css/reset.css">
+
   <!-- emoji inport -->
   <link rel="stylesheet" href="node_modules/emoji-data-css/emoji-data.css">
   <link href="./node_modules/emoji-data-css/files/ap-32-emoji.css" media="all" rel="stylesheet" />
@@ -32,15 +36,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
 </head>
 
-<body>
+<body style="background: #2d2d2d;">
   <header>
     <nav class="header-nav">
-      <div class="pl-t nav">
-        <p class="titleLight-100">포트폴리오 및 이력서</p>
+      <div class="header-p nav">
+        <p class="titleLight-100 p-5">포트폴리오 및 이력서</p>
         <div class="btn-toggle on">
           <img src="./public/images/toggleBtn.png" alt="다크모드버튼꺼짐">
         </div>
@@ -49,7 +51,6 @@
   </header>
   <div class="content">
     <section class="sec1">
-      <!-- <h2>Scroll&nbspTo&nbspSee&nbspMagic</h2> -->
       <h2>FrontEnd<br />
         Developer</h2>
     </section>
@@ -60,143 +61,108 @@
       <p class="downText">
         Scroll Down
       <div class="arrow-container">
-        <img src="./public/images/arrowDown.png" alt="" class="arrow">
-        <img src="./public/images/arrowDown.png" alt="" class="arrow1">
+        <img src="./public/images/arrowDown.png" alt="icon" class="arrow">
+        <img src="./public/images/arrowDown.png" alt="icons" class="arrow1">
       </div>
       </p>
     </section>
-    <section class="sec3">
-      <div class="p-b">
-        <h3 class="titleBasic pb-10"><span class="ap ap-hear_no_evil_1 p-r1"></span>Work Experience</h3>
-        <span class="border-bottom"></span>
-      </div>
-      <!-- Swiper -->
-      <div class="swiper porjectSlied">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide-1">
-            <div class="contantText">
-              <strong class="color-white titleBlod-m pb-26">소리빛</strong>
-              <p class="color-white titleMedium pb-10">기업 홈페이지 구축 프로젝트</p>
-              <p><span class="color-white titleMedium pb-10">작업기간: 3개월</span></p>
-              <p><span class="color-white titleMedium">작업언어: html,css,javascript</span></p>
-              <a href="#" class="btnLink">view</a>
-            </div>
+    <div class="area" style="max-width: 1400px; margin: 0 auto;">
+      <section class="sec3">
+        <h3 class="titleBasic pb-10 Gfont-title">
+          <span class="ap ap-hear_no_evil_1 p-r1"></span>
+          Work Experience
+        </h3>
+      </section>
+      <section class="Sec4">
+        <div class="sec4Header">
+          <div class="image">
+            <img src="./public/images/me.png" alt="이영현">
           </div>
-          <div class="swiper-slide slide-1">
-            <div class="contantText">
-              <strong class="color-white titleBlod-m pb-26">소리빛</strong>
-              <p class="color-white titleMedium pb-10">기업 홈페이지 구축 프로젝트</p>
-              <p><span class="color-white titleMedium pb-10">작업기간: 3개월</span></p>
-              <p><span class="color-white titleMedium">작업언어: html,css,javascript</span></p>
-            </div>
+          <div class="text">
+            <h2 class="titleBlod p-tb">이영현의 이력서</h2>
+            <p class="titleBasic pb-20">프론트앤드 개발자</p>
           </div>
-          <div class="swiper-slide slide-1">
-            <div class="contantText">
-              <strong class="color-white titleBlod-m pb-26">소리빛</strong>
-              <p class="color-white titleMedium pb-10">기업 홈페이지 구축 프로젝트</p>
-              <p><span class="color-white titleMedium pb-10">작업기간: 3개월</span></p>
-              <p><span class="color-white titleMedium">작업언어: html,css,javascript</span></p>
+        </div>
+        <div class="padding">
+          <div class="history AboutMe">
+            <div class="p-b">
+              <h3 class="titleBasic pb-10 flex"><span class="ap ap-hear_no_evil_1 p-r1"></span>About Me</h3>
+              <span class="border-bottom"></span>
             </div>
+            <p class="titleNormal pb-20 line-height-Basic">다양한 기술(React, PHP)을 학습하며, 코드 고도화, 웹 접근성, 크로스 브라우징을 준수하여 프로젝트를
+              구축해왔습니다.
+              라임프렌즈에서 PHP와 React 프로젝트를 담당하며,꾸준한 학습과 협업을 통해 개발 역량을 향상시켰습니다. 마크업, 웹 접근성, 크로스 브라우징을 중요하게 생각하여 프로젝트를 진행합니다.
+              새로운
+              환경에서도 빠르게 적응하고 팀과 협력하여 최고의 결과를 만들어내는 개발자가 되겠습니다.</p>
           </div>
-          <div class="swiper-slide slide-1">
-            <div class="contantText">
-              <strong class="color-white titleBlod-m pb-26">소리빛</strong>
-              <p class="color-white titleMedium pb-10">기업 홈페이지 구축 프로젝트</p>
-              <p><span class="color-white titleMedium pb-10">작업기간: 3개월</span></p>
-              <p><span class="color-white titleMedium">작업언어: html,css,javascript</span></p>
+          <div class="profileWrap flex-s padding-top37">
+            <div class="sectionComm content_left">
+              <div class="p-b">
+                <h3 class="titleBasic pb-10"><span class="ap ap-hear_no_evil_1 p-r1"></span>History</h3>
+                <span class="border-bottom"></span>
+              </div>
+              <div class="proFileCont proFileCont-inner">
+                <span class="titleNormal">라임프렌즈 프론트앤드팀 (2023.10 ~ 2024.06)</span>
+                <span class="titleNormal">이트라이브 UX/UI팀 (2023.02 ~ 2023.06)</span>
+                <span class="titleNormal">와이지앤 디자인팀(2022.02 ~ 2023.01)</span>
+                <span class="titleNormal">이인벤션 광고영업팀 (2019.01 ~ 2020.01)</span>
+                <span class="titleNormal">텐오 바이럴마케팅팀 (2018.05 ~ 2018.12)</span>
+              </div>
+            </div>
+            <div class="sectionComm content_right">
+              <div class="p-b">
+                <h3 class="titleBasic pb-10"><span class="ap ap-hear_no_evil_1 p-r1"></span>Educations</h3>
+                <span class="border-bottom"></span>
+              </div>
+              <div class="proFileCont ">
+                <div class="items">
+                  <strong>교육</strong>
+                  <ul>
+                    <li>
+                      <span class="titleNormal">2024.07 ~ 2023.08</span>
+                      <p class="titleNormal">SBS아카데미컴퓨터아트학원 리엑트 프론트앤드 개발 실무</p>
+                    </li>
+                    <li>
+                      <span class="titleNormal">2023.03 ~ 2023.06</span>
+                      <p class="titleNormal">디코드 학원 리엑트 프론트엔드 개발 실무</p>
+                    </li>
+                    <li>
+                      <span class="titleNormal">2021.06 ~ 2021.11</span>
+                      <p class="titleNormal">그린컴퓨터아트학원 HTML 구조화 및 CSS, 반응형웹페이지</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="items items-1">
+                  <strong>자격증</strong>
+                  <ul>
+                    <li>
+                      <span class="titleNormal">2021.12</span>
+                      <p class="titleNormal">웹디자인기능사(한국산업인력공단)</p>
+                    </li>
+                    <li>
+                      <span class="titleNormal">2014.01</span>
+                      <p class="titleNormal">국제운전면허증(경찰청)</p>
+                    </li>
+
+                    <li>
+                      <span class="titleNormal">2014.11</span>
+                      <p class="titleNormal">ITQ(한글,엑셀,파워보인트)</p>
+                    </li>
+
+                    <li>
+                      <span class="titleNormal">2013.08</span>
+                      <p class="titleNormal">그래픽기술자격(GTQ)2급(한국생산본부)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <section class="Sec4">
-      <h2 class="titleBlod p-tb">이영현의 이력서</h2>
-      <p class="titleBasic pb-20">프론트앤드 개발자</p>
-      <div class="section section1">
-        <div class="p-b">
-          <h3 class="titleBasic pb-10"><span class="ap ap-hear_no_evil_1 p-r1"></span>About Me</h3>
-          <span class="border-bottom"></span>
-        </div>
-        <p class="titleNormal pb-20 line-height-Basic">다양한 기술(React, PHP)을 학습하며, 코드 고도화, 웹 접근성, 크로스 브라우징을 준수하여 프로젝트를
-          구축해왔습니다.
-          라임프렌즈에서 PHP와 React 프로젝트를 담당하며,꾸준한 학습과 협업을 통해 개발 역량을 향상시켰습니다. 마크업, 웹 접근성, 크로스 브라우징을 중요하게 생각하여 프로젝트를 진행합니다.
-          새로운
-          환경에서도 빠르게 적응하고 팀과 협력하여 최고의 결과를 만들어내는 개발자가 되겠습니다.</p>
-      </div>
-      <div class="section section2">
-        <div class="sectionComm content_left">
-          <div class="p-b">
-            <h3 class="titleBasic pb-10"><span class="ap ap-hear_no_evil_1 p-r1"></span>ProFile</h3>
-            <span class="border-bottom"></span>
-          </div>
-          <p class="proFileCont">
-            <span class="pb-20 titleNormal">1996년 8월 6일 출생</span>
-            <span class="pb-20 titleNormal">국제대학 졸업(2015.03 ~ 2018.02)</span>
-          <div class="proFileCont-inner">
-            <span class="titleNormal">라임프렌즈 프론트앤드팀 (2023.10 ~ 2024.06)</span>
-            <span class="titleNormal">이트라이브 UX/UI팀 (2023.02 ~ 2023.06)</span>
-            <span class="titleNormal">와이지앤 디자인팀(2022.02 ~ 2023.01)</span>
-            <span class="titleNormal">이인벤션 광고영업팀 (2019.01 ~ 2020.01)</span>
-            <span class="titleNormal">텐오 바이럴마케팅팀 (2018.05 ~ 2018.12)</span>
-          </div>
-          </p>
-        </div>
-        <div class="sectionComm content_right">
-          <div class="p-b">
-            <h3 class="titleBasic pb-10"><span class="ap ap-hear_no_evil_1 p-r1"></span>Skills & Education</h3>
-            <span class="border-bottom"></span>
-          </div>
-          <div class="proFileCont">
-            <ul>
-              <li>
-                <span class="titleNormal">2023.03 ~ 2023.06</span>
-                <p class="titleNormal">디코드 학원 리엑트 프론트엔드 개발 실무</p>
-              </li>
-              <li>
-                <span class="titleNormal">2021.06 ~ 2021.11</span>
-                <p class="titleNormal">그린컴퓨터아트학원 HTML 구조화 및 CSS, 반응형웹페이지</p>
-              </li>
-              <br />
-              <li>
-                <span class="titleNormal">2021.12</span>
-                <p class="titleNormal">웹디자인기능사(한국산업인력공단)</p>
-              </li>
-              <li>
-                <span class="titleNormal">2020.08</span>
-                <p class="titleNormal">GAIQ(Google)</p>
-              </li>
-              <li>
-                <span class="titleNormal">2017.12</span>
-                <p class="titleNormal">병원행정사(대한병원행정관리자협회)</p>
-              </li>
 
-              <li>
-                <span class="titleNormal">2014.01</span>
-                <p class="titleNormal">국제운전면허증(경찰청)</p>
-              </li>
+      </section>
+    </div>
 
-              <li>
-                <span class="titleNormal">2014.11</span>
-                <p class="titleNormal">ITQ(한글,엑셀,파워보인트)</p>
-              </li>
-
-              <li>
-                <span class="titleNormal">2014.06</span>
-                <p class="titleNormal">ERP 정보관리사 회계2급(한국공인회계사회)</p>
-              </li>
-
-              <li>
-                <span class="titleNormal">2013.08</span>
-                <p class="titleNormal">그래픽기술자격(GTQ)2급(한국생산본부)</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
   <footer></footer>
   <!-- Initialize Swiper -->

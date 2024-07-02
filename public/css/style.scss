@@ -2,10 +2,8 @@
 .header-nav{
   width: 100%;
   border-bottom: 1px solid #ccc;
-  min-height: 50px;
-  height: 100%;
+  // height: 50px;
   background: #2d2d2d;
-  overflow: hidden;
   .nav{
     position: relative;
     display: flex;
@@ -136,15 +134,35 @@
       }
     }
     .downText{
-      font-size: 15px;
-      color: #ED8585;
+      position: relative;
+      font-family: "GmarketSansMedium", sans-serif;
+      display: block;
+      width:100%;
+      padding-top: 15px;
+      font-size: 20px;
+      color: #fff;
+      &::after{
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        content: "Scroll Down";
+        font-family: "Montserrat", sans-serif;
+        clear: both;
+        left: 2px;
+        top: 14px;
+        font-size: 23px;
+        color: #8d866d;
+        font-weight: 800;
+        letter-spacing: -0.9px;
+        width: 180px;
+      }
     }
     .arrow-container {
       position: relative;
       width: 30px;
       height: 100px;
       .arrow {
-        width: 45px;
+        width: 40px;
         height: auto;
         position: absolute;
         top: 0;
@@ -153,7 +171,7 @@
         animation: scrollDown 1s infinite;
     }
     .arrow1 {
-      width: 40px;
+      width: 33px;
       height: auto;
       position: absolute;
       top: 0;
@@ -193,97 +211,60 @@
   }
   }
   .sec3{
-    .swiper{
-      .slide-1{
-        background: url(../images/banner.png)no-repeat;
-        width: 1200px;
-        height: 500px;
-        background-position: center;
-        background-size: cover;
-      .contantText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 75%;
-        margin: 0 auto;
-        height: 100%;
+    .Gfont-title{
+      padding-top: 50px;
+      padding-bottom: 20px;
+      background-color: #2d2d2d;
+      color: #fff;
+    }
+    }
+  }
+  .Sec4{
+    background-color: #fff;
+    .sec4Header{
+      padding-top: 100px;
+      padding-left: 100px;
+      display: flex;
+      align-items: flex-start;
+      background: url(../images/historybg.png) no-repeat center ;
+      background-size: cover;
+      // max-width: 1400px;
+      width: 100%;
+      height: 300px;
+      .image{
+        display: inline-block;
+        max-width: 189px;
+        width: 100%;
+        height: 230px;
+        padding-right: 27px;
+        padding-top: 31px;
+        img{
+          display: inline-block;
+          width: 100%;
+        }
       }
-      .btnLink{
-        position: relative;
-        width: 117px;
-        height: 36px;
-        border-radius: 10px;
-        background-color: #fff;
-          &::after{
-            content: "";
-            clear: both;
-            position: absolute;
-            right: 7%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 27px;
-            height: 27px;
-            background-color: #000;
-            border-radius: 30px;
-          }
-          &::before{
-            content: "";
-            clear: both;
-            position: absolute;
-            right: 16%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background: url(../images/view.png) no-repeat;
-            width: 16px;
-            height: 17px;
-            background-size: contain;
-            background-position: center;
-            z-index: 10;
+    }
+    .padding{
+      padding: 97px 20px 0 20px;}
+    .AboutMe{
+      h3{
+        color: #000;
+      }
+      p{
+        color: #000;
+      }
+    }
+    .profileWrap{
+      h3,span,p{
+        color: #000;
+      }
+      .proFileCont{
+        span{
+          padding-top: 18px;
+          +span{
+            padding-top: 15px;
           }
         }
       }
-      }
-      .swiper-pagination-bullet-active{
-        background: #fff;
-        width: 42px;
-        border-radius: 15px;
-      }
-      .swiper-button-prev{
-        background: url(../images/arrwoLeft.png)no-repeat;
-        width: 50px;
-        background-size: contain;
-        background-position: center;
-        text-indent: -999px;
-      }
-      .swiper-button-next{
-        background: url(../images/arrowRight.png)no-repeat;
-        width: 50px;
-        background-size: contain;
-        background-position: center;
-        text-indent: -999px;
-      }
     }
   }
-
-.section2{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
-  > div{
-    flex: 1 0 auto;
-  }
-}
-
-.sectionComm{
-  .proFileCont-inner{
-    line-height: 1.75;
-  }
-}
-
-.proFileCont{
-  ul{
-    line-height: 1.75;
-  }
-}

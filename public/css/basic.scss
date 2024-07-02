@@ -1,25 +1,15 @@
 //common style flie
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  overflow-x: hidden;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10px;
-  letter-spacing: -0.02em;
-}
-span{
-  display:block;
-}
-
 .color-white{
   color: white;
 }
+.header-p{
+  padding:20px 10px 10px 15px;
+}
+
+.p-5{
+  padding: 5px;
+}
+
 .p-tb{
   padding-top: 40px;
   padding-bottom: 20px;
@@ -63,8 +53,28 @@ padding-right: 1px;
   overflow: hidden;
 }
 
-.section + .section{
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-s{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+
+.flex-s > div{
+  flex: 1 0 auto;
+}
+
+.history + .history{
   padding-top: 38px;
+}
+
+.padding-top37{
+  padding-top: 37px;
 }
 
 .custom-select {
