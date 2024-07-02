@@ -1,18 +1,22 @@
 //common style flie
-body {
-  overflow-x: hidden;
-}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #333;
+  color: white;
   overflow-x: hidden;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: -0.02em;
 }
-a{
-  text-decoration: none;
+span{
+  display:block;
 }
+
 .color-white{
   color: white;
 }

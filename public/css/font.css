@@ -1,21 +1,4 @@
 /*common font style flie */
-*{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  letter-spacing: -0.02em;
-  margin:0;
-  padding:0;
-  color:#fff;
-}
-li{
-  list-style:none;
-}
-span{
-  display:block;
-}
 @font-face {
   font-family: 'GmarketSansMedium';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
