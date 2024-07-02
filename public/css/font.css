@@ -5,11 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.titleBlod-sm{
-  font-family: "GmarketSansMedium", sans-serif;
-  font-size: 12px;
-  font-weight: 100;
-}
+
 .titleBlod{
   font-family: "GmarketSansMedium", sans-serif;
   font-size: 36px;
@@ -23,7 +19,6 @@
     text-align: left;
   }
 }
-
 
 .title-blod-mb{
   font-family: "GmarketSansMedium", sans-serif;
@@ -39,7 +34,16 @@
   }
 }
 
-
+.titleBlod-sm1{
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.titleBlod-sm{
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+}
 
 .titleBlod-m{
   font-family: "Montserrat", sans-serif;

@@ -206,7 +206,96 @@
     opacity: 0;
   }
 }
-.content .sec3 {
+
+.sec3 {
+  position: relative;
+  background: url(../images/sc2-bg.png) no-repeat center;
+  width: 100%;
+  min-height: 900px;
+  background-size: cover;
+  padding: 150px 100px 140px 100px;
+}
+.sec3 .sec3-title {
+  display: block;
+  width: 100%;
+  padding-top: 53px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.sec3 .projects-item {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.sec3 .projects-item .itemes {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.sec3 .projects-item .itemes::before {
+  position: absolute;
+  content: "";
+  clear: both;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(197, 197, 197, 0.35);
+}
+.sec3 .projects-item .itemes .hashtag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sec3 .projects-item .itemes .hashtag .tag {
+  display: inline-block;
+  height: 30px;
+  width: 62.43px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 29px;
+}
+.sec3 .projects-item .itemes .hashtag .html {
+  background-color: white;
+  color: #212121;
+}
+.sec3 .projects-item .itemes .hashtag .scss {
+  background-color: #CD6799;
+  color: #fff;
+}
+.sec3 .projects-item .itemes .hashtag .css {
+  background-color: #D9471C;
+  color: #fff;
+}
+.sec3 .projects-item .itemes .hashtag .javsscript {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 101.98px;
+}
+.sec3 .projects-item .itemes .hashtag .jQuery {
+  background-color: #8E8E8E;
+  border: 1px solid #C2C2C2;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.sec3 .projects-item .itemes .hashtag .php {
+  background-color: #7473A1;
+  color: #fff;
+}
+.sec3 .projects-item .itemes .hashtag .react {
+  background-color: #1083B1;
+  color: #fff;
+}
+.sec3 .projects-item + .projects-item {
+  padding-top: 80px;
+}
+
+.sec4 {
   position: relative;
   background: url(../images/sc3-bg.png) no-repeat center;
   width: 100%;
@@ -214,24 +303,24 @@
   background-size: cover;
   padding: 150px 66px 140px 66px;
 }
-.content .sec3::before {
+.sec4::before {
   content: "";
   clear: both;
   position: absolute;
-  top: 35px;
+  top: -1px;
   left: 0;
   width: 100%;
   height: 1px;
-  background: #FFf;
-  transform: rotate(2deg);
+  background: rgba(255, 255, 255, 0.65);
+  transform: rotate(-1deg);
 }
-.content .sec3 .iconBox-item {
+.sec4 .iconBox-item {
   position: relative;
   display: flex;
   justify-content: space-around;
   gap: 152px;
 }
-.content .sec3 .iconBox-item::after {
+.sec4 .iconBox-item::after {
   content: "";
   clear: both;
   position: absolute;
@@ -244,7 +333,7 @@
   height: 61px;
   transform: translate(-50%, -50%);
 }
-.content .sec3 .iconBox-item::before {
+.sec4 .iconBox-item::before {
   content: "";
   clear: both;
   position: absolute;
@@ -257,67 +346,68 @@
   height: 61px;
   transform: translate(-50%, -50%);
 }
-.content .sec3 .iconBox-item .items {
+.sec4 .iconBox-item .items {
   padding: 15px 24px;
   background-color: #fff;
   border-radius: 16px;
 }
-.content .sec3 .iconBox-item .items .sec3Title {
+.sec4 .iconBox-item .items .sec3Title {
   display: block;
   width: 100%;
   padding-top: 18px;
   padding-bottom: 30px;
   text-align: center;
 }
-.content .sec3 .iconBox-item .items .sec3Title strong {
+.sec4 .iconBox-item .items .sec3Title strong {
   display: block;
   width: 100%;
   color: #333;
   text-align: center;
 }
-.content .sec3 .iconBox-item .items .imageWrap {
+.sec4 .iconBox-item .items .imageWrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 22px 10px;
 }
-.content .sec3 .iconBox-item .items .imageWrap .image {
+.sec4 .iconBox-item .items .imageWrap .image {
   width: 20%;
 }
-.content .sec3 .iconBox-item .items .imageWrap .image figure {
+.sec4 .iconBox-item .items .imageWrap .image figure {
   width: 100%;
 }
-.content .sec3 .iconBox-item .items .imageWrap .image figure img {
+.sec4 .iconBox-item .items .imageWrap .image figure img {
   width: 100%;
 }
-.content .sec3 .iconBox-item .itmes-item {
+.sec4 .iconBox-item .itmes-item {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.Sec4 {
+.Sec5 {
   position: relative;
   background-color: #fff;
 }
-.Sec4::before {
-  position: absolute;
+.Sec5::before {
   content: "";
   clear: both;
+  position: absolute;
+  top: -1px;
   left: 0;
-  top: 0;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.65);
+  transform: rotate(-1deg);
 }
-.Sec4 .Gfont-title {
+.Sec5 .Gfont-title {
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: #2d2d2d;
   color: #fff;
 }
-.Sec4 .sec4Header {
+.Sec5 .sec4Header {
   padding-top: 100px;
   padding-left: 100px;
   display: flex;
@@ -327,7 +417,7 @@
   width: 100%;
   height: 300px;
 }
-.Sec4 .sec4Header .image {
+.Sec5 .sec4Header .image {
   display: inline-block;
   max-width: 189px;
   width: 100%;
@@ -335,35 +425,35 @@
   padding-right: 27px;
   padding-top: 31px;
 }
-.Sec4 .sec4Header .image img {
+.Sec5 .sec4Header .image img {
   display: inline-block;
   width: 100%;
 }
-.Sec4 .padding {
+.Sec5 .padding {
   padding: 100px 100px 0 51px;
 }
-.Sec4 .AboutMe h3 {
+.Sec5 .AboutMe h3 {
   color: #000;
 }
-.Sec4 .AboutMe p {
+.Sec5 .AboutMe p {
   color: #000;
 }
-.Sec4 .profileWrap h3, .Sec4 .profileWrap span, .Sec4 .profileWrap p {
+.Sec5 .profileWrap h3, .Sec5 .profileWrap span, .Sec5 .profileWrap p {
   color: #000;
 }
-.Sec4 .profileWrap .proFileCont span {
+.Sec5 .profileWrap .proFileCont span {
   padding-top: 18px;
 }
-.Sec4 .profileWrap .proFileCont span + span {
+.Sec5 .profileWrap .proFileCont span + span {
   padding-top: 15px;
 }
-.Sec4 .profileWrap .Educations .items strong {
+.Sec5 .profileWrap .Educations .items strong {
   display: block;
   padding-top: 14px;
   color: #000;
   font-weight: bold;
   font-size: 2.2rem;
 }
-.Sec4 .profileWrap .Educations .items-1 strong {
+.Sec5 .profileWrap .Educations .items-1 strong {
   padding-top: 30px;
 }/*# sourceMappingURL=style.css.map */
