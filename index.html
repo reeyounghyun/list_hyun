@@ -4,2372 +4,365 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이영현 포트폴리오</title>
+  <title>프론트앤드 이영현 2024ver.</title>
 
-  <!-- style.css -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/index.scss">
 
-  <script src="./js/scrpit.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
+  <link rel="stylesheet" href="./node_modules/reset-css/reset.css">
+
+  <!-- emoji inport -->
+  <link rel="stylesheet" href="node_modules/emoji-data-css/emoji-data.css">
+  <link href="./node_modules/emoji-data-css/files/ap-32-emoji.css" media="all" rel="stylesheet" />
+  <link href="files/gl-32-emoji.css" media="all" rel="stylesheet" />
+  <link href="files/tw-32-emoji.css" media="all" rel="stylesheet" />
+  <link href="files/eo-32-emoji.css" media="all" rel="stylesheet" />
+
+  <!-- js import -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- import -->
+  <script src="./public/js/scrpit.js"></script>
+  <link rel="stylesheet" href="./public/css/basic.css">
+  <link rel="stylesheet" href="./public/css/font.css">
+  <link rel="stylesheet" href="./public/css/style.css">
+
+  <!-- font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div id="Home_nav">
-    <nav class="nav_wrap">
-      <ul>
-        <li><a href="#section1" rel="noopener"><span>SI/SM 프로젝트</span></a></li>
-        <li><a href="#section2" rel="noopener"><span>이력서</span></a></li>
-      </ul>
+<body style="background: #2d2d2d;">
+  <header>
+    <nav class="header-nav">
+      <div class="header-p nav">
+        <p class="titleLight-100 p-5">포트폴리오 및 이력서</p>
+        <div class="btn-toggle on">
+          <img src="./public/images/toggleBtn.png" alt="다크모드버튼꺼짐">
+        </div>
+      </div>
     </nav>
-  </div>
-  <!-- portfolio 시작-->
-  <div class="portfolio_wrap" id="section1">
-    <div class="portfolio_inner">
-      <div class="inner">
-        <!-- 버튼 영역 -->
-        <div class="tab-buttons">
-          <button class="tab-btn active" onclick="showTab(1)">전체</button>
-          <button class="tab-btn" onclick="showTab(2)">SM</button>
-          <button class="tab-btn" onclick="showTab(3)">SI</button>
-        </div>
-        <div class="">
-          <div id="tab1" class="tab-content active">
-            <div class="tenance_wrap question">
-              <div class="title">
-                <h2>전체</h2>
-              </div>
-              <div class="maintenance">
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup1')">
-                    <div class="">
-                      <img src=" ./images/pc/enter_img1.png" alt="롯데리조트">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데 리조트</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup1" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데 리조트</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.lotteresort.com/main/ko/index" target="_blank" title="롯데리조트 바로가기"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img1.png" alt="롯데 리조트">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경, 팝업창 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Gitkraken</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.lotteresort.com/main/ko/index" title="롯데리조트" target="_blank"
-                                  rel="noopener">
-                                  <span>롯데리조트 바로가기 <img src="./images/pc/icon1.png" alt="롯데리조트"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 1 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup2')">
-                    <div class="">
-                      <img src=" ./images/pc/enter_img2.png" alt="롯데스카이힐">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데 스카이힐</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup2" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데 스카이힐</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.lotteresort.com/main/ko/index" target="_blank" title="롯데리조트 바로가기"
-                            rel="noopener">
-                            <img src=" ./images/pc/enter_img2.png" alt="롯데 스카이힐">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경, 팝업창 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Gitkraken</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.lotteskyhill.com/" title="롯데리조트" target="_blank" rel="noopener">
-                                  <span>롯데스카이힐 바로가기 <img src="./images/pc/icon1.png" alt="롯데스카이힐"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 2 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup3')">
-                    <div class="">
-                      <img src="./images/pc/enter_img3.png" alt="롯데월드 어드벤처">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데월드 어드벤처</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup3" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데월드 어드밴처</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://adventure.lotteworld.com/kor/main/index.do" target="_blank"
-                            title="롯데월드 어드밴처 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img3.png" alt="롯데월드 어드밴처">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Gitkraken</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://adventure.lotteworld.com/kor/main/index.do" title="롯드월드 어드밴처"
-                                  target="_blank" rel="noopener">
-                                  <span>롯데월드 어드밴처 바로가기 <img src="./images/pc/icon1.png" alt="롯데월드 어드밴처"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 3 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup4')">
-                    <div class="">
-                      <img src="./images/pc/enter_img4.png" alt="롯데월드 어드벤처동부산">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데월드 어드벤처동부산</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup4" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데월드 어드벤처동부산</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://adventurebusan.lotteworld.com/kor/main/index.do" target="_blank"
-                            title="롯데월드 어드벤처동부산 바로가기" rel="noopener">
-                            <img src=" ./images/pc/enter_img4.png" alt="롯데월드 어드벤처동부산">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Gitkraken</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://adventurebusan.lotteworld.com/kor/main/index.do" title="롯드월드 어드밴처"
-                                  target="_blank" rel="noopener">
-                                  <span>롯데월드 어드벤처동부산 바로가기 <img src="./images/pc/icon1.png" alt="롯데월드 어드벤처동부산"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 4 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup5')">
-                    <div class="">
-                      <img src="./images/pc/enter_img5.png" alt="세븐일레븐">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>세븐일레븐</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup5" class="popup">
-                    <div class="poo-tit">
-                      <h4>세븐일레븐</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.7-eleven.co.kr/" target="_blank" title="세븐일레븐 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img5.png" alt="세븐일레븐">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Gitkraken</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.7-eleven.co.kr/" title="세븐일레븐" target="_blank" rel="noopener">
-                                  <span>세븐일레븐 바로가기 <img src="./images/pc/icon1.png" alt="세븐일레븐"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 5 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup6')">
-                    <div class="">
-                      <img src="./images/pc/enter_img6.png" alt="롯데웰푸드">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데웰푸드</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup6" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데웰푸드</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.lotteconf.co.kr/gate.jsp" target="_blank" title="롯데웰푸드 바로가기"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img6.png" alt="롯데웰푸드">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Gitkraken</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.lotteconf.co.kr/gate.jsp" title="롯데웰푸드" target="_blank"
-                                  rel="noopener">
-                                  <span>롯데웰푸드 바로가기 <img src="./images/pc/icon1.png" alt="롯데웰푸드"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 6 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup7')">
-                    <div class="">
-                      <img src="./images/pc/enter_img17.png" alt="라임프렌즈">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>라임프렌즈</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup7" class="popup">
-                    <div class="poo-tit">
-                      <h4>라임프렌즈</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://limefriends.com/" target="_blank" title="라임프렌즈" rel="noopener">
-                            <img src="./images/pc/enter_img17.png" alt="라임프렌즈">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 유지보수&구축</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://limefriends.com/" title="라임프렌즈" target="_blank" rel="noopener">
-                                  <span>라임프렌즈 바로가기 <img src="./images/pc/icon1.png" alt="라임프렌즈"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 7 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup8')">
-                    <div class="">
-                      <img src="./images/pc/enter_img9.png" alt="한강">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>한강-사회적협동조합</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup8" class="popup">
-                    <div class="poo-tit">
-                      <h4>한강-사회적협동조합</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.coophangang.kr/" target="_blank" title="한강-사회적협동조합 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img9.png" alt="한강-사회적협동조합">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 유지보수&구축</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.coophangang.kr/" title="한강-사회적협동조합" target="_blank" rel="noopener">
-                                  <span>한강 바로가기 <img src="./images/pc/icon1.png" alt="한강"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 8 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup9')">
-                    <div class="">
-                      <img src="./images/pc/enter_img10.png" alt="메디프 상생포럼">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>메디프 상생포럼</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup9" class="popup">
-                    <div class="poo-tit">
-                      <h4>메디프 상생포럼</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://winwin.medif.or.kr/" target="_blank" title="메디프 상생포럼 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img10.png" alt="메디프 상생포럼">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 유지보수&구축</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin figma</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://winwin.medif.or.kr/" title="메디프 상생포럼" target="_blank" rel="noopener">
-                                  <span>메디프 바로가기 <img src="./images/pc/icon1.png" alt="메디프"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 9 end-->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup10')">
-                    <div class="">
-                      <img src="./images/pc/enter_img11.png" alt="서울에너지드림">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>서울에너지드림</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup10" class="popup">
-                    <div class="poo-tit">
-                      <h4>서울에너지드림</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://seouledc.or.kr/" target="_blank" title="서울에너지드림" rel="noopener">
-                            <img src="./images/pc/enter_img11.png" alt="서울에너지드림">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지(예약관리) 유지보수</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://seouledc.or.kr/" title="서울에너지드림" target="_blank" rel="noopener">
-                                  <span>서울에너지드림 바로가기 <img src="./images/pc/icon1.png" alt="서울에너지드림"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 10 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup11')">
-                    <div class="">
-                      <img src="./images/pc/enter_img12.png" alt="박피디와황배우">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>박피디와황배우</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup11" class="popup">
-                    <div class="poo-tit">
-                      <h4>박피디와황배우</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://cancertainment.limefriends.com/" target="_blank" title="박피디와황배우"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img12.png" alt="박피디와황배우">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>그누보드 html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://cancertainment.limefriends.com/" title="박피디와황배우" target="_blank"
-                                  rel="noopener">
-                                  <span>박피디와황배우 바로가기 <img src="./images/pc/icon1.png" alt="박피디와황배우"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 11 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup17')">
-                    <div class="">
-                      <img src="./images/pc/enter_img18.png" alt="소리빛">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>소리빛</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup17" class="popup">
-                    <div class="poo-tit">
-                      <h4>소리빛</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://soribit.limefriends.com/" target="_blank" title="소리빛" rel="noopener">
-                            <img src="./images/pc/enter_img18.png" alt="소리빛">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>PHP html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>특이사항: <span>PHP개발 된 환경에서 퍼블진행</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://soribit.limefriends.com/" title="소리빛" target="_blank" rel="noopener">
-                                  <span>소리빛 바로가기 <img src="./images/pc/icon1.png" alt="소리빛"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 12 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup18')">
-                    <div class="">
-                      <img src="./images/pc/enter_img20.png" alt="자람콘텐츠">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>자람콘텐츠</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup18" class="popup">
-                    <div class="poo-tit">
-                      <h4>자람콘텐츠</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://jaramc.com/" target="_blank" title="자람콘텐츠" rel="noopener">
-                            <img src="./images/pc/enter_img20.png" alt="자람콘텐츠">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수</h5>
-                          <p>
-                            <b>기여도: <span>메인페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>React scss JavaScript node yran</span></b>
-                            <b>형성관리: <span>Github Git</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>특이사항: <span>리엑트 퍼블진행</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/jaram-web-main/src/index.js" title="자람콘텐츠" target="_blank"
-                                  rel="noopener">
-                                  <span>자람콘텐츠 바로가기 <img src="./images/pc/icon1.png" alt="자람콘텐츠"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 13 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup19')">
-                    <div class="">
-                      <img src="./images/pc/enter_img19.png" alt="어썸마켓">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>어썸마켓</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup19" class="popup">
-                    <div class="poo-tit">
-                      <h4>어썸마켓</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/asomemarket-web-main/index.html" target="_blank" title="어썸마켓"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img19.png" alt="어썸마켓">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수(+EN)</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>PHP html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>특이사항: <span>PHP개발 된 환경에서 퍼븡진행</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/asomemarket-web-main/index.html" title="어썸마켓" target="_blank"
-                                  rel="noopener">
-                                  <span>어썸마켓 바로가기 <img src="./images/pc/icon1.png" alt="어썸마켓"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 14 end -->
-                <span>
-                  <div class="slide-popup popup-item" onclick="togglePopup('popup20')">
-                    <div class="">
-                      <img src="./images/pc/enter_img7.png" alt="미트식스">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>미트식스</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup20" class="popup">
-                    <div class="poo-tit">
-                      <h4>미트식스</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://meatsix.com/" target="_blank" title="미트식스" rel="noopener">
-                            <img src="./images/pc/enter_img7.png" alt="미트식스">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축</span></b>
-                            <b>개발언어: <span>PHP css JavaScript</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://meatsix.com/" title="미트식스" target="_blank" rel="noopener">
-                                  <span>미트식스 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 15 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup21')">
-                    <div class="">
-                      <img src="./images/pc/enter_img8.png" alt="와이지앤">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>와이지앤</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup21" class="popup">
-                    <div class="poo-tit">
-                      <h4>와이지앤</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://ygncorp.com/" target="_blank" title="와이지앤" rel="noopener">
-                            <img src="./images/pc/enter_img8.png" alt="와이지앤">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://ygncorp.com/" title="와이지앤" target="_blank" rel="noopener">
-                                  <span>와이지앤 바로가기 <img src="./images/pc/icon1.png" alt="와이지앤"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 16 end-->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup22')">
-                    <div class="">
-                      <img src="./images/pc/enter_img13.png" alt="하나투어가이드">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>하나투어가이드</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup22" class="popup">
-                    <div class="poo-tit">
-                      <h4>하나투어가이드</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/HanaTour/html/guide.html" target="_blank" title="하나투어가이드" rel="noopener">
-                            <img src="./images/pc/enter_img13.png" alt="하나투어가이드">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/HanaTour/html/guide.html" title="하나투어가이드" target="_blank"
-                                  rel="noopener">
-                                  <span>하나투어가이드 바로가기 <img src="./images/pc/icon1.png" alt="하나투어가이드"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 17 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup23')">
-                    <div class="">
-                      <img src="./images/pc/enter_img14.png" alt="하나투어">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>하나투어</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup23" class="popup">
-                    <div class="poo-tit">
-                      <h4>하나투어</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/HanaTour/html/main.html" target="_blank" title="하나투어" rel="noopener">
-                            <img src="./images/pc/enter_img14.png" alt="하나투어">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/HanaTour/html/main.html" title="하나투어" target="_blank"
-                                  rel="noopener">
-                                  <span>하나투어 바로가기 <img src="./images/pc/icon1.png" alt="하나투어"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 18 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup23')">
-                    <div class="">
-                      <img src="./images/pc/enter_img13.png" alt="하나투어서브페이지">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>하나투어-서브페이지</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup23" class="popup">
-                    <div class="poo-tit">
-                      <h4>하나투어-서브페이지</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/HanaTour/html/template.html" target="_blank" title="하나투어-서브페이지"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img13.png" alt="하나투어-서브페이지">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/HanaTour/html/template.html" title="하나투어-서브페이지" target="_blank"
-                                  rel="noopener">
-                                  <span>하나투어-서브페이지 바로가기 <img src="./images/pc/icon1.png" alt="하나투어-서브페이지"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 19 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup24')">
-                    <div class="view_image">
-                      <img src="./images/pc/srp_intro.png" alt="소리아월렛">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>소리아월렛(웹앱)</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup24" class="popup">
-                    <div class="poo-tit">
-                      <h4>소리아월렛-일본 가상화페 지갑</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img view_image">
-                          <!-- <a href="./Portfolio/asomemarket-web-main/index.html" target="_blank" title="소리아월렛"
-                            rel="noopener"> -->
-                          <div class="image laout_img">
-                            <img src="./images/pc/srp_cloud.png" alt="소리아월렛">
-                          </div>
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <!-- <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/soria-pay-publishing-main/public/" title="소리아월렛" target="_blank"
-                                  rel="noopener">
-                                  <span>소리아월렛 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b> -->
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 20 end -->
-                <!--<span class="width">
-                  <div class="slide-popup" onclick="togglePopup('popup17')">
-                    <div class="">
-                      <img src="./images/pc/enter_img16.png" alt="">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>카카오</span>
-                  </div>
-                  팝업 내용 
-                  <div id="popup17" class="popup">
-                    <div class="poo-tit">
-                      <h4>카카오</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/asomemarket-web-main/index.html" target="_blank" title="카카오"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img16.png" alt="카카오">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/asomemarket-web-main/index.html" title="카카오" target="_blank"
-                                  rel="noopener">
-                                  <span>어썸마켓 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>22 end -->
-                <!-- 23 end -->
-              </div>
-            </div>
-          </div>
-          <div id="tab2" class="tab-content">
-            <div class="tenance_wrap question">
-              <div class="title">
-                <h2>SM(유지보수)</h2>
-              </div>
-              <div class="maintenance">
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup25')">
-                    <div class="">
-                      <img src=" ./images/pc/enter_img1.png" alt="롯데리조트">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데 리조트</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup25" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데 리조트</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.lotteresort.com/main/ko/index" target="_blank" title="롯데리조트 바로가기"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img1.png" alt="롯데 리조트">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경, 팝업창 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.lotteresort.com/main/ko/index" title="롯데리조트" target="_blank"
-                                  rel="noopener">
-                                  <span>롯데리조트 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 1 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup26')">
-                    <div class="">
-                      <img src=" ./images/pc/enter_img2.png" alt="롯데스카이힐">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데 스카이힐</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup26" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데 스카이힐</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.lotteresort.com/main/ko/index" target="_blank" title="롯데리조트 바로가기"
-                            rel="noopener">
-                            <img src=" ./images/pc/enter_img2.png" alt="롯데 스카이힐">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경, 팝업창 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.lotteskyhill.com/" title="롯데리조트" target="_blank" rel="noopener">
-                                  <span>롯데스카이힐 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 2 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup27')">
-                    <div class="">
-                      <img src="./images/pc/enter_img3.png" alt="롯데월드 어드벤처">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데월드 어드벤처</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup27" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데월드 어드밴처</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://adventure.lotteworld.com/kor/main/index.do" target="_blank"
-                            title="롯데월드 어드밴처 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img3.png" alt="롯데월드 어드밴처">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://adventure.lotteworld.com/kor/main/index.do" title="롯드월드 어드밴처"
-                                  target="_blank" rel="noopener">
-                                  <span>롯데월드 어드밴처 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 3 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup28')">
-                    <div class="">
-                      <img src="./images/pc/enter_img4.png" alt="롯데월드 어드벤처동부산">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데월드 어드벤처동부산</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup28" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데월드 어드벤처동부산</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://adventurebusan.lotteworld.com/kor/main/index.do" target="_blank"
-                            title="롯데월드 어드벤처동부산 바로가기" rel="noopener">
-                            <img src=" ./images/pc/enter_img4.png" alt="롯데월드 어드벤처동부산">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://adventurebusan.lotteworld.com/kor/main/index.do" title="롯드월드 어드밴처"
-                                  target="_blank" rel="noopener">
-                                  <span>롯데월드 어드벤처동부산 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 4 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup29')">
-                    <div class="">
-                      <img src="./images/pc/enter_img5.png" alt="세븐일레븐">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>세븐일레븐</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup29" class="popup">
-                    <div class="poo-tit">
-                      <h4>세븐일레븐</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.7-eleven.co.kr/" target="_blank" title="세븐일레븐 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img5.png" alt="세븐일레븐">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.7-eleven.co.kr/" title="세븐일레븐" target="_blank" rel="noopener">
-                                  <span>세븐일레븐 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 5 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup30')">
-                    <div class="">
-                      <img src="./images/pc/enter_img6.png" alt="롯데웰푸드">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>롯데웰푸드</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup30" class="popup">
-                    <div class="poo-tit">
-                      <h4>롯데웰푸드</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.lotteconf.co.kr/gate.jsp" target="_blank" title="롯데웰푸드 바로가기"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img6.png" alt="롯데웰푸드">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>이벤트성 텍스트 변경 등</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.lotteconf.co.kr/gate.jsp" title="롯데웰푸드" target="_blank"
-                                  rel="noopener">
-                                  <span>롯데웰푸드 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 6 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup31')">
-                    <div class="">
-                      <img src="./images/pc/enter_img17.png" alt="라임프렌즈">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>라임프렌즈</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup31" class="popup">
-                    <div class="poo-tit">
-                      <h4>라임프렌즈</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://limefriends.com/" target="_blank" title="라임프렌즈" rel="noopener">
-                            <img src="./images/pc/enter_img17.png" alt="라임프렌즈">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 유지보수&구축</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://limefriends.com/" title="라임프렌즈" target="_blank" rel="noopener">
-                                  <span>라임프렌즈 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup32')">
-                    <div class="">
-                      <img src="./images/pc/enter_img9.png" alt="한강">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>한강-사회적협동조합</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup32" class="popup">
-                    <div class="poo-tit">
-                      <h4>한강-사회적협동조합</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://www.coophangang.kr/" target="_blank" title="한강-사회적협동조합 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img9.png" alt="한강-사회적협동조합">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 유지보수&구축</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://www.coophangang.kr/" title="한강-사회적협동조합" target="_blank" rel="noopener">
-                                  <span>한강 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 7 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup33')">
-                    <div class="">
-                      <img src="./images/pc/enter_img11.png" alt="서울에너지드림">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>서울에너지드림</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup33" class="popup">
-                    <div class="poo-tit">
-                      <h4>서울에너지드림</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://seouledc.or.kr/" target="_blank" title="서울에너지드림" rel="noopener">
-                            <img src="./images/pc/enter_img11.png" alt="서울에너지드림">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지(예약관리) 유지보수</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://seouledc.or.kr/" title="서울에너지드림" target="_blank" rel="noopener">
-                                  <span>서울에너지드림 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-
-              </div>
-            </div>
-          </div>
-          <div id="tab3" class="tab-content">
-            <div class="tenance_wrap question">
-              <div class="title">
-                <h2>SI(구축)</h2>
-              </div>
-              <div class="maintenance">
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup18')">
-                    <div class="">
-                      <img src="./images/pc/enter_img20.png" alt="자람콘텐츠">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>자람콘텐츠</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup18" class="popup">
-                    <div class="poo-tit">
-                      <h4>자람콘텐츠</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://jaramc.com/" target="_blank" title="자람콘텐츠" rel="noopener">
-                            <img src="./images/pc/enter_img20.png" alt="자람콘텐츠">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수</h5>
-                          <p>
-                            <b>기여도: <span>메인페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>React scss JavaScript node yran</span></b>
-                            <b>형성관리: <span>Github Git</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>특이사항: <span>리엑트 환경에서 퍼블진행</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://jaramc.com/" title="자람콘텐츠" target="_blank" rel="noopener">
-                                  <span>자람콘텐츠 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--1 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup30')">
-                    <div class="">
-                      <img src="./images/pc/enter_img12.png" alt="박피디와황배우">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>박피디와황배우</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup30" class="popup">
-                    <div class="poo-tit">
-                      <h4>박피디와황배우</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://cancertainment.limefriends.com/" target="_blank" title="박피디와황배우"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img12.png" alt="박피디와황배우">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수(+EN)</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>그누보드 html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://cancertainment.limefriends.com/" title="박피디와황배우" target="_blank"
-                                  rel="noopener">
-                                  <span>박피디와황배우 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--2 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup19')">
-                    <div class="">
-                      <img src="./images/pc/enter_img18.png" alt="소리빛">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>소리빛</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup19" class="popup">
-                    <div class="poo-tit">
-                      <h4>소리빛</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://soribit.limefriends.com/" target="_blank" title="소리빛" rel="noopener">
-                            <img src="./images/pc/enter_img18.png" alt="소리빛">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축&유지보수</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축&유지보수</span></b>
-                            <b>개발언어: <span>PHP html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <b>특이사항: <span>PHP개발 된 환경에서 퍼블진행(그누보드5)</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://soribit.limefriends.com/" title="소리빛" target="_blank" rel="noopener">
-                                  <span>소리빛 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--3 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup40')">
-                    <div class="">
-                      <img src="./images/pc/enter_img10.png" alt="메디프 상생포럼">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>메디프 상생포럼</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup40" class="popup">
-                    <div class="poo-tit">
-                      <h4>메디프 상생포럼</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://winwin.medif.or.kr/" target="_blank" title="메디프 상생포럼 바로가기" rel="noopener">
-                            <img src="./images/pc/enter_img10.png" alt="메디프 상생포럼">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>유지보수</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 유지보수&구축</span></b>
-                            <b>개발언어: <span>php html css JavaScript</span></b>
-                            <b>형성관리: <span>Github Sourcetree</span></b>
-                            <b>디자인 툴: <span>zeplin</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://winwin.medif.or.kr/" title="메디프 상생포럼" target="_blank" rel="noopener">
-                                  <!-- <span>메디프 바로가기 <img src=".../images/pc/icon1.png" alt="링크"></span> -->
-                                  <span>메디프 바로가기 <img src="../images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!-- 4 end-->
-                <span>
-                  <div class="slide-popup popup-item" onclick="togglePopup('popup41')">
-                    <div class="">
-                      <img src="./images/pc/enter_img7.png" alt="미트식스">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>미트식스</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup41" class="popup">
-                    <div class="poo-tit">
-                      <h4>미트식스</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://meatsix.com/" target="_blank" title="미트식스" rel="noopener">
-                            <img src="./images/pc/enter_img7.png" alt="미트식스">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>전체페이지 구축</span></b>
-                            <b>개발언어: <span>PHP css JavaScript</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://meatsix.com/" title="미트식스" target="_blank" rel="noopener">
-                                  <span>미트식스 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--5 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup42')">
-                    <div class="">
-                      <img src="./images/pc/enter_img8.png" alt="와이지앤">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>와이지앤</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup42" class="popup">
-                    <div class="poo-tit">
-                      <h4>와이지앤</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="https://ygncorp.com/" target="_blank" title="와이지앤" rel="noopener">
-                            <img src="./images/pc/enter_img8.png" alt="와이지앤">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>서브페이지 구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>디자인 툴: <span>포토샵</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="https://ygncorp.com/" title="와이지앤" target="_blank" rel="noopener">
-                                  <span>와이지앤 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--6 end-->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup43')">
-                    <div class="">
-                      <img src="./images/pc/enter_img13.png" alt="하나투어가이드">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>하나투어가이드</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup43" class="popup">
-                    <div class="poo-tit">
-                      <h4>하나투어가이드</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/HanaTour/html/guide.html" target="_blank" title="하나투어가이드" rel="noopener">
-                            <img src="./images/pc/enter_img13.png" alt="하나투어가이드">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/HanaTour/html/guide.html" title="하나투어가이드" target="_blank"
-                                  rel="noopener">
-                                  <span>하나투어가이드 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--7 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup44')">
-                    <div class="">
-                      <img src="./images/pc/enter_img14.png" alt="하나투어">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>하나투어</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup44" class="popup">
-                    <div class="poo-tit">
-                      <h4>하나투어</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/HanaTour/html/main.html" target="_blank" title="하나투어" rel="noopener">
-                            <img src="./images/pc/enter_img14.png" alt="하나투어">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/HanaTour/html/main.html" title="하나투어" target="_blank"
-                                  rel="noopener">
-                                  <span>하나투어 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--8 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup45')">
-                    <div class="">
-                      <img src="./images/pc/enter_img13.png" alt="하나투어서브페이지">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>하나투어-서브페이지</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup45" class="popup">
-                    <div class="poo-tit">
-                      <h4>하나투어-서브페이지</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/HanaTour/html/template.html" target="_blank" title="하나투어-서브페이지"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img13.png" alt="하나투어-서브페이지">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/HanaTour/html/template.html" title="하나투어-서브페이지" target="_blank"
-                                  rel="noopener">
-                                  <span>하나투어-서브페이지 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--9 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup18')">
-                    <div class="">
-                      <img src="./images/pc/srp_intro.png" alt="소리아월렛">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>소리아월렛(웹앱)</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup18" class="popup">
-                    <div class="poo-tit">
-                      <h4>소리아월렛-일본 가상화페 지갑</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/asomemarket-web-main/index.html" target="_blank" title="소리아월렛"
-                            rel="noopener">
-                            <div class="image">
-                              <img src="./images/pc/srp_intro.png" alt="소리아월렛">
-                              <img src="./images/pc/srp_cloud.png" alt="소리아월렛">
-                            </div>
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css JavaScript</span></b>
-                            <b>디자인 툴: <span>figma</span></b>
-                            <!-- <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/soria-pay-publishing-main/public/" title="소리아월렛" target="_blank"
-                                  rel="noopener">
-                                  <span>소리아월렛 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b> -->
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--10 end -->
-                <span>
-                  <div class="slide-popup" onclick="togglePopup('popup47')">
-                    <div class="">
-                      <img src="./images/pc/enter_img16.png" alt="">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>어썸마켓</span>
-                  </div>
-                  <!-- 팝업 내용 -->
-                  <div id="popup47" class="popup">
-                    <div class="poo-tit">
-                      <h4>어썸마켓</h4>
-                      <span class="close" onclick="closePopup()">닫기</span>
-                    </div>
-                    <div>
-                      <div class="pop-contant">
-                        <div class="img">
-                          <a href="./Portfolio/asomemarket-web-main/index.html" target="_blank" title="어썸마켓"
-                            rel="noopener">
-                            <img src="./images/pc/enter_img15.png" alt="어썸마켓">
-                          </a>
-                        </div>
-                        <div class="pop-txt">
-                          <h5>구축</h5>
-                          <p>
-                            <b>기여도: <span>구축</span></b>
-                            <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                            <b>링크:
-                              <span class="link-icon">
-                                <a href="./Portfolio/asomemarket-web-main/index.html" title="어썸마켓" target="_blank"
-                                  rel="noopener">
-                                  <span>어썸마켓 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                                </a>
-                              </span>
-                            </b>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </span>
-                <!--11 end -->
-                <!-- <span class="width">
-                  <div class="slide-popup" onclick="togglePopup('popup46')">
-                    <div class="">
-                      <img src="./images/pc/enter_img16.png" alt="">
-                    </div>
-                  </div>
-                  <div class="explan_txt">
-                    <span>카카오</span>
-                  </div>
-                팝업 내용
-                <div id="popup46" class="popup">
-                  <div class="poo-tit">
-                    <h4>카카오</h4>
-                    <span class="close" onclick="closePopup()">닫기</span>
-                  </div>
-                  <div>
-                    <div class="pop-contant">
-                      <div class="img">
-                        <a href="./Portfolio/asomemarket-web-main/index.html" target="_blank" title="카카오"
-                          rel="noopener">
-                          <img src="./images/pc/enter_img16.png" alt="카카오">
-                        </a>
-                      </div>
-                      <div class="pop-txt">
-                        <h5>구축</h5>
-                        <p>
-                          <b>기여도: <span>구축</span></b>
-                          <b>개발언어: <span>html css jQuery JavaScript</span></b>
-                          <b>링크:
-                            <span class="link-icon">
-                              <a href="./Portfolio/asomemarket-web-main/index.html" title="카카오" target="_blank"
-                                rel="noopener">
-                                <span>어썸마켓 바로가기 <img src="./images/pc/icon1.png" alt="링크"></span>
-                              </a>
-                            </span>
-                          </b>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </span> -->
-                <!--12 end -->
-              </div>
-            </div>
-          </div>
-          <div id="overlay" class="overlay" onclick="closePopup()"></div>
-        </div>
+  </header>
+  <div class="content">
+    <section class="sec1">
+      <h2>FrontEnd<br />
+        Developer</h2>
+    </section>
+    <section class="scrollDown arrow-container sec2">
+      <div class="image">
+        <img src="./public/images/scrollDownIcon.png" alt="스크롤 다운">
       </div>
+      <p class="downText">
+        Scroll Down
+      <div class="arrow-container">
+        <img src="./public/images/arrowDown.png" alt="icon" class="arrow">
+        <img src="./public/images/arrowDown.png" alt="icons" class="arrow1">
+      </div>
+      </p>
+    </section>
+    <div class="area">
+      <section class="sec3">
+        <strong class="titleBlod sec3-title">PROJECTS</strong>
+        <div class="projects-item">
+          <h3 class="titleBlod"> <span class="ap ap-hear_no_evil_1 p-r1"></span>Work Projects</h3>
+          <span class="itemes">
+            <strong class="titleBlod-sm1">롯데정보통신</strong>
+            <div class="hashtag">
+              <span class="html tag">html</span>
+              <span class="scss tag">scss</span>
+              <span class="css tag">css</span>
+              <span class="javsscript tag">javsscript</span>
+              <span class="jQuery tag">jQuery</span>
+            </div>
+          </span>
+          <span class="itemes">
+            <strong class="titleBlod-sm1">한강사회적협동조합</strong>
+            <div class="hashtag">
+              <span class="html tag">html</span>
+              <span class="css tag">css</span>
+              <span class="php tag">php</span>
+            </div>
+          </span>
+          <span class="itemes">
+            <strong class="titleBlod-sm1">어썸마켓</strong>
+            <div class="hashtag">
+              <span class="html tag">html</span>
+              <span class="css tag">css</span>
+              <span class="javsscript tag">javsscript</span>
+              <span class="jQuery tag">jQuery</span>
+            </div>
+          </span>
+        </div>
+        <div class="projects-item">
+          <h3 class="titleBlod"> <span class="ap ap-hear_no_evil_1 p-r1"></span>Projects</h3>
+          <span class="itemes">
+            <strong class="titleBlod-sm1">리엑트 프로젝트</strong>
+            <div class="hashtag">
+              <span class="react tag">react</span>
+              <span class="scss tag">scss</span>
+              <span class="javsscript tag">javsscript</span>
+            </div>
+          </span>
+          <span class="itemes">
+            <strong class="titleBlod-sm1">하나투어</strong>
+            <div class="hashtag">
+              <span class="html tag">html</span>
+              <span class="css tag">css</span>
+              <span class="css tag">css</span>
+              <span class="javsscript tag">javsscript</span>
+              <span class="jQuery tag">jQuery</span>
+            </div>
+          </span>
+          <span class="itemes">
+            <strong class="titleBlod-sm1">하나투어가이드</strong>
+            <div class="hashtag">
+              <span class="html tag">html</span>
+              <span class="css tag">css</span>
+            </div>
+          </span>
+        </div>
+      </section>
+      <section class="sec4">
+        <div class="iconBox-item">
+          <div class="items" style="flex:1; width: 100%; max-width: 347.68px; height: 529.27px;">
+            <span class="sec3Title">
+              <strong class="title-blod-mb">프론트앤드</strong>
+            </span>
+            <div class="imageWrap" style="padding: 0 18px;">
+              <div class="image" style="width: 70px; height: 60px;">
+                <figure>
+                  <img src="./public/images/icons/react-icon.png" alt="react icon">
+                </figure>
+              </div>
+              <div class="image" style="width: 58.36px; height: 63.56px;">
+                <figure>
+                  <img src="./public/images/icons/javascript-icon.png" alt="javascript icon">
+                </figure>
+              </div>
+              <div class="image" style="width: 58.92px; height: 66.85px;">
+                <figure>
+                  <img src="./public/images/icons/scss-icon.png" alt="scss icon">
+                </figure>
+              </div>
+              <div class="image" style="width:52.04px; height: 70.95px;">
+                <figure>
+                  <img src="./public/images/icons/html-icon.png" alt="html icon">
+                </figure>
+              </div>
+              <div class="image" style="width: 58.16px; height: 54.12px;">
+                <figure>
+                  <img src="./public/images/icons/jquery-iocn.png" alt="jquery icon">
+                </figure>
+              </div>
+              <div class="image" style="width: 58.32px; height: 68.49px;">
+                <figure>
+                  <img src="./public/images/icons/css-icon.png" alt="css icon">
+                </figure>
+              </div>
+              <div class="image" style="width: 74.44px; height: 37.43px;">
+                <figure>
+                  <img src="./public/images/icons/php-icon.png" alt="php icon">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="itmes-item" style="flex:1; max-width: 277.15px; width: 100%; height: 254.72px;">
+            <div class="items-tool items" style="padding: 0 45px; padding-bottom: 20px;">
+              <span class="sec3Title">
+                <strong class="title-blod-mb">협업 툴</strong>
+              </span>
+              <div class="imageWrap">
+                <div class="image" style="width: 54.68px; height: 54.55px;">
+                  <figure>
+                    <img src="./public/images/icons/github-icon.png" alt="github icon">
+                  </figure>
+                </div>
+                <div class="image" style="width: 57.62px; height: 50.55px;">
+                  <figure>
+                    <img src="./public/images/icons/gitKraken-icon.png" alt="gitKraken icon">
+                  </figure>
+                </div>
+                <div class="image" style="width: 61.59px; height: 60.46px;">
+                  <figure>
+                    <img src="./public/images/icons/vs-icon.png" alt="vs icon">
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="items-design items" style="padding: 0 45px; padding-bottom: 20px;">
+              <span class="sec3Title">
+                <strong class="title-blod-mb">디자인 툴</strong>
+              </span>
+              <div class="imageWrap">
+                <div class="image" style="width: 86.42px; height: 86.23px;">
+                  <figure>
+                    <img src="./public/images/icons/figma-icon.png" alt="figma icon">
+                  </figure>
+                </div>
+                <div class="image" style="width: 78.45px; height: 40.64px;">
+                  <figure>
+                    <img src="./public/images/icons/zeppelin-icon.png" alt="zeppelin icon">
+                  </figure>
+                </div>
+                <div class="image" style="width: 70.53px; height: 70.37px;">
+                  <figure>
+                    <img src="./public/images/icons/photoshop-icon.png" alt="photoshop icon">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items" style="flex:0.5; max-width: 296px; width: 100%; height: 529.56px; padding:0 50.19px;">
+            <span class="sec3Title">
+              <strong class="title-blod-mb">커뮤니케이션</strong>
+            </span>
+            <div class="imageWrap">
+              <div class="image" style="width: 61.62px; height: 61.94px;">
+                <figure>
+                  <img src="./public/images/icons/notion-iocn.png" alt="notion icon">
+                </figure>
+              </div>
+              <div class="image" style="width: 71px; height: 75.08px;">
+                <figure>
+                  <img src="./public/images/icons/slack-icon.png" alt="slack icon">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class=" title-blod-mb"
+          style="display: block; padding-top: 128px; padding-bottom: 95px; width: 100%; text-align: center; line-height: 1.5;">
+          프로젝트를
+          진행하는데 있어 기술 및 영향을 지속적으로
+          <br />
+          확대하는데 노력하고 있습니다.
+        </p>
+      </section>
     </div>
-  </div>
-  <!-- portfolio 끝-->
-  <!-- about us 시작 -->
-  <div class="about_us_wrap" id="section2">
-    <div class="about_inner">
-      <div class="title">
-        <h2>이력서</h2>
+    </section>
+    <section class="Sec5">
+      <div class="sec4Header">
+        <div class="image">
+          <img src="./public/images/me.png" alt="이영현">
+        </div>
+        <div class="text">
+          <h2 class="titleBlod p-tb">이영현의 이력서</h2>
+          <p class="titleBasic pb-20">프론트앤드 개발자</p>
+        </div>
       </div>
-      <h3 class="ti">꼼꼼함과 실력을 갖춘 이영현 입니다.</h3>
-      <div class="about_info">
-        <div class="info_por">
-          <div class="por_txt">
-            <h3>이영현 <span class="smallText">LEE Young Hyun</span></h3>
-            <div class="por-inner">
-              <div class="info-txt">
-                <div class="info-inner">
-                  <div class="gender">
-                    <span>성별</span>
-                    <p>
-                      <span>남</span>
-                      <span class="boldText">여</span>
-                    </p>
-                  </div>
-                  <div class="birth">
-                    <p>
-                      <span>1996년</span>
-                      <span class="order">(만28세)</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="address">
-                  <p>주소 <span>경기도 군포시 용호2로</span></p>
-                </div>
-                <div class="mbti">
-                  <p>
-                    MBTI
-                    <span>ISFJ(잇프젯)</span>
-                    <span class="mbtiText">
-                      <b>#배려심많고</b>
-                      <b>#책임감 강함</b>
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div class="skill_wrap">
-                <!-- <span>나의 스킬</span> -->
-                <div class="my_skili">
-                  <p>
-                    <span>HTML5</span>
-                    95%
-                    <span>CSS3</span>
-                    90%
-                    <span>SCSS</span>
-                    80%
-                    <span>Jquery</span>
-                    78%
-                    <span>JavaScript</span>
-                    60%
-                    <span>Bootstrap</span>
-                    60%
-                  </p>
-                  <p>
-                    <span>PHP</span>
-                    50%
-                    <span>그누보드</span>
-                    50%
-                    <span>라라벨</span>
-                    50%
-                    <span>Github</span>
-                    65%
-                    <span>GitKraken</span>
-                    60%
-                    <span>sourcetree</span>
-                    85%
-                  </p>
-                  <!-- <span>React</span> -->
-                </div>
-              </div>
-            </div>
+      <div class="padding" style="max-width: 1400px; margin: 0 auto;">
+        <div class="history AboutMe">
+          <div class="p-b">
+            <h3 class="titleBasic pb-10 flex">
+              <span class="ap ap-hear_no_evil_1 p-r1"></span>
+              About Me
+            </h3>
+            <span class="border-bottom"></span>
           </div>
-
-          <div class="info-me">
-            <img src="./images/pc/about_us_my.JPG" alt="이영현">
-          </div>
+          <p class="titleNormal pb-20 line-height-Basic">
+            다양한 기술(React, PHP)을 학습하며, 코드 고도화, 웹 접근성, 크로스 브라우징을 준수하여 프로젝트를
+            구축해왔습니다.
+            라임프렌즈에서 PHP와 React 프로젝트를 담당하며,꾸준한 학습과 협업을 통해 개발 역량을 향상시켰습니다. 마크업, 웹 접근성, 크로스 브라우징을 중요하게 생각하여 프로젝트를
+            진행합니다.
+            새로운
+            환경에서도 빠르게 적응하고 팀과 협력하여 최고의 결과를 만들어내는 개발자가 되겠습니다.</p>
         </div>
-
-        <div class="career_wrap">
-          <div class="career_inner">
-            <div class="career">
-              <span>경력</span>
-              <p>
-                <span>라임프렌즈</span>
-                <span class="block smailText"></span>
-              </p>
+        <div class="profileWrap flex-s padding-top37">
+          <div class="sectionComm content_left">
+            <div class="p-b">
+              <h3 class="titleBasic pb-10 flex">
+                <span class="ap ap-hear_no_evil_1 p-r1"></span>History
+              </h3>
+              <span class="border-bottom"></span>
             </div>
-            <!-- 1 -->
-            <div class="career">
-              <span>학력</span>
-              <p>
-                <span>국제대학 졸업</span>
-                <span class="block smailText">(3년제)</span>
-              </p>
-            </div>
-            <!-- 2 -->
-            <div class="career">
-              <span>희망연봉</span>
-              <p class="wen">
-                <span class="brLine">면접 후 결정</span>
-                <span><i>3,200만원 (마지막 연봉)</i></span>
-              </p>
-            </div>
-            <!-- 3 -->
-          </div>
-        </div>
-
-        <div class="company">
-          <div class="company_wrap">
-            <div class="company_title">
-              <h4>경력</h4>
-            </div>
-            <div class="company_list">
-              <div class="list">
-                <div class="com_inner">
-                  <h5 class="lime_friends">라임프랜즈</h5>
-                  <div class="main_text">
-                    <div>
-                      <strong class="txt_blod ">소속</strong>
-                      <p>개발사업부_웹 프론트</p>
-                      <!-- <span class="font-13">내근(100%)</span> -->
-                    </div>
-                    <div>
-                      <strong class="txt_blod">담당 업무</strong>
-                      <span class=" ml-10">웹&앱 구축 및 유지보수</span>
-                    </div>
-                    <div>
-                      <strong class="txt_blod brand">담당 브랜드</strong>
-                      <div class="ml-12">
-                        <b>유지보수</b>
-                        <p class="list_up ">
-                          <span>> 한강사회적협동조합(PHP)</span>
-                          <span>> 메디프(PHP)</span>
-                          <span>> 라임프렌즈(PHP)</span>
-                          <span>> 서울에너지드림(PHP)</span>
-                          <span>> 지혜의밭(웹앱_논문)</span>
-                          <span>> 레스포 통합관리시스템(삼천리자전거)</span>
-                          <span>> 롯데중앙연구소_모두리(PHP)</span>
-                          <span>> 링켄리브(React)</span>
-                          <span>> 박피디와황배우(html)</span>
-                          <span>> 모두리(롯데중앙연구소)(PHP)</span>
-                        </p>
-
-                        <b>구축</b>
-                        <p class="list_up ml-10">
-                          <span>> 어썸마켓(html)</span>
-                        </p>
-                        <p class="list_up ml-10">
-                          <span>> 소리빛(html)</span>
-                        </p>
-                        <p class="list_up ml-10">
-                          <span>> 소리아월렛(웹앱)</span>
-                        </p>
-                        <p class="list_up ml-10">
-                          <span>> 자람콘텐츠(Ract)</span>
-                        </p>
-                        <p class="list_up ml-10">
-                          <span>> 비큐라(next.js Ract)</span>
-                        </p>
-                        <p class="list_up ml-10">
-                          <span>> 펀데이코리아(next.js Ract)</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2023.11~ 2024.06</span>
-                </div>
-              </div>
-              <!-- 1 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5 class="etrlbe">이트라이브</h5>
-                  <div class="main_text">
-                    <p>
-                    <div>
-                      <strong class="txt_blod">소속</strong>
-                      <span>UX 그룹 사원 메니저 파견(100%)</span>
-                    </div>
-                    <div>
-                      <strong class="txt_blod">담당 업무</strong>
-                      <p>
-                        <span class="smail_tit">파견지: <b class="txt_blod">롯데정보통신</b></span>
-                      </p>
-                      <span class="ml-10">롯데 계열사 웹페이지 유지보수</span>
-                    </div>
-                    <div class="">
-                      <strong class="txt_blod">담당 계열사</strong>
-                      <div class="ml-10">
-                        <b>유지보수</b>
-                        <p class="list_up ml-10">
-                          <span>> 스카이힐</span>
-                          <span>> 리조트</span>
-                          <span>> 웰푸드</span>
-                          <span>> 어드벤처 잠실</span>
-                          <span>> 어드벤처 동부산</span>
-                          <span>> 어드밴처 아쿠아룸</span>
-                        </p>
-                      </div>
-                    </div>
-                    </p>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2023.02~ 2023.04</span>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5 class="ygn">와이지앤</h5>
-                  <div class="main_text">
-                    <p>
-                    <div>
-                      <strong class="txt_blod">소속</strong>
-                      <span>UX 그룹 </span>
-                    </div>
-                    <!-- <span>내근(100%)</span> -->
-                    <div>
-                      <strong class="txt_blod">담당 업무</strong>
-                      <p>
-                        <span class="ml-10">자회사 웹페이지 구축 및 유지보수</span>
-                      </p>
-                    </div>
-                    <div>
-                      <strong class="txt_blod">담당 브랜드</strong>
-                      <div class="ml-10">
-                        <b>구축</b>
-                        <p class="list_up ml-10">
-                          <span>> 와이지앤(자사홈페이지 리뉴얼)</span>
-                          <span>> 닥터볼츠</span>
-                          <span>> 대한민국안전재단</span>
-                          <span>> 미트식스(쇼핑몰 / PHP)</span>
-                          <span>> 쇼핑몰스킨</span>
-                        </p>
-                      </div>
-
-                    </div>
-                    </p>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2022.01~ 2023.01</span>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5 class="einvention">이인벤션</h5>
-                  <div class="main_text">
-                    <p>
-                    <div class="divText">
-                      <div>
-                        <strong class="txt_blod">소속</strong>
-                        <span>마케팅 영업3팀 </span>
-                      </div>
-                      <!-- <span>내근(100%)</span> -->
-                    </div>
-                    <div>
-                      <strong class="txt_blod">담당 업무</strong>
-                      <p>
-                        <span class="ml-10">온라인 마케팅 광고수주 및 운영</span>
-                      </p>
-                    </div>
-                    <div>
-                      <strong class="txt_blod">담당 브랜드</strong>
-                      <div class="ml-10">
-                        <b>운영</b>
-                        <p class="list_up ml-10">
-                          <span>> 누가의료기</span>
-                          <span>> 키스미</span>
-                          <span>> 레이지비</span>
-                          <span>> 아이수</span>
-                        </p>
-                      </div>
-
-                    </div>
-                    </p>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2020.02~ 2020.11</span>
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5 class="">Ten5(텐오)</h5>
-                  <div class="main_text">
-                    <p>
-                    <div class="divText">
-                      <div>
-                        <strong class="txt_blod">소속</strong>
-                        <span> 마케팅1팀 </span>
-                      </div>
-                      <!-- <span>내근(100%)</span> -->
-                    </div>
-                    <div>
-                      <strong class="txt_blod">담당 업무</strong>
-                      <p>
-                        <span class="ml-10">바비톡&강남언니 바이럴</span>
-                      </p>
-                    </div>
-                    </p>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2018.05~ 2019.11</span>
-                </div>
-              </div>
+            <div class="proFileCont">
+              <span class="titleNormal">라임프렌즈 프론트앤드팀 (2023.10 ~ 2024.06)</span>
+              <span class="titleNormal">이트라이브 UX/UI팀 (2023.02 ~ 2023.06)</span>
+              <span class="titleNormal">와이지앤 디자인팀(2022.02 ~ 2023.01)</span>
+              <span class="titleNormal">이인벤션 광고영업팀 (2019.01 ~ 2020.01)</span>
+              <span class="titleNormal">텐오 바이럴마케팅팀 (2018.05 ~ 2018.12)</span>
             </div>
           </div>
-          <div class="company_wrap">
-            <div class="company_title">
-              <h4>경험/활동/교육</h4>
+          <div class="sectionComm content_right">
+            <div class="p-b">
+              <h3 class="titleBasic pb-10 flex">
+                <span class="ap ap-hear_no_evil_1 p-r1"></span>
+                Educations
+              </h3>
+              <span class="border-bottom"></span>
             </div>
-            <div class="company_list">
-              <div class="list">
-                <div class="com_inner">
-                  <h5>디코드학원</h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>리액트 프론트엔드 개발 실무 (React JS)</span>
-                        <span>> 실무에서 사용하는 리액트를 기반으로 페이지 완성하기</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2023.03~ 2023.06</span>
-                </div>
+            <div class="proFileCont Educations">
+              <div class="items">
+                <strong>교육</strong>
+                <ul>
+                  <li>
+                    <span class="titleNormal">2024.07 ~ 2023.08</span>
+                    <p class="titleNormal p-t">SBS아카데미컴퓨터아트학원 리엑트 프론트앤드 개발 실무</p>
+                  </li>
+                  <li>
+                    <span class="titleNormal">2023.03 ~ 2023.06</span>
+                    <p class="titleNormal p-t">디코드 학원 리엑트 프론트엔드 개발 실무</p>
+                  </li>
+                  <li>
+                    <span class="titleNormal">2021.06 ~ 2021.11</span>
+                    <p class="titleNormal p-t">그린컴퓨터아트학원 HTML 구조화 및 CSS, 반응형웹페이지</p>
+                  </li>
+                </ul>
               </div>
-              <!-- 1 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5>그린컴퓨터아트학원</h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>HTML 구조화 및 CSS 스타일링, 반응형웹디자인</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2023.06~ 2023.11</span>
-                </div>
+              <div class="items items-1">
+                <strong>자격증</strong>
+                <ul>
+                  <li>
+                    <span class="titleNormal">2021.12</span>
+                    <p class="titleNormal p-t">웹디자인기능사(한국산업인력공단)</p>
+                  </li>
+                  <li>
+                    <span class="titleNormal">2014.01</span>
+                    <p class="titleNormal p-t">국제운전면허증(경찰청)</p>
+                  </li>
+
+                  <li>
+                    <span class="titleNormal">2014.11</span>
+                    <p class="titleNormal p-t">ITQ(한글,엑셀,파워보인트)</p>
+                  </li>
+
+                  <li>
+                    <span class="titleNormal">2013.08</span>
+                    <p class="titleNormal p-t">그래픽기술자격(GTQ)2급(한국생산본부)</p>
+                  </li>
+                </ul>
               </div>
-              <!-- 2 -->
-            </div>
-          </div>
-          <div class="company_wrap">
-            <div class="company_title">
-              <h4>자격/수상</h4>
-            </div>
-            <div class="company_list">
-              <div class="list">
-                <div class="com_inner">
-                  <h5>웹디자인기능사</h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>발급처 : 한국산업인력공단</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2021.12</span>
-                </div>
-              </div>
-              <!-- 1 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5>그래픽기술자격(GTQ) 2급 </h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>발급처 : 한국생산성본부(KPC)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2013.08</span>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5>국제운전면허증 </h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>발급처 : 경찰청</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2015.01</span>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5>ITQ Master (한글) </h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>발급처 : 한국생산성본부(KPC)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2014.11</span>
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5>ITQ Master (엑셀) </h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>발급처 : 한국생산성본부(KPC)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2014.11</span>
-                </div>
-              </div>
-              <!-- 5 -->
-              <div class="list">
-                <div class="com_inner">
-                  <h5>정보기술자격(ITQ) (파워포인트) </h5>
-                  <div class="main_text">
-                    <div>
-                      <p class="list_up ml-10">
-                        <span>발급처 : 한국생산성본부(KPC)</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="com_day">
-                  <span>2014.11</span>
-                </div>
-              </div>
-              <!-- 6 -->
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
-  <!-- about us 끝 -->
+
+  </div>
+  <footer></footer>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".porjectSlied", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

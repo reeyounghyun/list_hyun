@@ -52,7 +52,7 @@ img {
 }
 
 /* 공통 Style CSS */
-.content {
+.wrap {
 	width: 1200px;
 	max-width: 100%;
 	margin: 0 auto 100px auto;

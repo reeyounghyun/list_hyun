@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "emoji-data-css": "^1.0.1",
+    "reset-css": "^5.0.2"
+  }
+}
