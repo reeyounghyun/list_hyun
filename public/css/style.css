@@ -159,7 +159,13 @@ h3.title{
 
 /* color:rgb(101 163 13)   /* #65a30d */; */
 
-
+.gif{
+  transition: all 0.8s;
+}
+.gif:hover{
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
 .tab-content {
   display: none;
   opacity: 0;
@@ -224,7 +230,7 @@ h3.title{
   position: relative;
   max-width: 288px;
   border-radius: 10px;
-   background: #333333db;
+  background: #333333db;
 }
 .hoverItme{
   opacity: 0;
@@ -258,10 +264,63 @@ h3.title{
   margin:0 auto;
 }
 
-
 .tegItem{
   padding: 5px 9px;
   border-radius: 8px;
   font-size: 10px;
   font-weight: 300;
+}
+
+.careerCard{
+  padding: 20px 14px 21px;
+  border-radius: 10px;
+  background: #333333db;
+}
+
+.skliIcon{
+  padding-top: 1.3rem;
+  gap: 20px; 
+}
+
+.company{
+  font-size: 23px;
+}
+
+.period{
+  font-weight: 100;
+  font-size: 10px;
+}
+
+
+.list{
+  position: relative;
+}
+
+.list li{
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 0.25rem;
+}
+
+.list li::after{
+  position: absolute;
+  content: "";
+  clear: both;
+  width: 9px;
+  height: 9px;
+  background: #535353;
+  border-radius: 30px;
+  top: 7px;
+  left:0;
+  margin-top: -1px;
+}
+
+
+.deac{
+  color: #bababa;
+  display: vb;
+  display: block;
+  width: 100%;
+  padding-top: 4rem;
+  font-size: 11px;
 }
