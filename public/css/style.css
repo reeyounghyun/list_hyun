@@ -291,7 +291,6 @@ h3.title{
   font-size: 10px;
 }
 
-
 .list{
   position: relative;
 }
@@ -315,7 +314,6 @@ h3.title{
   margin-top: -1px;
 }
 
-
 .deac{
   color: #bababa;
   display: vb;
@@ -323,4 +321,31 @@ h3.title{
   width: 100%;
   padding-top: 4rem;
   font-size: 11px;
+}
+
+.projectinner{
+  justify-content: center;
+  margin-left: 10rem;
+}
+
+.careerInner{
+  margin-left: 22rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  height: 91vh;
+  gap: 34px;
+}
+
+.educationInner{
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 34px;
+  margin-left: 22rem;
+}
+
+.educationCard{
+  flex-wrap: wrap;
+  width: 31%;
+  gap: 15px;
 }

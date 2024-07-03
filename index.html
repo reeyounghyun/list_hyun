@@ -146,7 +146,7 @@
       <div class="ml-auto">
         <div id="project" class="p-4 section">
           <div class="p-5 rounded shadow-lg portfolio_inner">
-            <div class="flex inner" style="justify-content: center;  margin-left: 10rem;">
+            <div class="flex inner projectinner">
               <!-- 버튼 영역 -->
               <div class="mb-5 space-x-2 tab-buttons">
                 <button class="block px-4 py-2 text-base text-white bg-blue-500 rounded tab-btn active"
@@ -293,12 +293,7 @@
           </div>
         </div>
         <div id="career" class="h-screen p-4 section">
-          <div class="flex inner" style="    margin-left: 22rem;
-          flex-wrap: wrap;
-          justify-content: flex-start;
-          overflow-x: auto;
-          height: 91vh;
-          gap: 34px;">
+          <div class="flex inner careerInner">
             <!-- 라임프렌즈 -->
             <section
               class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard "
@@ -459,11 +454,120 @@
               <p class="deac">퇴사사유 : 경영악화 페업</p>
             </section>
           </div>
-
         </div>
-        <div id="education" class="h-screen p-4 bg-gray-500 section">
-          <h2>Education</h2>
-          <!-- 내용 -->
+        <div id="education" class="h-screen p-4 section">
+          <div class="flex inner educationInner">
+            <!-- sbs아카데미 -->
+            <section
+              class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard educationCard">
+              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+                <span class="text-[#A6A6A6] block period">2024.07 - 2024.08</span>
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">
+                  sbs아카데미컴퓨터아트학원
+                  <span class="text-sm">@ 실무에서 사용가능한 리엑트 커리큘럼</span>
+                </h4>
+                <ul class="text-base text-[#A6A6A6] list">
+                  <li>JavaScript, React 등 학습.</li>
+                  <li>5주 동안 React 기초 및 실수에 사용할수 있는 외부 api 사용하는 방법에 대해 배웠습니다. </li>
+                  <li>타입스크립트, Hook, API 개념을 이해하고, 구현 및 응용이 가능합니다.</li>
+                </ul>
+              </div>
+              <div class="flex gap-1 p-5 skliIcon">
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_react.svg"
+                    alt="ps" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_javascript.svg"
+                    alt="ai" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+              </div>
+            </section>
+            <!-- 디코드학원 -->
+            <section
+              class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard educationCard">
+              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+                <span class="text-[#A6A6A6] block period">2023.03 - 2024.06</span>
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">
+                  디코드학원
+                  <span class="text-sm">@ 리액트 프론트엔드 개발 실무 (React JS)</span>
+                </h4>
+                <ul class="text-base text-[#A6A6A6] list">
+                  <li>JavaScript, React 등 학습.</li>
+                  <li>12주 동안 React 기초 및 실수에 사용할수 있는 외부 API 사용하는 방법에 대해 배웠습니다.</li>
+                  <li>수업이 종료된 이후에도 네이버 카페를 통하여 커뮤니케이션을 이어나아가고 있습니다.</li>
+                </ul>
+              </div>
+              <div class="flex gap-1 p-5 skliIcon">
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_react.svg"
+                    alt="ps" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_javascript.svg"
+                    alt="ai" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+              </div>
+            </section>
+            <!-- 그림컴퓨터아트학원 -->
+            <section
+              class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard educationCard">
+              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+                <span class="text-[#A6A6A6] block period">2023.06 - 2023.11</span>
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">그린컴퓨터아트학원
+                  <span class="text-sm">@ HTML 구조화 및 CSS 스타일링, 반응형웹디자인</span>
+                </h4>
+                <ul class="text-base text-[#A6A6A6] list">
+                  <li>포토샵과 일러스트 기초적인 툴 사용방법을 익혔습니다.</li>
+                  <li>html, css, jquery 기초적인 이론부터 심화과정을 걸처 학습하였습니다.</li>
+                  <li>포토샵을 이용하여 디자인 시안을 제작하였으며, 이를 토대로 반응형 웝페이지를 제작했습니다.</li>
+                  <li>이 과정을 통하여 디자인을 통한 반응협 웹페이지 제작이 가능하여, flex, grid style을 이용하여 구현할 수 있습니다.</li>
+                </ul>
+              </div>
+              <div class="flex gap-1 p-5 skliIcon">
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_html.svg"
+                    alt="html" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_css.svg"
+                    alt="css" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_javascript.svg"
+                    alt="ai" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+                <div width="w-[50px]"
+                  class="relative bg-[#0C0C0C] w-[50px] h-0 pb-[3.125rem] flex items-center justify-center rounded-2xl">
+                  <img
+                    src="https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/icons/icon_ps.svg"
+                    alt="ps" loading="lazy"
+                    class="absolute w-2/4 h-1/2 inset-2/4 translate-y-[-50%] translate-x-[-50%]">
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </section>
