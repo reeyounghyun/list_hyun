@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "^2.3.4",
     "emoji-data-css": "^1.0.1",
     "reset-css": "^5.0.2"
   },
