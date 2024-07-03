@@ -7,6 +7,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
 
   <link rel="icon" href="./images/all/memoji2.svg" type="image/x-icon">
   <link rel="shortcut icon" href="./images/all/memoji2.svg" type="image/x-icon">
@@ -22,31 +25,175 @@
 <body>
   <div class="contants-wrap" style="padding:0 30px;">
     <section>
-      <h2 class="block text-xl color-white mainTitle">About me</h2>
-      <figure class="container p-4 mx-auto">
-        <img src="./public/images/memoji1-removebg-preview.png" alt="Memoji" class="memoji">
+      <h2 class="block w-full text-xl color-white mainTitle" style="padding: 10px; ">About me</h2>
+      <div class="main-title">
+        <h3 class="block color-white title"
+          style="text-transform:capitalize; text-align: center; font-size: 139px; font-family:Pretendard-Regular,serif;">
+          front
+          end
+        </h3>
+        <p class="mainSubTitle">프론트앤드 개발자 <strong>이영현</strong>입니다.</p>
+      </div>
+      <figure class="container p-4 mx-auto" style="padding-top: 12rem;">
+        <!-- <img src="./public/images/memoji1-removebg-preview.png" alt="Memoji" class="memoji"> -->
+        <img src="./public/images/emojimoviegif-converter.gif" alt="Converted GIF" width="400"
+          class="w-full max-[240px]: my-0 mx-auto">
       </figure>
-      <p class="flex items-center justify-center pt-8 pb-6 tag">
+      <p class="flex items-center justify-center pt-10 pb-6 tag">
         <span class="text-sm color-white">#책임감</span>
         <span class="text-sm color-white">#끊임없이_배움</span>
         <span class="text-sm color-white">#수용적인</span>
         <span class="text-sm color-white">#타자속도 KTX급</span>
       </p>
     </section>
-    <section>
-      <h3>Skill & Tolls</h3>
-      <div class="items">
-        <strong>FrontEnd</strong>
-      </div>
-      <div class="items">
-        <strong>Design</strong>
-      </div>
-      <div class="items">
-        <strong>Cooperation</strong>
+    <section class="" style="margin-top: 14rem;">
+      <h3 class="block pb-6 text-xl text-center color-white mainTitle">Skill & Tolls</h3>
+      <div class="flex items-center justify-center items gap-70">
+        <span class="sec3Title">
+          <strong class="w-full color-white"
+            style="padding-bottom: 12px; display:block; font-size:24px;">FrontEnd</strong>
+          <div class="flex items-center gap-15">
+            <div class="image" style="width: 54px;">
+              <figure>
+                <img src="./public/images/icons/html5.png" alt="html icon">
+              </figure>
+            </div>
+            <div class="image" style="width: 41px;">
+              <figure>
+                <img src="./public/images/icons/scss-icon.png" alt="scss icon">
+              </figure>
+            </div>
+            <div class="image" style="width: 54px;">
+              <figure>
+                <img src="./public/images/icons/css3.png" alt="css icon">
+              </figure>
+            </div>
+            <div class="image" style="width: 50px;">
+              <figure>
+                <img src="./public/images/icons/react-icon.png" alt="react icon">
+              </figure>
+            </div>
+            <div class="image" style="width: 47px;">
+              <figure>
+                <img src="./public/images/icons/javascript.png" alt="javascript icon">
+              </figure>
+            </div>
+            <div class="image" style="width: 66px;">
+              <figure>
+                <img src="./public/images/icons/jquery.png" alt="jquery icon">
+              </figure>
+            </div>
+          </div>
+        </span>
+        <div class="items">
+          <strong class="w-full color-white"
+            style="padding-bottom: 12px; display: block; font-size:24px;">Design</strong>
+          <div class="flex items-center gap-15">
+            <div class="image" style="width:62px;">
+              <figure>
+                <img src="./public/images/icons/figma-icon.png" alt="figma icon">
+              </figure>
+            </div>
+            <div class="image" style="width:56px;">
+              <figure>
+                <img src="./public/images/icons/zeppelin-icon.png" alt="zeppelin icon">
+              </figure>
+            </div>
+            <div class="image" style="width:50px;">
+              <figure>
+                <img src="./public/images/icons/photoshop-icon.png" alt="photoshop icon">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <strong class="w-full color-white"
+            style="padding-bottom: 12px; display: block; font-size:24px;">Cooperation</strong>
+          <div class="flex items-center gap-15">
+            <div class="image" style="width:50px;">
+              <figure>
+                <img src="./public/images/icons/github.png" alt="github icon">
+              </figure>
+            </div>
+            <div class="image" style="width:50px;">
+              <figure>
+                <img src="./public/images/icons/vs-icon.png" alt="vs icon">
+              </figure>
+            </div>
+            <div class="image" style="width:50px;">
+              <figure>
+                <img src="./public/images/icons/notion-iocn.png" alt="notion icon">
+              </figure>
+            </div>
+            <div class="image" style="width:50px;">
+              <figure>
+                <img src="./public/images/icons/slack-icon.png" alt="slack icon">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="section3">
+      <nav id="menu" class="sticky top-0 h-24 p-4 text-black ">
+        <ul class="flex items-center gap-3 ">
+          <li><a href="#career" class="text-6xl menu-link">Career</a></li>
+          <li><a href="#project" class="text-6xl menu-link">Project</a></li>
+          <li><a href="#education" class="text-6xl menu-link">Education</a></li>
+        </ul>
+      </nav>
 
+      <div class="ml-auto ">
+        <div id="career" class="h-screen p-4 bg-gray-700 section">
+          <h2>Career</h2>
+          <!-- 내용 -->
+        </div>
+
+        <div id="project" class="h-screen p-4 bg-gray-600 section">
+          <h2>Project</h2>
+          <!-- 내용 -->
+        </div>
+
+        <div id="education" class="h-screen p-4 bg-gray-500 section">
+          <h2>Education</h2>
+          <!-- 내용 -->
+        </div>
+      </div>
+    </section>
   </div>
+  <!-- <script>
+    const img = document.querySelector('.memoji');
+
+    window.addEventListener('scroll', () => {
+      // 페이지의 총 스크롤 가능 높이
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      // 현재 스크롤 위치 비율 (0 ~ 1)
+      const scrollFraction = window.scrollY / scrollHeight;
+
+      // 이미지 크기 조정 (최저 400px ~ 최대 460px)
+      // 스크롤 중간에 가장 커지게 하고 다시 작아지도록 설정
+      const newSize = 400 + Math.sin(scrollFraction * Math.PI) * 60;
+      img.style.width = `${newSize}px`;
+    });
+  </script> -->
+
+  <!-- <script>
+    const img = document.querySelector('.memoji');
+
+    window.addEventListener('scroll', () => {
+      페이지의 총 스크롤 가능 높이
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+      현재 스크롤 위치 비율 (0 ~ 1)
+      const scrollFraction = window.scrollY / scrollHeight;
+
+      이미지 크기 조정 (최저 400px ~ 최대 460px)
+      const newSize = 400 + scrollFraction * 300;
+      img.style.width = `${newSize}px`;
+    });
+  </script> -->
+
 </body>
 
 </html>

@@ -71,37 +71,75 @@ document.addEventListener("DOMContentLoaded", function() {
  **/
 
 //스크롤다운.JS
-document.addEventListener("DOMContentLoaded", function() {
-  function scrollDown() {
-      let text = document.querySelector("h2");
-      let textString = text.textContent;
-      let split = textString.split("");
-      text.textContent = "";
-      for (let i = 0; i < split.length; i++) {
-          let span = document.createElement("span");
-          span.classList.add("spanText");
-          span.textContent = split[i];
-          text.appendChild(span);
-      }
+// document.addEventListener("DOMContentLoaded", function() {
+//   function scrollDown() {
+//       let text = document.querySelector("h2");
+//       let textString = text.textContent;
+//       let split = textString.split("");
+//       text.textContent = "";
+//       for (let i = 0; i < split.length; i++) {
+//           let span = document.createElement("span");
+//           span.classList.add("spanText");
+//           span.textContent = split[i];
+//           text.appendChild(span);
+//       }
       
-      gsap.registerPlugin(ScrollTrigger);
+//       gsap.registerPlugin(ScrollTrigger);
       
-      let tl = gsap.timeline();
-      tl.from(".spanText", {
-          y: -500,
-          opacity: 0,
-          scrollTrigger: {
-              pin: true,
-              scrub: 1,
-              trigger: "section",
-              start: "top top",
-              end: "bottom top"
-          },
-          stagger: {
-              amount: 2
-          }
-      });
-  }
+//       let tl = gsap.timeline();
+//       tl.from(".spanText", {
+//           y: -500,
+//           opacity: 0,
+//           scrollTrigger: {
+//               pin: true,
+//               scrub: 1,
+//               trigger: "section",
+//               start: "top top",
+//               end: "bottom top"
+//           },
+//           stagger: {
+//               amount: 2
+//           }
+//       });
+//   }
   
-  scrollDown();
+//   scrollDown();
+// });
+document.addEventListener("DOMContentLoaded", function() {
+  const section3 = document.querySelector('.section3');
+  const sections = document.querySelectorAll(".section");
+  const menuLinks = document.querySelectorAll(".menu-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    menuLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetElement.offsetTop - 60, // 메뉴바 높이만큼 오프셋 조정
+        behavior: "smooth"
+      });
+    });
+  });
 });

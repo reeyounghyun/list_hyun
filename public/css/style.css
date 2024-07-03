@@ -1,16 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
 
+/* font-family: "Song Myung", serif; */
 /*font-family: "GmarketSansMedium", sans-serif; */
 .mainTitle {
   font-weight: bold;
@@ -30,27 +36,115 @@
 }
 
 .text-xl {
-  font-size: 36px;
+  line-height: inherit;
 }
 
 .text-sm {
-  font-size: 12px;
+  line-height: inherit;
 }
 
-.memoji {
+/* .memoji {
   max-width: 420px;
   margin: 0 auto;
-}
+} */
 
 .tag {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 20px;
   gap: 10px;
 }
 .tag span {
   font-weight: 600;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.image {
+  background-color: #000;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-70 {
+  gap: 70px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu.hidden {
+  display: none;
+}
+
+.section3 > div {
+  width:100%;
+}
+
+.section {
+  padding-top: 60px; /* 네비게이션 높이만큼 패딩 추가 */
+}
+
+.menu-link.active {
+  color: #fff; /* 활성화된 링크의 색상 */
+}
+
+.memoji {
+  transition: width 0.3s ease;
+  width: 400px; /* 초기 크기 */
+}
+
+.text-center{
+  text-align: center;
+}
+
+h3.title{
+  text-align: center;
+  font-size: 39px;
+  position:relative;
+  color: #fff;
+}
+
+.mainSubTitle{
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  text-align: center;
+  color: #246cd9;
+  font-size: 64px;
+  font-family: "GmarketSansMedium", sans-serif;
+  letter-spacing: -11px;
+  padding: 0px 14px;
+  transform: translate(-50%, -2%);
+}
+
+.mainSubTitle::after{
+  content: "프론트앤드 개발자 이영현 입니다";
+  clear: both;
+  position: absolute;
+  left: 0px;
+  top: 15px;
+  font-size: 62px;
+  color: #fff;
+  font-family: "GmarketSansMedium", sans-serif;
+  letter-spacing: -10px;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+/* color:rgb(101 163 13)   /* #65a30d */; */
