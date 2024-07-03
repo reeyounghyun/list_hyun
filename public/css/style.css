@@ -82,6 +82,20 @@
   flex-direction: column;
 }
 
+#menu{
+  z-index: 1000; 
+  border-radius: 0 0 15px 15px;
+}
+
+.menu-link{
+  color:#333;
+}
+
+.menu-link.active {
+  color: #fff; /* 활성화된 링크의 색상 */
+}
+
+
 #menu.fixed {
   position: fixed;
   top: 0;
@@ -98,10 +112,6 @@
 
 .section {
   padding-top: 60px; /* 네비게이션 높이만큼 패딩 추가 */
-}
-
-.menu-link.active {
-  color: #fff; /* 활성화된 링크의 색상 */
 }
 
 .memoji {
@@ -148,3 +158,110 @@ h3.title{
 }
 
 /* color:rgb(101 163 13)   /* #65a30d */; */
+
+
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tab-content.active {
+  display: flex;
+  opacity: 1;
+  gap: 16px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: flex-start;
+}
+
+.tab-buttons{
+  background: #181818;
+  padding: 60px 2px;
+  flex: 1 0 auto;
+  display: flex;
+  max-width: 121px;
+  height: initial;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+.tab-btn{
+  max-width: 118px;
+  width: 100%;
+  margin: 0 auto; 
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 16px;
+  text-align: center;
+  color:#fff;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  border-bottom-color rgb(0, 0, 0);
+  max-width: 80px;
+}
+
+.tab-btn.active {
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  background-color: rgb(241 242 245);
+  text-align: center;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 80px;
+
+}
+.card{
+  position: relative;
+  max-width: 288px;
+  border-radius: 10px;
+   background: #333333db;
+}
+.hoverItme{
+  opacity: 0;
+}
+.card:hover .hoverItme {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  background-color: #444444;
+  transition: all 0.3s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .hoverItme strong{
+  width:100%;
+  text-align:center;
+  font-size:25px;
+  font-weight: bold;
+  padding-bottom:20px;
+}
+.card:hover .hoverItme .btn{
+  border:1px solid #fff;
+  display:inline-block;
+  padding:5px 0;
+  width:150px;
+  margin:0 auto;
+}
+
+
+.tegItem{
+  padding: 5px 9px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 300;
+}

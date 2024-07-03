@@ -135,8 +135,8 @@
       </div>
     </section>
     <section class="section3">
-      <nav id="menu" class="sticky top-0 h-24 p-4 text-black ">
-        <ul class="flex items-center gap-3 ">
+      <nav id="menu" class="sticky top-0 h-24 p-4 text-black">
+        <ul class="flex gap-3" style="flex-direction: column; align-items: flex-start;">
           <li><a href="#project" class="text-6xl menu-link">Project</a></li>
           <li><a href="#education" class="text-6xl menu-link">Education</a></li>
           <li><a href="#career" class="text-6xl menu-link">Career</a></li>
@@ -144,9 +144,154 @@
       </nav>
 
       <div class="ml-auto">
-        <div id="project" class="h-screen p-4 bg-gray-600 section">
-          <h2>Project</h2>
-          <!-- 내용 -->
+        <div id="project" class="p-4 section">
+          <div class="p-5 rounded shadow-lg portfolio_inner">
+            <div class="flex inner" style="justify-content: center;  margin-left: 10rem;">
+              <!-- 버튼 영역 -->
+              <div class="mb-5 space-x-2 tab-buttons">
+                <button class="block px-4 py-2 text-base text-white bg-blue-500 rounded tab-btn active"
+                  onclick="showTab(event, 1)">All</button>
+                <button class="block px-4 py-2 text-gray-700 bg-gray-200 rounded tab-btn"
+                  onclick="showTab(event, 2)">html<br />php</button>
+                <button class="block px-4 py-2 text-gray-700 bg-gray-200 rounded tab-btn"
+                  onclick="showTab(event, 3)">React</button>
+              </div>
+              <div class="wrapContent">
+                <div id="tab1" class="flex flex-wrap All tab-content active">
+                  <!-- 카드 1 자람콘텐츠 -->
+                  <div class="bg-[#333] p-5 text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img20.png" alt="Image 1"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">자람콘텐츠</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">체험 학습 예약, 활동 검색, 맞춤형 교육 프로그램
+                        제공, 온라인 학습 자료 제공하는 웹페이지</p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
+                        <span class="text-white bg-gray-600 tegItem">React</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                      </div>
+                    </div>
+                    <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
+                      <strong class="w-full font-black text-center">자람콘텐츠</strong>
+                      <a href="#" class="px-4 py-2 text-center text-white rounded hover:bg-gray-500 btn">자세히
+                        보기</a>
+                      <a href="#" class="px-4 py-2 mt-2 text-center text-white rounded hover:bg-gray-500 btn"
+                        style="margin: 16px;">Github
+                        바로가기</a>
+                    </div>
+                  </div>
+                  <!-- 카드 2 펀데이코리아 -->
+                  <div class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img21.png" alt="Image 2"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">펀데이 코리아</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">패키지 예약/ 여행 리뷰/ 체험단 모집 웹페이지</p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
+                        <span class="text-white bg-gray-600 tegItem">React</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">구축</span>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- 카드 3 박피디와황배우-->
+                  <div class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img12.png" alt="Image 3"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">박피디와황배우</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">암 환자 및 생존자의 삶의 질 향상을 위한 다양한 사회
+                        서비스를 제공하는 웹페이지</p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">개인</span>
+                        <span class="text-white bg-gray-600 tegItem">html</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 카드 4 소리빛 -->
+                  <div class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img18.png" alt="Image 3"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">소리빛</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">청각 및 언어 발달에 관련된 프로그램과 서비스를 제공하는
+                        전문 기관의 웹 페이지입니다</p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">개인</span>
+                        <span class="text-white bg-gray-600 tegItem">html</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 카드 5 롯데 -->
+                  <div class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img3.png" alt="Image 3"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">롯데</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">롯데 계열사 웹페이지 유지보수했던 경험이 있습니다.
+                      </p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
+                        <span class="text-white bg-gray-600 tegItem">html</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">유지보수</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 카드 6 에너지드림센터 -->
+                  <div class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img11.png" alt="Image 3"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">에너지드림센터</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">친환경 에너지 기술과 지속 가능한 도시 생활을 체험하고
+                        배우는 교육 전시관 예약 및 소개 플렛폼
+                      </p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
+                        <span class="text-white bg-gray-600 tegItem">html</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">유지보수</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 카드 6 에너지드림센터 -->
+                  <div class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img10.png" alt="Image 3"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="" style="padding: 20px 14px 21px;">
+                      <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">메디프</h2>
+                      <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">상생포럼. 병원, 기업, 전문가, 연구자 등이 자유롭게
+                        네트워킹할 수 있는 플랫폼
+                      </p>
+                      <div class="flex gap-3" style="padding-top: 13px;">
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
+                        <span class="text-white bg-gray-600 tegItem">html</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab2" class="html&php tab-content">
+                  <p>메뉴2 콘텐츠</p>
+                </div>
+                <div id="tab3" class="React tab-content">
+                  <p>메뉴3 콘텐츠</p>
+                </div>
+                <div id="overlay" class="hidden overlay" onclick="closePopup()"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div id="education" class="h-screen p-4 bg-gray-500 section">
           <h2>Education</h2>
@@ -159,6 +304,47 @@
       </div>
     </section>
   </div>
+
+  <script>
+    function showTab(event, tabIndex) {
+      // 모든 탭 콘텐츠를 숨김
+      document.querySelectorAll('.tab-content').forEach(function (element) {
+        element.classList.remove('active');
+        element.style.display = 'none';
+      });
+
+      // 모든 탭 버튼에서 'active' 클래스 제거
+      document.querySelectorAll('.tab-btn').forEach(function (element) {
+        element.classList.remove('active');
+        element.classList.remove('bg-blue-500');
+        element.classList.add('bg-gray-200');
+        element.classList.remove('text-white');
+        element.classList.add('text-gray-700');
+      });
+
+      // 클릭한 탭에 해당하는 콘텐츠를 표시
+      var tabId = 'tab' + tabIndex;
+      var tabElement = document.getElementById(tabId);
+      tabElement.style.display = 'flex';
+      setTimeout(() => {
+        tabElement.classList.add('active');
+        tabElement.style.opacity = 1;
+      }, 0);
+
+      // 클릭한 버튼에 'active' 클래스 추가
+      event.currentTarget.classList.add('active');
+      event.currentTarget.classList.add('bg-blue-500');
+      event.currentTarget.classList.remove('bg-gray-200');
+      event.currentTarget.classList.add('text-white');
+      event.currentTarget.classList.remove('text-gray-700');
+    }
+
+    // 초기화 함수로 첫 번째 탭을 활성화 상태로 설정
+    document.addEventListener("DOMContentLoaded", function () {
+      showTab({ currentTarget: document.querySelector('.tab-buttons .tab-btn.active') }, 1);
+    });
+  </script>
+
   <!-- <script>
     const img = document.querySelector('.memoji');
 
