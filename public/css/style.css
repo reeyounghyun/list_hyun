@@ -126,38 +126,29 @@
 h3.title{
   text-align: center;
   font-size: 39px;
-  position:relative;
-  color: #fff;
+  position: relative;
+  color: #ffbfbf;
 }
 
 .mainSubTitle{
   position: absolute;
   left: 50%;
-  top: 22%;
+  top: 27%;
   text-align: center;
-  color: #246cd9;
-  font-size: 64px;
+  color: #ccc;
+  font-size: 51px;
   font-family: "GmarketSansMedium", sans-serif;
-  letter-spacing: -11px;
+  /* letter-spacing: -11px; */
   padding: 0px 14px;
   transform: translate(-50%, -2%);
+  font-weight: 500;
+  width:100%;
 }
-
-.mainSubTitle::after{
-  content: "프론트앤드 개발자 이영현 입니다";
-  clear: both;
-  position: absolute;
-  left: 0px;
-  top: 15px;
-  font-size: 62px;
-  color: #fff;
+.mainSubTitle strong{
   font-family: "GmarketSansMedium", sans-serif;
-  letter-spacing: -10px;
-  font-weight: 400;
-  padding: 0 20px;
+  font-weight: bold;
+  color: #fff;
 }
-
-/* color:rgb(101 163 13)   /* #65a30d */; */
 
 .gif{
   transition: all 0.8s;
@@ -182,7 +173,7 @@ h3.title{
 
 .tab-buttons{
   background: #181818;
-  padding: 60px 2px;
+  padding: 44px 2px 0 2px;
   flex: 1 0 auto;
   display: flex;
   max-width: 121px;
@@ -190,6 +181,8 @@ h3.title{
   flex-direction: column;
   align-items: center;
   gap: 9px;
+  /* border-radius: 0 0 30px 30px; */
+  max-height: 945px;
 }
 
 .tab-btn{
@@ -348,4 +341,146 @@ h3.title{
   flex-wrap: wrap;
   width: 31%;
   gap: 15px;
+}
+
+.section4{
+  background-color: #f5f5f7;
+  padding: 6rem 0 3rem 0;
+}
+.ending{
+  display:block;
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.ending strong{
+  display: block;
+  font-size: 7rem;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.ending span{
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.endingDeac{
+  text-align: center;
+  display: block;
+  padding: 39px 0 14px 0;
+  text-decoration: underline;
+}
+
+.endingImg{
+  max-width: 300px;
+  width: 100%;
+}
+
+.gitImages{
+  max-width: 40px;
+  width: 100%;
+}
+
+.ending .Copyright{
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  font-weight: 200;
+  padding-top: 3rem;
+  font-family: sans-serif;
+}
+
+.section0 {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.section0 .btn img{
+  max-width: 40px;
+  width: 100%;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.section0 .btn a{
+  font-size: 11px;
+  position: relative;
+  padding: 0 5px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.section0 .btn:hover a::before{
+  content: "Github";
+  clear: both;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 27px;
+  top: 31px;
+  z-index: 100;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/* .section0 .btn a::after{
+  content: "Github";
+  clear: both;
+  position: absolute;
+  background: url(./images/icons/cursor.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  right: -33px;
+  top: 0;
+  z-index: 100;
+} */
+
+.topBtn{
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.btn img:hover, .topBtn img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+ /* 스크롤바 스타일링 */
+ ::-webkit-scrollbar {
+  width: 12px; /* 너비 설정 */
+  height: 10px; /* 높이 설정 */
+}
+
+/* 스크롤바 트랙 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 트랙 배경색 */
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+  background: #333; /* 핸들 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 스크롤바 핸들 호버 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 호버 시 핸들 색상 */
+}
+
+.project-text{
+  padding: 20px 14px 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 184px;
 }
