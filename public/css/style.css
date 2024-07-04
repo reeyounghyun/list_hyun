@@ -42,10 +42,21 @@
   line-height: inherit;
   font-size: 45px;
   padding: 10px;
-  @media screen and (max-width:1400px) {
+
+}
+
+@media screen and (max-width:1400px) {
+  .fontTitle {
     font-size: 30px;
   }
 }
+
+@media screen and (max-width:990px) {
+  .fontTitle {
+    font-size: 1.5rem;
+  }
+}
+
 
 .fontTitle-xl{
   line-height: inherit;
@@ -237,6 +248,12 @@ h3.title{
   h3.title{font-size: 85px;}
 }
 
+@media screen and (max-width:490px) {
+  h3.title{
+    font-size: 68px;
+  }
+}
+
 .main-title{
   position: relative;
 }
@@ -276,6 +293,12 @@ h3.title{
 }
 @media screen and (max-width:900px) {
   .mainSubTitle{font-size: 35px;}
+}
+
+@media screen and (max-width: 490px) {
+    .mainSubTitle {
+        font-size: 18px;
+    }
 }
 
 .mainSubTitle strong{
