@@ -97,8 +97,23 @@
   max-width: 323px;
 }
 
+@media screen and (max-width:1500px) {
+  #menu{
+    max-width: inherit;
+    width: 100%;
+    background: #3b3b3b;
+    z-index: 10000;
+    margin-bottom: 2rem;
+  }
+}
 .menu-link{
   color:#333;
+}
+
+@media screen and (max-width:1520px) {
+  .menu-link{
+    font-size: 2.8rem;
+  }
 }
 
 .menu-link.active {
@@ -261,6 +276,11 @@ h3.title{
   }
 }
 
+#tab1{
+  cursor: pointer;
+  overflow: hidden;
+}
+
 .tab-content {
   display: none;
   opacity: 0;
@@ -295,10 +315,16 @@ h3.title{
 .portfolio_inner{
   min-height: 1302px;
 }
-@media screen and (max-width:1515px) {
+@media screen and (max-width:1520px) {
   .portfolio_inner{
     flex-direction: column;
     /* max-width: 1444px; */
+  }
+}
+
+@media screen and (max-width:768px) {
+  .portfolio_inner{
+    margin-left: 19rem;
   }
 }
 
@@ -319,10 +345,9 @@ h3.title{
     max-width: 190px;
   }
 }
-@media screen and (max-width:1515px) {
+@media screen and (max-width:1520px) {
   .tab-buttons{
     flex-direction: row;
-    width: inherit;
     max-width: max-content;
     padding: 10px 0;
     border-radius: 20px;
@@ -388,6 +413,14 @@ h3.title{
   flex-direction: column;
   align-items: flex-start; 
 }
+@media screen and (max-width:1500px) {
+  .secNav{
+    flex-direction: row;
+    max-width: inherit;
+    width: 100%;
+    gap: 30px;
+  }
+}
 
 .wrap{
   position: relative;
@@ -408,11 +441,66 @@ h3.title{
   background: #333333db;
 }
 
-@media screen and (max-width:1000px) {
-  #card {
-    max-width: 276px;
+@media screen and (max-width:1331px) {
+  #card{
+    max-width: 330px;
+    height: inherit;
   }
 }
+
+@media screen and (max-width:1200px) {
+  #card {
+    max-width: 250px;
+    width: 100%;
+    height: inherit;
+  }
+}
+
+@media screen and (max-width:935px) {
+  #card {
+    max-width: 312px;
+  }
+}
+
+/* .cardTitle-lg{
+  font-size: 21px;
+  font-weight: bold;
+} */
+
+@media screen and (min-width:2580px) {
+  .cardTitle-lg{
+    font-size: 23px;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width:1280px) {
+  .cardTitle-lg{
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.cradTitle-basic{
+  font-size: 13px;
+  color: #c4c4c4;
+}
+
+@media screen and (max-width:1000px) {
+  .cradTitle-basic{
+    font-size: 10px;
+  }
+}
+
+.tagLlist{
+  padding-top: 13px;
+}
+
+@media screen and (max-width:1000px) {
+  .tagLlist{
+    gap: 7px;
+  }
+}
+
 
 #card .hoverItme{
   /* display: flex; */
@@ -523,11 +611,17 @@ h3.title{
   font-weight: 500;
   font-family: 'GmarketSansMedium';
 }
+
 .tegItem{
   padding: 5px 9px;
   border-radius: 8px;
   font-size: 10px;
   font-weight: 300;
+}
+@media screen and (max-width:1000px) {
+  .tegItem{
+    font-size: 8px;
+  }
 }
 
 .careerCard{
