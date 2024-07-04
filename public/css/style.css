@@ -25,6 +25,13 @@
 
 .contants-wrap {
   background: #000;
+  padding:0 30px;
+}
+
+@media screen and (max-width:1280px) {
+  .contants-wrap {
+    padding:0;
+  }
 }
 
 .color-white {
@@ -101,9 +108,11 @@
   #menu{
     max-width: inherit;
     width: 100%;
-    background: #3b3b3b;
+    background: #000000;
     z-index: 10000;
     margin-bottom: 2rem;
+    border-bottom: 1px solid #6d6d6d;
+    border-radius: initial;
   }
 }
 .menu-link{
@@ -113,6 +122,16 @@
 @media screen and (max-width:1520px) {
   .menu-link{
     font-size: 2.8rem;
+  }
+}
+@media screen and (max-width:1420px) {
+  .menu-link{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .menu-link {
+      font-size: 1.5rem;
   }
 }
 
@@ -140,6 +159,53 @@
 @media screen and (max-width:990px) {
   .section {
     padding-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section {
+    padding-bottom: 0rem;
+  }
+}
+
+.educationbox{
+  height: 75vh;
+}
+
+@media screen and (max-width:1500px) {
+  .educationbox{
+    height: initial;
+    padding-bottom: 10rem;
+  }
+}
+
+.educationItem{
+  flex-direction: column;
+}
+
+.educationItem-title{
+  flex-direction: column;
+}
+
+.educationItem-ul{
+  font-family: sans-serif; 
+  color: #c7c7c7;
+}
+
+.education-strong{
+  font-family: emoji;
+}
+
+.education-strong-lang{
+  font-family: emoji;
+}
+
+.career-txt{
+  font-size: 16px;
+}
+@media screen and (max-width:1000px) {
+  .career-txt{
+    font-size: 14px;
   }
 }
 
@@ -312,21 +378,6 @@ h3.title{
   }
 }
 
-.portfolio_inner{
-  min-height: 1302px;
-}
-@media screen and (max-width:1520px) {
-  .portfolio_inner{
-    flex-direction: column;
-    /* max-width: 1444px; */
-  }
-}
-
-@media screen and (max-width:768px) {
-  .portfolio_inner{
-    margin-left: 19rem;
-  }
-}
 
 .tab-buttons{
   display: flex;
@@ -340,12 +391,12 @@ h3.title{
   padding: 44px 2px 0 2px;
   background: #181818;
 }
-@media screen and (min-width:1520px) {
+@media screen and (min-width:1500px) {
   .tab-buttons{
     max-width: 190px;
   }
 }
-@media screen and (max-width:1520px) {
+@media screen and (max-width:1500px) {
   .tab-buttons{
     flex-direction: row;
     max-width: max-content;
@@ -455,10 +506,11 @@ h3.title{
     height: inherit;
   }
 }
-
-@media screen and (max-width:935px) {
+@media screen and (max-width: 612px) {
   #card {
-    max-width: 312px;
+    max-width: inherit;
+    width: 100%;
+    height: inherit;
   }
 }
 
@@ -466,17 +518,22 @@ h3.title{
   font-size: 21px;
   font-weight: bold;
 } */
-
 @media screen and (min-width:2580px) {
   .cardTitle-lg{
     font-size: 23px;
     font-weight: bold;
   }
 }
-@media screen and (min-width:1280px) {
+@media screen and (max-width:1280px) {
   .cardTitle-lg{
     font-size: 18px;
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .cardTitle-lg{
+    font-weight: 600;
   }
 }
 
@@ -487,7 +544,7 @@ h3.title{
 
 @media screen and (max-width:1000px) {
   .cradTitle-basic{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -501,11 +558,26 @@ h3.title{
   }
 }
 
+@media screen and (max-width:768px) {
+  .tagLlist{
+    flex-wrap: wrap;
+  }
+}
+
+
 
 #card .hoverItme{
   /* display: flex; */
   display:none;
   transition: all 0.7s;
+}
+@media screen and (max-width:768px) {
+  #card .hoverItme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px 5px;
+  }
 }
 
 #card:hover .hoverItme{
@@ -551,6 +623,7 @@ h3.title{
   font-weight: bold;
   padding-bottom:20px;
 }
+
 .card:hover .hoverItme .btn{
   border:1px solid #fff;
   display:inline-block;
@@ -601,6 +674,13 @@ h3.title{
   font-weight: 500;
   font-family: 'GmarketSansMedium';
 }
+@media screen and (max-width:768px) {
+  .moerBtn{
+    font-size: 12px;
+    font-weight: 200;
+    padding: 7px 3px;
+  }
+}
 
 .gitHub{
   margin: 16px;  border: 1px solid #fff;
@@ -612,15 +692,23 @@ h3.title{
   font-family: 'GmarketSansMedium';
 }
 
+@media screen and (max-width:768px) {
+  .gitHub{
+    font-size: 12px;
+    font-weight: 200;
+    padding: 7px 3px;
+  }
+}
+
 .tegItem{
   padding: 5px 9px;
   border-radius: 8px;
   font-size: 10px;
   font-weight: 300;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
   .tegItem{
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
@@ -638,6 +726,11 @@ h3.title{
 .company{
   font-size: 23px;
 }
+@media screen and (max-width:1000px) {
+  .company{
+    font-size: 20px;
+  }
+}
 
 .period{
   font-weight:200;
@@ -654,6 +747,13 @@ h3.title{
   padding-left: 15px;
   padding-bottom: 0.75rem;
 }
+
+@media screen and (max-width:1000px) {
+  .list li{
+    font-size: 14px;
+  }
+}
+
 
 .list li::after{
   position: absolute;
@@ -679,8 +779,25 @@ h3.title{
 
 .projectinner{
   justify-content: flex-start;
+  min-height: 1302px;
   margin-left: 21rem;
 }
+
+@media screen and (max-width:1500px) {
+  .portfolio_inner{
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-left: 0;
+    min-height: inherit;
+    padding-bottom: 8rem
+  }
+}
+@media screen and (max-width:768px) {
+  .portfolio_inner{
+    padding-bottom: 4rem;
+  }
+}
+
 
 .careerInner{
   margin-left: 22rem;
@@ -691,17 +808,37 @@ h3.title{
   gap: 34px;
 }
 
+@media screen and (max-width:1500px) {
+  .careerInner{
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}
+
 .educationInner{
-  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 34px;
   margin-left: 22rem;
+}
+
+@media screen and (max-width:1500px) {
+  .educationInner{
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-left: 0;
+  }
 }
 
 .educationCard{
   flex-wrap: wrap;
   width: 31%;
   gap: 15px;
+}
+@media screen and (max-width:1500px) {
+  .educationCard{
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .section4{
@@ -721,6 +858,18 @@ h3.title{
   text-align: center;
   padding-top: 7rem;
 }
+@media screen and (max-width:990px) {
+  .ending strong{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ending strong {
+    padding-top: 0rem;
+    font-size: 3rem;
+  }
+}
 
 .ending span{
   display: block;
@@ -729,6 +878,19 @@ h3.title{
   margin-top: -3rem;
 }
 
+@media screen and (max-width:990px) {
+  .ending span {
+    font-size: 2rem;
+    margin-top: -2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ending span {
+      font-size: 1rem;
+      margin-top: -10px;
+  }
+}
 .endingDeac{
   text-align: center;
   display: block;
@@ -736,10 +898,22 @@ h3.title{
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .endingDeac{
+    font-size: 12px;
+  }
+}
+
 .endingImg{
   max-width: 300px;
   width: 100%;
 }
+@media screen and (max-width:990px) {
+  .endingImg {
+    max-width: 246px;
+  }
+}
+
 
 .gitImages{
   max-width: 40px;
