@@ -717,6 +717,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}	
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;

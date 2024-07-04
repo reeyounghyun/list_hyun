@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <div class="contants-wrap" style="padding:0 30px;">
+  <div class="contants-wrap">
     <section class="section0">
       <div class="btn">
         <a href="https://github.com/reeyounghyun" target="_blank" rel="noopener">
@@ -40,13 +40,9 @@
       </div>
     </section>
     <section class="section1">
-      <h2 class="block w-full text-xl color-white mainTitle" style="padding: 10px; ">About me</h2>
+      <h2 class="block w-full color-white mainTitle fontTitle">About me</h2>
       <div class="main-title">
-        <h3 class="block color-white title"
-          style="text-transform:capitalize; text-align: center; font-size: 139px; font-family:Pretendard-Regular,serif;">
-          front
-          end
-        </h3>
+        <h3 class="block title">front end</h3>
         <p class="mainSubTitle">프론트앤드 개발자 <strong>이영현</strong>입니다.</p>
       </div>
       <figure class="container p-4 mx-auto" style="padding-top: 12rem;">
@@ -61,12 +57,11 @@
         <span class="text-sm color-white">#리더십</span>
       </p>
     </section>
-    <section class="section2" style="margin-top: 14rem;" data-aos="fade-down">
-      <h3 class="block pb-6 text-xl text-center color-white mainTitle" data-aos="fade-down">Skill & Tolls</h3>
-      <div class="flex items-center justify-center items gap-70">
-        <span class="sec3Title">
-          <strong class="w-full color-white"
-            style="padding-bottom: 12px; display:block; font-size:24px;">FrontEnd</strong>
+    <section class="section2">
+      <h3 class="block pb-6 text-center fontTitle-xl color-white mainTitle">Skill & Tolls</h3>
+      <div class="flex items-center justify-center items gap-70 flex-layout">
+        <div class="items">
+          <strong class="w-full color-white titleSm">FrontEnd</strong>
           <div class="flex items-center gap-15">
             <div class="image" style="width: 54px;">
               <figure>
@@ -99,10 +94,9 @@
               </figure>
             </div>
           </div>
-        </span>
+        </div>
         <div class="items">
-          <strong class="w-full color-white"
-            style="padding-bottom: 12px; display: block; font-size:24px;">Design</strong>
+          <strong class="w-full color-white titleSm">Design</strong>
           <div class="flex items-center gap-15">
             <div class="image" style="width:62px;">
               <figure>
@@ -122,8 +116,7 @@
           </div>
         </div>
         <div class="items">
-          <strong class="w-full color-white"
-            style="padding-bottom: 12px; display: block; font-size:24px;">Cooperation</strong>
+          <strong class="w-full color-white titleSm">Cooperation</strong>
           <div class="flex items-center gap-15">
             <div class="image" style="width:50px;">
               <figure>
@@ -150,18 +143,16 @@
       </div>
     </section>
     <section class="section3">
-      <nav id="menu" class="sticky top-0 h-24 p-4 text-black" style="max-width: 309px;">
-        <ul class="flex gap-3"
-          style="flex-direction: column; align-items: flex-start; align-items: flex-start; max-width: 309px;">
+      <nav id="menu" class="sticky top-0 h-24 p-4 text-black">
+        <ul class="flex gap-3 secNav">
           <li><a href="#project" class="text-6xl menu-link">Project</a></li>
           <li><a href="#career" class="text-6xl menu-link">Career</a></li>
           <li><a href="#education" class="text-6xl menu-link">Education</a></li>
         </ul>
       </nav>
       <div class="ml-auto">
-        <div id="project" class="p-4 section">
-          <div class="flex p-5 rounded shadow-lg inner projectinner portfolio_inner" data-aos="fade-down"
-            style="max-width: 1444px;  min-height: 1302px;">
+        <div id="project" class="p-4 section ">
+          <div class="flex p-5 rounded shadow-lg inner projectinner portfolio_inner">
             <!-- 버튼 영역 -->
             <div class="mb-5 space-x-2 tab-buttons">
               <button class="block px-4 py-2 text-base text-white bg-blue-500 rounded tab-btn active"
@@ -172,24 +163,24 @@
                 onclick="showTab(event, 3)">React</button>
             </div>
             <div class="wrapContent">
-              <div id="tab1" class="flex flex-wrap All tab-content active" style="cursor: pointer; overflow: hidden;">
+              <div id="tab1" class="flex flex-wrap All tab-content active">
                 <!-- 카드 1 자람콘텐츠 -->
-                <div class="wrap" onclick="togglePopup('popup1')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup1')">
                   <div id="card" class="bg-[#333] p-5 text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img20.png" alt="Image 1"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">자람콘텐츠</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">체험 학습 예약, 활동 검색, 맞춤형 교육
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">자람콘텐츠</h2>
+                        <p class="mb-4 text-base cradTitle-basic">체험 학습 예약, 활동 검색, 맞춤형 교육
                           프로그램
                           제공, 온라인 학습 자료 제공하는 웹페이지</p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">React</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -207,17 +198,17 @@
                   </div>
                 </div>
                 <!-- 카드 2 펀데이코리아 -->
-                <div class="wrap" onclick="togglePopup('popup2')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup2')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img21.png" alt="Image 2"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">펀데이 코리아</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">패키지 예약/ 여행 리뷰/ 체험단 모집 웹페이지
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">펀데이 코리아</h2>
+                        <p class="mb-4 text-base cradTitle-basic">패키지 예약/ 여행 리뷰/ 체험단 모집 웹페이지
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">React</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
@@ -239,22 +230,22 @@
                   </div>
                 </div>
                 <!-- 카드 3 박피디와황배우-->
-                <div class="wrap" onclick="togglePopup('popup3')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup3')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img12.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">박피디와황배우</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">암 환자 및 생존자의 삶의 질 향상을 위한 다양한
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">박피디와황배우</h2>
+                        <p class="mb-4 text-base cradTitle-basic">암 환자 및 생존자의 삶의 질 향상을 위한 다양한
                           사회
                           서비스를 제공하는 웹페이지</p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">개인</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -272,22 +263,22 @@
                   </div>
                 </div>
                 <!-- 카드 4 소리빛 -->
-                <div class="wrap" onclick="togglePopup('popup4')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup4')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img18.png" alt="Image3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">소리빛</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">청각 및 언어 발달에 관련된 프로그램과 서비스를
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">소리빛</h2>
+                        <p class="mb-4 text-base cradTitle-basic">청각 및 언어 발달에 관련된 프로그램과 서비스를
                           제공하는
                           전문 기관의 웹 페이지입니다</p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">개인</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -305,18 +296,18 @@
                   </div>
                 </div>
                 <!-- 카드 5 롯데 -->
-                <div class="wrap" onclick="togglePopup('popup5')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup5')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img3.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">롯데</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">롯데 계열사 웹페이지 유지보수했던 경험이
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">롯데</h2>
+                        <p class="mb-4 text-base cradTitle-basic">롯데 계열사 웹페이지 유지보수했던 경험이
                           있습니다.
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
@@ -338,19 +329,20 @@
                   </div>
                 </div>
                 <!-- 카드 6 에너지드림센터 -->
-                <div class="wrap" onclick="togglePopup('popup6')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup6')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img11.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">에너지드림센터</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">친환경 에너지 기술과 지속 가능한 도시 생활을
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">
+                          에너지드림센터</h2>
+                        <p class="mb-4 text-base cradTitle-basic">친환경 에너지 기술과 지속 가능한 도시 생활을
                           체험하고
                           배우는 교육 전시관 예약 및 소개 플렛폼
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
@@ -372,23 +364,23 @@
                   </div>
                 </div>
                 <!-- 카드 6 메디프 -->
-                <div class="wrap" onclick="togglePopup('popup7')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup7')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img10.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">메디프</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">상생포럼. 병원, 기업, 전문가, 연구자 등이
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">메디프</h2>
+                        <p class="mb-4 text-base cradTitle-basic">상생포럼. 병원, 기업, 전문가, 연구자 등이
                           자유롭게
                           네트워킹할 수 있는 플랫폼
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -408,22 +400,22 @@
               </div>
               <div id="tab2" class="html&php tab-content">
                 <!-- 카드 3 박피디와황배우-->
-                <div class="wrap" onclick="togglePopup('popup8')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup8')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img12.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">박피디와황배우</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">암 환자 및 생존자의 삶의 질 향상을 위한 다양한
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">박피디와황배우</h2>
+                        <p class="mb-4 text-base cradTitle-basic">암 환자 및 생존자의 삶의 질 향상을 위한 다양한
                           사회
                           서비스를 제공하는 웹페이지</p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">개인</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -441,22 +433,22 @@
                   </div>
                 </div>
                 <!-- 카드 4 소리빛 -->
-                <div class="wrap" onclick="togglePopup('popup9')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup4')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img18.png" alt="Image3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">소리빛</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">청각 및 언어 발달에 관련된 프로그램과 서비스를
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">소리빛</h2>
+                        <p class="mb-4 text-base cradTitle-basic">청각 및 언어 발달에 관련된 프로그램과 서비스를
                           제공하는
                           전문 기관의 웹 페이지입니다</p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">개인</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -468,24 +460,24 @@
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup9" class="popup">
+                  <div id="popup4" class="popup">
                     <span class="close" onclick="closePopup()">닫기</span>
                     <strong class="w-full font-black text-center ">준비중입니다</strong>
                   </div>
                 </div>
                 <!-- 카드 5 롯데 -->
-                <div class="wrap" onclick="togglePopup('popup10')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup5')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img3.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">롯데</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">롯데 계열사 웹페이지 유지보수했던 경험이
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">롯데</h2>
+                        <p class="mb-4 text-base cradTitle-basic">롯데 계열사 웹페이지 유지보수했던 경험이
                           있습니다.
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
@@ -501,25 +493,26 @@
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup10" class="popup">
+                  <div id="popup5" class="popup">
                     <span class="close" onclick="closePopup()">닫기</span>
                     <strong class="w-full font-black text-center ">준비중입니다</strong>
                   </div>
                 </div>
                 <!-- 카드 6 에너지드림센터 -->
-                <div class="wrap" onclick="togglePopup('popup11')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup6')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img11.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">에너지드림센터</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">친환경 에너지 기술과 지속 가능한 도시 생활을
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">
+                          에너지드림센터</h2>
+                        <p class="mb-4 text-base cradTitle-basic">친환경 에너지 기술과 지속 가능한 도시 생활을
                           체험하고
                           배우는 교육 전시관 예약 및 소개 플렛폼
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
@@ -535,29 +528,29 @@
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup11" class="popup">
+                  <div id="popup6" class="popup">
                     <span class="close" onclick="closePopup()">닫기</span>
                     <strong class="w-full font-black text-center ">준비중입니다</strong>
                   </div>
                 </div>
                 <!-- 카드 6 메디프 -->
-                <div class="wrap" onclick="togglePopup('popup12')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup7')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img10.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">메디프</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">상생포럼. 병원, 기업, 전문가, 연구자 등이
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">메디프</h2>
+                        <p class="mb-4 text-base cradTitle-basic">상생포럼. 병원, 기업, 전문가, 연구자 등이
                           자유롭게
                           네트워킹할 수 있는 플랫폼
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -569,7 +562,7 @@
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup12" class="popup">
+                  <div id="popup7" class="popup">
                     <span class="close" onclick="closePopup()">닫기</span>
                     <strong class="w-full font-black text-center ">준비중입니다</strong>
                   </div>
@@ -577,22 +570,22 @@
               </div>
               <div id="tab3" class="React tab-content">
                 <!-- 카드 1 자람콘텐츠 -->
-                <div class="wrap" onclick="togglePopup('popup13')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup1')">
                   <div id="card" class="bg-[#333] p-5 text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img20.png" alt="Image 1"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">자람콘텐츠</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">체험 학습 예약, 활동 검색, 맞춤형 교육
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">자람콘텐츠</h2>
+                        <p class="mb-4 text-base cradTitle-basic">체험 학습 예약, 활동 검색, 맞춤형 교육
                           프로그램
                           제공, 온라인 학습 자료 제공하는 웹페이지</p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">React</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축및유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
@@ -604,23 +597,23 @@
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup13" class="popup">
+                  <div id="popup1" class="popup">
                     <span class="close" onclick="closePopup()">닫기</span>
                     <strong class="w-full font-black text-center ">준비중입니다.</strong>
                   </div>
                 </div>
                 <!-- 카드 2 펀데이코리아 -->
-                <div class="wrap" onclick="togglePopup('popup14')" style="position: relative;">
+                <div class="wrap" onclick="togglePopup('popup2')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
                     <img src="./public/images/pc/enter_img21.png" alt="Image 2"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
-                      <div class="">
-                        <h2 class="mb-2 text-2xl font-bold" style="font-size: 21px; font-weight: bold;">펀데이 코리아</h2>
-                        <p class="mb-4 text-base" style="font-size: 13px; color: #c4c4c4;">패키지 예약/ 여행 리뷰/ 체험단 모집 웹페이지
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">펀데이 코리아</h2>
+                        <p class="mb-4 text-base cradTitle-basic">패키지 예약/ 여행 리뷰/ 체험단 모집 웹페이지
                         </p>
                       </div>
-                      <div class="flex gap-3" style="padding-top: 13px;">
+                      <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">React</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
@@ -636,7 +629,7 @@
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup14" class="popup">
+                  <div id="popup2" class="popup">
                     <span class="close" onclick="closePopup()">닫기</span>
                     <strong class="w-full font-black text-center ">준비중입니다</strong>
                   </div>
@@ -652,18 +645,17 @@
             <section
               class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard "
               style="flex-direction: column; width: 100%;">
-              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+              <div class="flex flex-col gap-3 p-5 text-white educationItem">
                 <span class="text-[#A6A6A6] block period">2023.11 - 2024.06</span>
-                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company educationItem-title">
                   라임프렌즈
-                  <span style="font-size: 16px;">@ 자사 플랫홈 개발 및 외주 클라이언트로 부터 웹 서비스를 제공, 구축 및 유지보수 진행</span>
+                  <span class="career-txt">@ 자사 플랫홈 개발 및 외주 클라이언트로 부터 웹 서비스를 제공, 구축 및 유지보수 진행</span>
                   <span class="text-sm">@ 개발본부 프런트앤드 - 퍼블리셔&리액트퍼블리싱 담당 / 정규직 </span>
                 </h4>
-                <ul class="text-base text-[#A6A6A6] list" style="font-family: sans-serif; color: #c7c7c7;">
-                  <li>
-                    <strong class="font-normal text-white" style="font-family: emoji;">FrontEnd</strong>와 협업하여 담당 영역을
+                <ul class="text-base text-[#A6A6A6] list educationItem-ul">
+                  <li> <strong class="font-normal text-white education-strong">FrontEnd</strong>와 협업하여 담당 영역을
                     분담하여
-                    <strong class="font-light text-white" style="font-family: emoji;">React Publishing</strong>을
+                    <strong class="font-light text-white education-strong-lang">React Publishing</strong>을
                     <span>반응형 웹페이지</span> 작업했습니다.
                   </li>
                   <li>
@@ -731,13 +723,13 @@
             <section
               class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard"
               style="flex-direction: column; width: 100%;">
-              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+              <div class="flex flex-col gap-3 p-5 text-white educationItem">
                 <span class="text-[#A6A6A6] block period">2023.02 - 2024.05</span>
-                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">이트라이브
-                  <span style="font-size: 16px;">@ 롯데정보통신 파견(가산)</span>
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company educationItem-title">이트라이브
+                  <span class="career-txt">@ 롯데정보통신 파견(가산)</span>
                   <span class="text-sm">@ 개발본부 UX/UI - 퍼블리셔 / 계약직 </span>
                 </h4>
-                <ul class="text-base text-[#A6A6A6] list" style="font-family: sans-serif; color: #c7c7c7;">
+                <ul class="text-base text-[#A6A6A6] list educationItem-ul">
                   <li>
                     <strong class="font-normal text-white">롯데월드 어드벤처(잠실&동부산), 롯데스카이힐, 세븐일레븐, 롯데웰푸드</strong>
                     등 프로젝트에 참여했습니다.
@@ -749,12 +741,12 @@
                     기간은 길지않지만 헙업에 가장 중요한 커뮤니케이션과, <strong class="font-normal text-white">프론트앤드와의 협업, git,
                       Branch</strong> 등 관련하여 스킬업 할 수 있었습니다.
                   </li>
-                  <li>기획자는 <strong class="font-normal text-white" style="font-family: emoji;">Jira, PowerPoint</strong>
-                    / 디자인은 <strong class="font-normal text-white" style="font-family: emoji;">Photoshop</strong>로 작업 및
+                  <li>기획자는 <strong class="font-normal text-white education-strong-lang">Jira, PowerPoint</strong>
+                    / 디자인은 <strong class="font-normal text-white education-strong-lang">Photoshop</strong>로 작업 및
                     소통 했으며, 각 프로그램을 통하여 원할한
                     커뮤니케이션으로 협업 했습니다.
                   </li>
-                  <li><strong class="font-normal text-white" style="font-family: emoji;">html, scss,
+                  <li><strong class="font-normal text-white education-strong-lang">html, scss,
                       javascript</strong>를 이용하여 진행했습니다.</li>
                 </ul>
               </div>
@@ -796,25 +788,25 @@
               style="flex-direction: column; width: 100%;">
               <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
                 <span class="text-[#A6A6A6] block period">2022.01 - 2023.12</span>
-                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">와이지앤
-                  <span style="font-size: 16px;">@ 자사 플랫홈 개발 및 외주 클라이언트로 부터 웹 서비스를 제공, 구축 및 유지보수 진행</span>
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company educationItem">와이지앤
+                  <span class="career-txt">@ 자사 플랫홈 개발 및 외주 클라이언트로 부터 웹 서비스를 제공, 구축 및 유지보수 진행</span>
                   <span class="text-sm">@ 개발본부 UX/UI - 퍼블리셔 / 정규직 </span>
                 </h4>
-                <ul class="text-base text-[#A6A6A6] list" style="font-family: sans-serif; color: #c7c7c7;">
+                <ul class="text-base text-[#A6A6A6] list educationItem-ul">
                   <li>프로젝트를 진행하는데 있어, 팀원과 분담하여
-                    <strong class="font-normal text-white" style="font-family: emoji;">Develop branch에</strong>
+                    <strong class="font-normal text-white .education-strong">Develop branch에</strong>
                     작업 하여
-                    <strong class="font-normal text-white" style="font-family: emoji;">main branch에 merge</strong>하여
+                    <strong class="font-normal text-white .education-strong">main branch에 merge</strong>하여
                     작업습니다.
                   </li>
-                  <li><strong class="font-normal text-white" style="font-family: emoji;">Photoshop</strong>로 디자인 작업 후
-                    <strong class="font-normal text-white" style="font-family: emoji;">반응형 웹페이지</strong> 작업했습니다.
+                  <li><strong class="font-normal text-white education-strong-lang">Photoshop</strong>로 디자인 작업 후
+                    <strong class="font-normal text-white education-strong">반응형 웹페이지</strong> 작업했습니다.
                   </li>
-                  <li><strong class="font-normal text-white" style="font-family: emoji;">html, css , jquery</strong>를
+                  <li><strong class="font-normal text-white .education-strong-lang">html, css , jquery</strong>를
                     이용하여 진행했습니다.
                   </li>
-                  <li><strong class="font-normal text-white" style="font-family: emoji;">vscode, git, Photoshop 등
-                    </strong>개발하는데 있어 자주사용하는<strong class="font-normal text-white" style="font-family: emoji;">
+                  <li><strong class="font-normal text-white .education-strong-lang">vscode, git, Photoshop 등
+                    </strong>개발하는데 있어 자주사용하는<strong class="font-normal text-white education-strong">
                       tool에</strong> 대해 학습하며, 작업하는데 있어 <strong class="font-normal text-white">능숙하게 사용</strong>이 가능합니다.
                   </li>
                 </ul>
@@ -853,23 +845,25 @@
             </section>
           </div>
         </div>
-        <div id="education" class="p-4 section" style="height: 75vh;">
+        <div id="education" class="p-4 section educationbox">
           <div class="flex inner educationInner">
             <!-- sbs아카데미 -->
             <section
               class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard educationCard">
-              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+              <div class="flex flex-col gap-3 p-5 text-white educationItem">
                 <span class="text-[#A6A6A6] block period">2024.07 - 2024.08</span>
-                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company educationItem-title">
                   sbs아카데미컴퓨터아트학원 - 안양캠퍼스
                   <span class="text-sm">@ 실무에서 사용가능한 리엑트 커리큘럼</span>
                 </h4>
-                <ul class="text-base text-[#A6A6A6] list" style="font-family: sans-serif; color: #c7c7c7;">
+                <ul class="text-base text-[#A6A6A6] list educationItem-ul">
                   <li>JavaScript, React 등 학습.</li>
-                  <li>5주 동안 <strong class="font-normal text-white" style="font-family: emoji;">React 기초 및 실수에 사용할수 있는 외부
+                  <li>5주 동안 <strong class="font-normal text-white education-strong">React 기초 및 실수에 사용할수 있는 외부
                       api</strong> 사용하는 방법에 대해 배웠습니다.</li>
-                  <li><strong class="font-normal text-white" style="font-family: emoji;">TypeScript, Hook, API
-                      개념</strong>을 이해하고, <strong class="font-normal text-white">구현 및 응용이</strong> 가능합니다.</li>
+                  <li>
+                    <strong class="font-normal text-white">TypeScript, Hook, API
+                      개념</strong>을 이해하고, <strong class="font-normal text-white">구현 및 응용이</strong> 가능합니다.
+                  </li>
                 </ul>
               </div>
               <div class="flex gap-1 p-5 skliIcon">
@@ -892,17 +886,17 @@
             <!-- 디코드학원 -->
             <section
               class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard educationCard">
-              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+              <div class="flex flex-col gap-3 p-5 text-white educationItem">
                 <span class="text-[#A6A6A6] block period">2023.03 - 2024.06</span>
-                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company educationItem-title">
                   디코드학원
                   <span class="text-sm">@ 리액트 프론트엔드 개발 실무 (React JS)</span>
                 </h4>
-                <ul class="text-base text-[#A6A6A6] list" style="font-family: sans-serif; color: #c7c7c7;">
+                <ul class="text-base text-[#A6A6A6] list educationItem-ul">
                   <li>JavaScript, React 등 학습.</li>
-                  <li>12주 동안 <strong class="font-normal text-white" style="font-family: emoji;">React 기초 및 실무</strong>에
+                  <li>12주 동안 <strong class="font-normal text-white education-strong">React 기초 및 실무</strong>에
                     사용할 수 있는
-                    <strong class="font-normal text-white" style="font-family: emoji;">외부 API</strong> 사용하는 방법에 대해
+                    <strong class="font-normal text-white education-strong-lang">외부 API</strong> 사용하는 방법에 대해
                     배웠습니다.
                   </li>
                   <li>수업이 종료된 이후에도 네이버 카페를 통하여 <strong class="font-normal text-white">커뮤니케이션</strong>을 이어나아가고 있습니다.</li>
@@ -928,20 +922,20 @@
             <!-- 그림컴퓨터아트학원 -->
             <section
               class="overflow-hidden flex flex-col rounded h-[30rem] bg-lightGray relative justify-between group careerCard educationCard">
-              <div class="flex flex-col gap-3 p-5 text-white" style="flex-direction: column;">
+              <div class="flex flex-col gap-3 p-5 text-white educationItem">
                 <span class="text-[#A6A6A6] block period">2023.06 - 2023.11</span>
-                <h4 class="flex flex-col gap-1 text-2xl font-bold company" style="flex-direction: column;">그린컴퓨터아트학원 -
+                <h4 class="flex flex-col gap-1 text-2xl font-bold company educationItem-title">그린컴퓨터아트학원 -
                   안양캠퍼스
                   <span class="text-sm">@HTML 구조화 및 CSS 스타일링, 반응형 웹디자인</span>
                 </h4>
-                <ul class="text-base text-[#A6A6A6] list" style="font-family: sans-serif; color: #c7c7c7;">
+                <ul class="text-base text-[#A6A6A6] list educationItem-ul">
                   <li>포토샵과 일러스트 <strong class="font-normal text-white">기초적인 툴 </strong>사용방법을 익혔습니다.</li>
-                  <li><strong class="font-normal text-white" style="font-family: emoji;">html, css, jquery</strong> 기초적인
+                  <li><strong class="font-normal text-white education-strong">html, css, jquery</strong> 기초적인
                     이론부터 심화과정을 걸쳐 학습하였습니다.</li>
                   <li>포토샵을 이용하여 디자인 시안을 제작하였으며, 이를 토대로<strong class="font-normal text-white"> 반응형 웹페이지</strong>를 제작했습니다.
                   </li>
                   <li>이 과정을 통하여 <strong class="font-normal text-white">디자인을 통한 반응형 웹페이지</strong> 제작이 가능하여,
-                    <strong class="font-normal text-white" style="font-family: emoji;">flex, grid style</strong>을 이용하여
+                    <strong class="font-normal text-white education-strong-lang">flex, grid style</strong>을 이용하여
                     구현할 수 있습니다.
                   </li>
                 </ul>
