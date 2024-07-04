@@ -240,6 +240,21 @@ h3.title{
 .main-title{
   position: relative;
 }
+@media screen and (max-width:990px) {
+  .main-title{
+    margin-top: 4rem;
+  }
+}
+
+.image-mo{
+  padding-top: 12rem;
+}
+@media screen and  (max-width:990px) {
+  .image-mo{
+    padding-top: 6rem;
+  }
+}
+
 
 .mainSubTitle{
   font-family:"GmarketSansMedium", sans-serif;
