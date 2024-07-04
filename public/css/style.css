@@ -111,7 +111,7 @@
 }
 
 .section {
-  padding-top: 60px; /* 네비게이션 높이만큼 패딩 추가 */
+  padding-top: 10px; /* 네비게이션 높이만큼 패딩 추가 */
 }
 
 .memoji {
@@ -161,13 +161,15 @@ h3.title{
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease;
+  position: relative;
+  gap: 15px 20px;
 }
+
 .tab-content.active {
   display: flex;
   opacity: 1;
-  gap: 16px;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1240px;
   justify-content: flex-start;
 }
 
@@ -182,7 +184,7 @@ h3.title{
   align-items: center;
   gap: 9px;
   /* border-radius: 0 0 30px 30px; */
-  max-height: 945px;
+  max-height: 862px;
 }
 
 .tab-btn{
@@ -217,7 +219,10 @@ h3.title{
   font-weight: 500;
   display: inline-block;
   max-width: 80px;
+}
 
+.wrap{
+  position: relative;
 }
 .card{
   position: relative;
@@ -225,10 +230,40 @@ h3.title{
   border-radius: 10px;
   background: #333333db;
 }
-.hoverItme{
-  opacity: 0;
+#card{
+  position: relative;
+  height: 424px;
 }
-.card:hover .hoverItme {
+
+#card .hoverItme{
+  /* display: flex; */
+  display:none;
+  transition: all 0.7s;
+}
+
+#card:hover .hoverItme{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #1c1c1c;
+  z-index: 200;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  transition: all 0.5s;
+  border: 1.2px solid rgb(101 101 101);
+  border-radius: 15px;
+}
+
+/* .hoverItme{
+  opacity: 0;
+} */
+
+/* .card:hover .hoverItme {
   opacity: 1;
   width: 100%;
   height: 100%;
@@ -240,7 +275,7 @@ h3.title{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .card:hover .hoverItme strong{
   width:100%;
@@ -254,9 +289,61 @@ h3.title{
   display:inline-block;
   padding:5px 0;
   width:150px;
-  margin:0 auto;
+  margin: 1rem auto 0 auto;
 }
 
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 99;
+}
+
+.popup {
+	width: 50%;
+	height: 800px;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: #fff;
+	z-index: 10000;
+	overflow-x: scroll;
+}
+
+.close {
+	text-align: right;
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.moerBtn{
+  border: 1px solid #fff;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'GmarketSansMedium';
+}
+
+.gitHub{
+  margin: 16px;  border: 1px solid #fff;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'GmarketSansMedium';
+}
 .tegItem{
   padding: 5px 9px;
   border-radius: 8px;
@@ -280,8 +367,9 @@ h3.title{
 }
 
 .period{
-  font-weight: 100;
-  font-size: 10px;
+  font-weight:200;
+  font-size: 14px;
+  font-family: emoji;
 }
 
 .list{
@@ -291,7 +379,7 @@ h3.title{
 .list li{
   position: relative;
   padding-left: 15px;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.75rem;
 }
 
 .list li::after{
@@ -317,8 +405,8 @@ h3.title{
 }
 
 .projectinner{
-  justify-content: center;
-  margin-left: 10rem;
+  justify-content: flex-start;
+  margin-left: 21rem;
 }
 
 .careerInner{
@@ -481,6 +569,5 @@ h3.title{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  max-height: 184px;
+  min-height: 169px;
 }
