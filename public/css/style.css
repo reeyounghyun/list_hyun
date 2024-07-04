@@ -43,7 +43,7 @@
 .fontTitle-xl{
   line-height: inherit;
   font-size: 30px;
-  @media screen and (max-width:1400px) {
+  @media screen and (max-width:768px) {
     font-size: 25px;
   }
 }
@@ -94,6 +94,7 @@
 #menu{
   z-index: 1000; 
   border-radius: 0 0 15px 15px;
+  max-width: 323px;
 }
 
 .menu-link{
@@ -103,7 +104,6 @@
 .menu-link.active {
   color: #fff; /* 활성화된 링크의 색상 */
 }
-
 
 #menu.fixed {
   position: fixed;
@@ -121,6 +121,11 @@
 
 .section {
   padding-top: 10px; /* 네비게이션 높이만큼 패딩 추가 */
+}
+@media screen and (max-width:990px) {
+  .section {
+    padding-bottom: 8rem;
+  }
 }
 
 .memoji {
@@ -183,13 +188,79 @@ h3.title{
   color: #fff;
 }
 
+.section2{
+  margin-top: 14rem;
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width:1000px) {
+  .items{
+    width:100%;
+  }
+  .items >div{
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .flex-layout{
+    padding: 0 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .flex-layout{
+    padding: 0 12rem;
+  }
+}
+
+@media screen and (max-width:976px) {
+  .flex-layout{
+    padding: 0 10rem;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .flex-layout{
+    padding: 0 8rem;
+  }
+}
+@media screen and (max-width:640px) {
+  .flex-layout{
+    padding: 0 5rem;
+  }
+}
+
+.titleSm{
+  padding-bottom: 12px;
+  display:block;
+  font-size:24px;
+}
+@media screen and (max-width:990px) {
+  .titleSm{
+    font-size:20px;
+  }
+}
+
 .gif{
   transition: all 0.8s;
 }
+
 .gif:hover{
   transform: scale(1.2);
   transition: all 0.5s;
 }
+
+@media screen (min-width:1980px) and (max-width:2560px) {
+  .wrapContent{
+    max-width: 1400px;
+
+  }
+}
+
 .tab-content {
   display: none;
   opacity: 0;
@@ -197,27 +268,68 @@ h3.title{
   position: relative;
   gap: 15px 20px;
 }
+@media screen and (min-width:2560px) {
+  .tab-content {
+    gap: 27px 35px;
+  }
+}
+/* @media screen and (max-width:1515px) {
+  .tab-content {
+    padding: 0 4rem;
+  }
+} */
 
 .tab-content.active {
   display: flex;
   opacity: 1;
   flex-wrap: wrap;
-  max-width: 1240px;
   justify-content: flex-start;
 }
 
+@media screen and (max-width:1280px) {
+  .tab-content.active {
+    max-width: 1240px;
+  }
+}
+
+.portfolio_inner{
+  min-height: 1302px;
+}
+@media screen and (max-width:1515px) {
+  .portfolio_inner{
+    flex-direction: column;
+    /* max-width: 1444px; */
+  }
+}
+
 .tab-buttons{
-  background: #181818;
-  padding: 44px 2px 0 2px;
-  flex: 1 0 auto;
   display: flex;
-  max-width: 121px;
+  width:100%;
   height: initial;
+  max-height: 876px;
+  flex: 1 0 auto;
   flex-direction: column;
   align-items: center;
   gap: 9px;
-  /* border-radius: 0 0 30px 30px; */
-  max-height: 862px;
+  padding: 44px 2px 0 2px;
+  background: #181818;
+}
+@media screen and (min-width:1520px) {
+  .tab-buttons{
+    max-width: 190px;
+  }
+}
+@media screen and (max-width:1515px) {
+  .tab-buttons{
+    flex-direction: row;
+    width: inherit;
+    max-width: max-content;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    gap: 0;
+    flex: initial;
+  }
 }
 
 .tab-btn{
@@ -234,6 +346,14 @@ h3.title{
   transition-duration: .15s;
   border-bottom-color rgb(0, 0, 0);
   max-width: 80px;
+}
+@media screen and (max-width:1515px) {
+  .tab-btn{
+    margin: 0 1rem;
+    max-width: initial;
+    width:auto;
+    padding: 0 16px;
+  }
 }
 
 .tab-btn.active {
@@ -254,18 +374,44 @@ h3.title{
   max-width: 80px;
 }
 
+@media screen and (max-width:1515px) {
+  .tab-btn.active {
+    margin: 0 1rem;
+    max-width: initial;
+    width:auto;
+    padding: 0 16px;
+  }
+}
+
+.secNav{
+  max-width: 309px;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
 .wrap{
   position: relative;
 }
+
 .card{
   position: relative;
   max-width: 288px;
   border-radius: 10px;
   background: #333333db;
 }
+
 #card{
   position: relative;
   height: 424px;
+  max-width: 288px;
+  border-radius: 10px;
+  background: #333333db;
+}
+
+@media screen and (max-width:1000px) {
+  #card {
+    max-width: 276px;
+  }
 }
 
 #card .hoverItme{
