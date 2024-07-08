@@ -31,9 +31,9 @@ font-family: "GmarketSansMedium", sans-serif;
   padding: 0 30px;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1440px) {
   .contants-wrap {
-    padding: 0;
+    padding: 1rem 0 0 0;
   }
 }
 
@@ -43,15 +43,8 @@ font-family: "GmarketSansMedium", sans-serif;
 
 .fontTitle {
   line-height: inherit;
-  font-size: 45px;
+  font-size: 2rem;
   padding: 10px;
-
-}
-
-@media screen and (max-width:1400px) {
-  .fontTitle {
-    font-size: 30px;
-  }
 }
 
 @media screen and (max-width:990px) {
@@ -84,7 +77,20 @@ font-family: "GmarketSansMedium", sans-serif;
 }
 
 .tag span {
+  font-size: 1.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width:1440px) {
+  .tag span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .tag span {
+    font-size: 14px;
+  }
 }
 
 .justify-center {
@@ -114,7 +120,7 @@ font-family: "GmarketSansMedium", sans-serif;
   max-width: 323px;
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1440px) {
   #menu {
     max-width: inherit;
     width: 100%;
@@ -237,26 +243,21 @@ font-family: "GmarketSansMedium", sans-serif;
 }
 
 h3.title {
-  font-family: "Pretendard-Regular", serif;
   position: relative;
-  text-align: center;
-  font-size: 139px;
+  font-size: 10rem;
   color: #ffbfbf;
   text-align: center;
   text-transform: capitalize;
+  font-family: "Pretendard-Regular", serif;
 }
 
-@media screen and (max-width:1400px) {
+
+@media screen and (max-width:1440px) {
   h3.title {
-    font-size: 120px;
+    font-size: 6rem;
   }
 }
 
-@media screen and (max-width:1200px) {
-  h3.title {
-    font-size: 100px;
-  }
-}
 
 @media screen and (max-width:900px) {
   h3.title {
@@ -264,7 +265,7 @@ h3.title {
   }
 }
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:768px) {
   h3.title {
     font-size: 68px;
   }
@@ -295,34 +296,35 @@ h3.title {
   width: 100%;
   position: absolute;
   left: 50%;
-  bottom: -21px;
+  bottom: -29px;
   text-align: center;
   font-weight: 500;
-  font-size: 51px;
+  font-size: 4rem;
   transform: translate(-50%, -2%);
-  color: #ccc;
+  color: rgb(123 123 123 / 76%);
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1440px) {
   .mainSubTitle {
-    font-size: 45px;
+    font-size: 2.1rem;
   }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1280px) {
   .mainSubTitle {
     font-size: 40px;
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:990px) {
   .mainSubTitle {
     font-size: 35px;
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 768px) {
   .mainSubTitle {
+    bottom: -9px;
     font-size: 18px;
   }
 }
@@ -338,17 +340,30 @@ h3.title {
   margin-bottom: 10rem;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1440px) {
+  .sec2Title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:1440px) {
   .items {
     width: 100%;
   }
 
   .items>div {
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 29px;
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
+  .items>div {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:1440px) {
   .flex-layout {
     padding: 0 10rem;
     flex-direction: column;
@@ -356,13 +371,7 @@ h3.title {
   }
 }
 
-@media screen and (max-width:1000px) {
-  .flex-layout {
-    padding: 0 12rem;
-  }
-}
-
-@media screen and (max-width:976px) {
+@media screen and (max-width:990px) {
   .flex-layout {
     padding: 0 10rem;
     gap: 30px;
@@ -387,9 +396,10 @@ h3.title {
   font-size: 24px;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1440px) {
   .titleSm {
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 1.3rem;
   }
 }
 
@@ -428,11 +438,27 @@ h3.title {
   }
 }
 
+@media screen and (min-width:1440px) {
+  .tab-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
 .tab-content.active {
   display: flex;
   opacity: 1;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+@media screen and (max-width:1440px) {
+  .tab-content.active {
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width:1280px) {
@@ -441,37 +467,51 @@ h3.title {
   }
 }
 
+@media screen and (max-width:990px) {
+  .tab-content.active {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
 .tab-buttons {
   display: flex;
   width: 100%;
-  height: initial;
-  max-height: 876px;
   flex: 1 0 auto;
   flex-direction: column;
   align-items: center;
   gap: 9px;
   padding: 44px 2px 0 2px;
-  background: #181818;
+  background: #2a2a2a;
+  border-radius: 0 15px 15px 0;
 }
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1440px) {
   .tab-buttons {
     max-width: 190px;
   }
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1440px) {
   .tab-buttons {
+    justify-content: space-between;
     flex-direction: row;
-    max-width: max-content;
-    padding: 10px 0;
-    border-radius: 20px;
+    max-width: initial;
+    padding: 10px;
+    border-radius: 30px;
     margin-bottom: 3rem;
-    gap: 0;
-    flex: initial;
+    width: 26%;
+    margin: 0 auto 3rem auto;
   }
 }
 
+@media screen and (max-width:768px) {
+  .tab-buttons {
+    width: 50%;
+  }
+}
+gir
 .tab-btn {
   max-width: 118px;
   width: 100%;
@@ -484,44 +524,18 @@ h3.title {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   transition-duration: .15s;
-  border-bottom-color rgb(0, 0, 0);
-  max-width: 80px;
-}
-
-@media screen and (max-width:1515px) {
-  .tab-btn {
-    margin: 0 1rem;
-    max-width: initial;
-    width: auto;
-    padding: 0 16px;
-  }
 }
 
 .tab-btn.active {
-  margin: 0 auto;
   border-radius: 30px;
   padding: 3px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
   text-align: center;
   background-color: rgb(241 242 245);
-  text-align: center;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-  transition-duration: .15s;
   font-weight: 500;
   display: inline-block;
-  max-width: 80px;
-}
-
-@media screen and (max-width:1515px) {
-  .tab-btn.active {
-    margin: 0 1rem;
-    max-width: initial;
-    width: auto;
-    padding: 0 16px;
-  }
 }
 
 .secNav {
@@ -530,7 +544,7 @@ h3.title {
   align-items: flex-start;
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1440px) {
   .secNav {
     flex-direction: row;
     max-width: inherit;
@@ -544,24 +558,19 @@ h3.title {
 }
 
 #card {
+  overflow: hidden;
   position: relative;
-  max-width: 288px;
-  border-radius: 10px;
+  max-width: 388px;
+  width: 100%;
+  border-radius: 15px;
   background: #333333db;
+  height: 100%;
 }
 
-@media screen and (max-width:1331px) {
+@media screen and (max-width:1520px) {
   #card {
-    max-width: 330px;
-    height: inherit;
-  }
-}
-
-@media screen and (max-width:1200px) {
-  #card {
-    max-width: 250px;
+    max-width: 256px;
     width: 100%;
-    height: inherit;
   }
 }
 
@@ -594,7 +603,7 @@ h3.title {
 }
 
 .cradTitle-basic {
-  font-size: 13px;
+  font-size: 14px;
   color: #c4c4c4;
 }
 
@@ -604,7 +613,14 @@ h3.title {
   }
 }
 
+.txt-box>h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
 .tagLlist {
+  flex-wrap: wrap;
   padding-top: 13px;
 }
 
@@ -760,9 +776,9 @@ h3.title {
 
 .tegItem {
   padding: 5px 9px;
-  border-radius: 8px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
+  border-radius: 8px;
 }
 
 @media screen and (max-width:768px) {
@@ -839,11 +855,12 @@ h3.title {
 
 .projectinner {
   justify-content: flex-start;
+  gap: 10px;
   min-height: 1302px;
-  margin-left: 21rem;
+  margin-left: 20rem;
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1440px) {
   .portfolio_inner {
     margin-top: 2rem;
     flex-direction: column;
@@ -1091,5 +1108,4 @@ h3.title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 169px;
 }
