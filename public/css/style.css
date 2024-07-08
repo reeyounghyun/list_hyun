@@ -53,6 +53,12 @@ font-family: "GmarketSansMedium", sans-serif;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .fontTitle {
+    font-size: 15px;
+  }
+}
+
 .fontTitle-xl {
   line-height: inherit;
   font-size: 30px;
@@ -74,6 +80,12 @@ font-family: "GmarketSansMedium", sans-serif;
   padding-top: 30px;
   padding-bottom: 20px;
   gap: 10px;
+}
+
+@media screen and (max-width:320px) {
+  .tag {
+    flex-wrap: wrap;
+  }
 }
 
 .tag span {
@@ -154,6 +166,12 @@ font-family: "GmarketSansMedium", sans-serif;
   }
 }
 
+@media screen and (max-width: 375px) {
+  .menu-link {
+    font-size: 19px;
+  }
+}
+
 .menu-link.active {
   color: #fff;
   /* 활성화된 링크의 색상 */
@@ -191,6 +209,7 @@ font-family: "GmarketSansMedium", sans-serif;
 }
 
 .educationbox {
+  padding-top: 5rem;
   height: 75vh;
 }
 
@@ -271,6 +290,12 @@ h3.title {
   }
 }
 
+@media screen and (max-width:320px) {
+  h3.title {
+    font-size: 52px;
+  }
+}
+
 .main-title {
   position: relative;
 }
@@ -346,6 +371,12 @@ h3.title {
   }
 }
 
+@media screen and (max-width:320px) {
+  .sec2Title {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width:1440px) {
   .items {
     width: 100%;
@@ -390,6 +421,12 @@ h3.title {
   }
 }
 
+@media screen and (max-width:320px) {
+  .flex-layout {
+    padding: 0 20px;
+  }
+}
+
 .titleSm {
   padding-bottom: 12px;
   display: block;
@@ -400,6 +437,12 @@ h3.title {
   .titleSm {
     font-weight: 300;
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .titleSm {
+    font-size: 16px;
   }
 }
 
@@ -517,6 +560,12 @@ h3.title {
   }
 }
 
+@media screen and (max-width:320px) {
+  .tab-buttons {
+    width: 96%;
+  }
+}
+
 .tab-btn {
   max-width: 118px;
   width: 100%;
@@ -555,6 +604,12 @@ h3.title {
     max-width: inherit;
     width: 100%;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .secNav {
+    flex-wrap: wrap;
   }
 }
 
@@ -861,7 +916,7 @@ h3.title {
 .projectinner {
   justify-content: flex-start;
   gap: 10px;
-  min-height: 1302px;
+  min-height: 1215px;
   margin-left: 20rem;
 }
 
@@ -883,15 +938,15 @@ h3.title {
 
 
 .careerInner {
-  margin-left: 22rem;
+  margin-left: 20rem;
   flex-wrap: wrap;
   justify-content: flex-start;
-  overflow-x: auto;
-  height: 91vh;
+  /* overflow-x: auto;
+  height: 91vh; */
   gap: 34px;
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1440px) {
   .careerInner {
     margin-top: 2rem;
     margin-left: 0;
@@ -901,10 +956,10 @@ h3.title {
 .educationInner {
   justify-content: flex-start;
   gap: 34px;
-  margin-left: 22rem;
+  margin-left: 20rem;
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1440px) {
   .educationInner {
     margin-top: 2rem;
     flex-direction: column;
@@ -928,6 +983,12 @@ h3.title {
 .section4 {
   background-color: #f5f5f7;
   padding: 6rem 0 3rem 0;
+}
+
+@media screen and (max-width:640px) {
+  .section4 {
+    padding: 6rem 0 8rem 0;
+  }
 }
 
 .ending {
@@ -991,6 +1052,14 @@ h3.title {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .endingDeac {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
 .endingImg {
   max-width: 300px;
   width: 100%;
@@ -1022,6 +1091,12 @@ h3.title {
   bottom: 20px;
   right: 40px;
   z-index: 1000;
+}
+
+@media screen and (max-width:640px) {
+  .section0 {
+    right: 4px;
+  }
 }
 
 .section0 .btn img {
