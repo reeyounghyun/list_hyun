@@ -782,25 +782,25 @@ h3.title {
 }
 
 .popup {
-  width: 50%;
-  height: 800px;
+  overflow: scroll;
+  width: 60%;
+  height: 744px;
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background-color: #fff;
+  background-color: rgb(255 255 255 / 91%);
   z-index: 10000;
-  overflow-x: scroll;
 }
 
 .close {
-  text-align: right;
   display: block;
-  font-size: 15px;
-  font-weight: 500;
+  float: right;
   cursor: pointer;
+  display: inline-block;
+  max-width: 42px;
 }
 
 .moerBtn {
