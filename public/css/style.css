@@ -57,6 +57,12 @@
   }
 }
 
+@media screen and (max-width:990px) {
+  .fontTitle {
+    font-size: 1.5rem;
+  }
+}
+
 
 .fontTitle-xl {
   line-height: inherit;
@@ -273,9 +279,30 @@ h3.title {
   }
 }
 
+@media screen and (max-width:490px) {
+  h3.title{
+    font-size: 68px;
+  }
+}
+
 .main-title {
   position: relative;
 }
+@media screen and (max-width:990px) {
+  .main-title{
+    margin-top: 4rem;
+  }
+}
+
+.image-mo{
+  padding-top: 12rem;
+}
+@media screen and  (max-width:990px) {
+  .image-mo{
+    padding-top: 6rem;
+  }
+}
+
 
 @media screen and (max-width:990px) {
   .main-title {
@@ -329,6 +356,12 @@ h3.title {
   .mainSubTitle {
     font-size: 18px;
   }
+}
+
+@media screen and (max-width: 490px) {
+    .mainSubTitle {
+        font-size: 18px;
+    }
 }
 
 .mainSubTitle strong {
