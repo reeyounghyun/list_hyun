@@ -16,8 +16,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* font-family: "Song Myung", serif; */
-/*font-family: "GmarketSansMedium", sans-serif; */
+/* 
+font-family: "Song Myung", serif;
+font-family: "GmarketSansMedium", sans-serif;
+*/
+
 .mainTitle {
   font-weight: bold;
   font-family: "GmarketSansMedium", sans-serif;
@@ -57,13 +60,6 @@
   }
 }
 
-@media screen and (max-width:990px) {
-  .fontTitle {
-    font-size: 1.5rem;
-  }
-}
-
-
 .fontTitle-xl {
   line-height: inherit;
   font-size: 30px;
@@ -76,11 +72,6 @@
 .text-sm {
   line-height: inherit;
 }
-
-/* .memoji {
-  max-width: 420px;
-  margin: 0 auto;
-} */
 
 .tag {
   width: 100%;
@@ -279,12 +270,6 @@ h3.title {
   }
 }
 
-@media screen and (max-width:490px) {
-  h3.title {
-    font-size: 68px;
-  }
-}
-
 .main-title {
   position: relative;
 }
@@ -304,24 +289,6 @@ h3.title {
     padding-top: 6rem;
   }
 }
-
-
-@media screen and (max-width:990px) {
-  .main-title {
-    margin-top: 4rem;
-  }
-}
-
-.image-mo {
-  padding-top: 12rem;
-}
-
-@media screen and (max-width:990px) {
-  .image-mo {
-    padding-top: 6rem;
-  }
-}
-
 
 .mainSubTitle {
   font-family: "GmarketSansMedium", sans-serif;
@@ -351,12 +318,6 @@ h3.title {
 @media screen and (max-width:900px) {
   .mainSubTitle {
     font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .mainSubTitle {
-    font-size: 18px;
   }
 }
 
@@ -467,12 +428,6 @@ h3.title {
   }
 }
 
-/* @media screen and (max-width:1515px) {
-  .tab-content {
-    padding: 0 4rem;
-  }
-} */
-
 .tab-content.active {
   display: flex;
   opacity: 1;
@@ -485,7 +440,6 @@ h3.title {
     max-width: 1240px;
   }
 }
-
 
 .tab-buttons {
   display: flex;
@@ -589,16 +543,8 @@ h3.title {
   position: relative;
 }
 
-.card {
-  position: relative;
-  max-width: 288px;
-  border-radius: 10px;
-  background: #333333db;
-}
-
 #card {
   position: relative;
-  height: 424px;
   max-width: 288px;
   border-radius: 10px;
   background: #333333db;
@@ -627,10 +573,6 @@ h3.title {
   }
 }
 
-/* .cardTitle-lg{
-  font-size: 21px;
-  font-weight: bold;
-} */
 @media screen and (min-width:2580px) {
   .cardTitle-lg {
     font-size: 23px;
@@ -677,7 +619,6 @@ h3.title {
     flex-wrap: wrap;
   }
 }
-
 
 
 #card .hoverItme {
