@@ -438,13 +438,18 @@ h3.title {
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:1440px) {
   .tab-content {
     width: 80%;
     margin: 0 auto;
   }
 }
 
+@media screen and (max-width:990px) {
+  .tab-content {
+    gap: 50px 20px;
+  }
+}
 
 .tab-content.active {
   display: flex;
@@ -506,12 +511,12 @@ h3.title {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:990px) {
   .tab-buttons {
-    width: 50%;
+    width: 58%;
   }
 }
-gir
+
 .tab-btn {
   max-width: 118px;
   width: 100%;
@@ -528,7 +533,7 @@ gir
 
 .tab-btn.active {
   border-radius: 30px;
-  padding: 3px;
+  padding: 3px 2rem;
   font-weight: bold;
   font-size: 1rem;
   color: #000;
@@ -560,7 +565,7 @@ gir
 #card {
   overflow: hidden;
   position: relative;
-  max-width: 388px;
+  max-width: 286px;
   width: 100%;
   border-radius: 15px;
   background: #333333db;
@@ -569,12 +574,18 @@ gir
 
 @media screen and (max-width:1520px) {
   #card {
-    max-width: 256px;
+    max-width: 240px;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 612px) {
+@media screen and (max-width:990px) {
+  #card {
+    max-width: 290px;
+  }
+}
+
+@media screen and (max-width: 632px) {
   #card {
     max-width: inherit;
     width: 100%;
@@ -751,7 +762,7 @@ gir
   .moerBtn {
     font-size: 12px;
     font-weight: 200;
-    padding: 7px 3px;
+    padding: 10px 3px;
   }
 }
 
@@ -770,21 +781,15 @@ gir
   .gitHub {
     font-size: 12px;
     font-weight: 200;
-    padding: 7px 3px;
+    padding: 10px 3px;
   }
 }
 
 .tegItem {
-  padding: 5px 9px;
+  padding: 5px 15px;
   font-size: 12px;
   font-weight: 300;
   border-radius: 8px;
-}
-
-@media screen and (max-width:768px) {
-  .tegItem {
-    font-size: 10px;
-  }
 }
 
 .careerCard {
