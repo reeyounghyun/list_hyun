@@ -1299,3 +1299,17 @@ h3.title {
 .bodyPark {
   padding-top: 13rem;
 }
+
+.headerSoribit {
+  background: #d9b022;
+}
+
+.headerSoribit .image {
+  bottom: -76%;
+}
+
+.popupContents .headerSoribit .tegItem {
+  background: #efefef;
+  color: #333;
+  font-weight: 700;
+}
