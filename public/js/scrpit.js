@@ -103,3 +103,10 @@ function togglePopup(popupId) {
     overlay.style.display = 'block';
   }
 }
+
+function closePopup() {
+  var popup = document.getElementById('popup');
+  if (popup) {
+      popup.style.display = 'none';
+  }
+}
