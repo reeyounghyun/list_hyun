@@ -62,8 +62,10 @@ font-family: "GmarketSansMedium", sans-serif;
 .fontTitle-xl {
   line-height: inherit;
   font-size: 30px;
+}
 
-  @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
+  .fontTitle-xl {
     font-size: 25px;
   }
 }
