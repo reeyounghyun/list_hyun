@@ -1242,7 +1242,7 @@ h3.title {
 }
 
 .popupContents .headerComm .tegItem {
-  background-color: #00123dcf;
+  background: #00123dcf;
 }
 
 .itemComm p {
@@ -1271,4 +1271,13 @@ h3.title {
   background-color: rgb(239, 239, 241);
   border-right: 12px;
   padding: 4px 9px;
+}
+
+.funday {
+  background: #67b0d5;
+}
+
+.popupContents .funday .tegItem {
+  color: #ffffff;
+  background: #3083ad;
 }
