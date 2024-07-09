@@ -193,6 +193,7 @@ font-family: "GmarketSansMedium", sans-serif;
 
 .section {
   padding-top: 10px;
+  margin-bottom: 13rem;
   /* 네비게이션 높이만큼 패딩 추가 */
 }
 
@@ -205,6 +206,7 @@ font-family: "GmarketSansMedium", sans-serif;
 @media screen and (max-width:768px) {
   .section {
     padding-bottom: 0rem;
+    margin-bottom: 0;
   }
 }
 
