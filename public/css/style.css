@@ -1571,6 +1571,14 @@ h3.title {
   font-weight: 700;
 }
 
+.headerSeouledc {
+  background: #004135;
+}
+
+.popupContents .headerSeouledc .tegItem {
+  background: #46a768cf;
+}
+
 .headerSeouledc .image {
   width: 100%;
   margin: 0 auto;
@@ -1658,7 +1666,12 @@ h3.title {
 }
 
 .headerLotte {
+  background: #8f001a;
   justify-content: center;
+}
+
+.popupContents .headerLotte .tegItem {
+  background: #af5858;
 }
 
 .bodyLottom {
