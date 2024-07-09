@@ -1,112 +1,5 @@
-/**
+// ScrollHandler.js
 document.addEventListener("DOMContentLoaded", function() {
-  const line = document.querySelector(".line");
-  const dots = document.querySelectorAll(".dot");
-  const sections = document.querySelectorAll(".content .filler");
-
-  window.addEventListener("scroll", function() {
-    const scrollY = window.scrollY;
-
-    // 스크롤에 따라 line의 높이를 증가시킵니다.
-    line.style.height = `${40 + scrollY / 5}px`;
-
-    // 스크롤에 따라 dots의 배경색을 변경합니다.
-    dots.forEach((dot, index) => {
-      const sectionOffset = sections[index].offsetTop;
-      if (scrollY >= sectionOffset - window.innerHeight / 2 && scrollY < sectionOffset + sections[index].offsetHeight) {
-        dot.style.backgroundColor = "plum";
-        dot.style.transform = `translateY(${scrollY / 10}px)`;
-      } else {
-        dot.style.backgroundColor = "white";
-        dot.style.transform = "translateY(0)";
-      }
-    });
-  });
-});
-
-  // dark-mode stert
-    function initTheme() {
-      const savedTheme = localStorage.getItem("theme");
-      const isDark = savedTheme
-        ? savedTheme == "dark"
-        : window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(isDark);
-    }
-    function setTheme(isDark) {
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-      if (isDark) {
-        document.body.classList.add("dark-mode");
-      } else {
-        document.body.classList.remove("dark-mode");
-      }
-    }
-    function toggleTheme() {
-      setTheme(localStorage.getItem("theme") !== "dark");
-    }
-
-    $(document).ready(function () {
-      initTheme();
-      $(".custom-select").click(function () {
-        toggleTheme();
-      });
-
-      $('.custom-select__trigger').click(function () {
-        $('.custom-select').toggleClass('open');
-      });
-
-      $('.custom-option').click(function () {
-        var value = $(this).attr('data-value');
-        $('#mySelect').val(value);
-        $('.custom-select').removeClass('open');
-        $('.custom-option').removeClass('selected');
-        $(this).addClass('selected');
-      });
-
-      $(document).click(function (e) {
-        if (!$(e.target).closest('.custom-select').length) {
-          $('.custom-select').removeClass('open');
-        }
-      });
-    });
- **/
-
-//스크롤다운.JS
-// document.addEventListener("DOMContentLoaded", function() {
-//   function scrollDown() {
-//       let text = document.querySelector("h2");
-//       let textString = text.textContent;
-//       let split = textString.split("");
-//       text.textContent = "";
-//       for (let i = 0; i < split.length; i++) {
-//           let span = document.createElement("span");
-//           span.classList.add("spanText");
-//           span.textContent = split[i];
-//           text.appendChild(span);
-//       }
-      
-//       gsap.registerPlugin(ScrollTrigger);
-      
-//       let tl = gsap.timeline();
-//       tl.from(".spanText", {
-//           y: -500,
-//           opacity: 0,
-//           scrollTrigger: {
-//               pin: true,
-//               scrub: 1,
-//               trigger: "section",
-//               start: "top top",
-//               end: "bottom top"
-//           },
-//           stagger: {
-//               amount: 2
-//           }
-//       });
-//   }
-  
-//   scrollDown();
-// });
-document.addEventListener("DOMContentLoaded", function() {
-  const section3 = document.querySelector('.section3');
   const sections = document.querySelectorAll(".section");
   const menuLinks = document.querySelectorAll(".menu-link");
 
@@ -143,3 +36,70 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+// AOSInit.js
+document.addEventListener("DOMContentLoaded", function() {
+  AOS.init({
+    duration: 1300, // 애니메이션 지속 시간
+  });
+});
+
+// ScrollToTop.js
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById('scrollToTop').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+// Tabs.js
+function showTab(event, tabIndex) {
+  // 모든 탭 콘텐츠를 숨김
+  document.querySelectorAll('.tab-content').forEach(function(element) {
+    element.classList.remove('active');
+    element.style.display = 'none';
+  });
+
+  // 모든 탭 버튼에서 'active' 클래스 제거
+  document.querySelectorAll('.tab-btn').forEach(function(element) {
+    element.classList.remove('active');
+    element.classList.remove('bg-blue-500');
+    element.classList.add('bg-gray-200');
+    element.classList.remove('text-white');
+    element.classList.add('text-gray-700');
+  });
+
+  // 클릭한 탭에 해당하는 콘텐츠를 표시
+  var tabId = 'tab' + tabIndex;
+  var tabElement = document.getElementById(tabId);
+  tabElement.style.display = 'flex';
+  setTimeout(() => {
+    tabElement.classList.add('active');
+    tabElement.style.opacity = 1;
+  }, 0);
+
+  // 클릭한 버튼에 'active' 클래스 추가
+  event.currentTarget.classList.add('active');
+  event.currentTarget.classList.add('bg-blue-500');
+  event.currentTarget.classList.remove('bg-gray-200');
+  event.currentTarget.classList.add('text-white');
+  event.currentTarget.classList.remove('text-gray-700');
+}
+
+// 초기화 함수로 첫 번째 탭을 활성화 상태로 설정
+document.addEventListener("DOMContentLoaded", function() {
+  showTab({ currentTarget: document.querySelector('.tab-buttons .tab-btn.active') }, 1);
+});
+
+// Popup.js
+function togglePopup(popupId) {
+  var popup = document.getElementById(popupId);
+  var overlay = document.getElementById('overlay');
+  if (popup.style.display === 'block') {
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  } else {
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+}
