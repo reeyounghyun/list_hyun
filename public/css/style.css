@@ -457,7 +457,7 @@ h3.title {
   transition: all 0.5s;
 }
 
-@media screen (min-width:1980px) and (max-width:2560px) {
+@media screen and (min-width:1980px) and (max-width:2560px) {
   .wrapContent {
     max-width: 1400px;
 
