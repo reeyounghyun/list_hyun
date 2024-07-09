@@ -1281,3 +1281,21 @@ h3.title {
   color: #ffffff;
   background: #3083ad;
 }
+
+
+.headerPark {
+  background: #d35721f5;
+}
+
+.popupContents .headerPark .tegItem {
+  border: 1px solid rgb(255 255 255 / 37%);
+  background: #ff6a2a;
+}
+
+.headerPark .image {
+  bottom: -65%;
+}
+
+.bodyPark {
+  padding-top: 13rem;
+}
