@@ -1646,11 +1646,20 @@ h3.title {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .headerComm {
+    min-height: 472px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .headerMedif {
     min-height: 385px;
   }
 }
+
+
 
 .headerMedif .image {
   bottom: -31%;
@@ -1658,6 +1667,13 @@ h3.title {
   margin: 0 auto;
   left: 0;
   right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .headerMedif .image {
+    width: 60%;
+    bottom: -45px;
+  }
 }
 
 .popupContents .headerMedif .tegItem {
