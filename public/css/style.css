@@ -45,6 +45,15 @@ font-family: "GmarketSansMedium", sans-serif;
   font-family: sans-serif;
 }
 
+@media screen and (max-width:426px) {
+  .tagBg {
+    font-size: 13px;
+    width: 67%;
+    padding: 18px 0 21px 1px;
+    text-align: center;
+  }
+}
+
 .color-white {
   color: #fff;
 }
@@ -1264,6 +1273,16 @@ h3.title {
   }
 }
 
+@media screen and (max-width:321px) {
+  .headerComm {
+    min-height: 340px;
+  }
+}
+
+
+
+
+
 .headerComm .headerTitle {
   font-family: 'GmarketSansMedium';
   padding: 1rem 0 1rem 0;
@@ -1274,6 +1293,12 @@ h3.title {
 @media screen and (max-width:1200px) {
   .headerComm .headerTitle {
     font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width:426px) {
+  .headerComm .headerTitle {
+    padding: 0;
   }
 }
 
@@ -1306,7 +1331,7 @@ h3.title {
 @media screen and (max-width:1200px) {
   .headerComm .image {
     width: 60%;
-    bottom: -127px;
+    bottom: -93px;
   }
 }
 
@@ -1319,6 +1344,12 @@ h3.title {
 @media screen and (max-width: 768px) {
   .headerComm .image {
     bottom: -44px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .headerComm .image {
+    bottom: -72px;
   }
 }
 
