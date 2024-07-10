@@ -1836,8 +1836,6 @@ h3.title {
   }
 }
 
-
-
 .soria {
   background: #78b1a9;
 }
@@ -1856,4 +1854,9 @@ h3.title {
   .soria .image {
     bottom: -58px;
   }
+}
+
+.tit-item {
+  display: block;
+  padding: 1rem 0;
 }
