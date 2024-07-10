@@ -1481,7 +1481,6 @@ h3.title {
   }
 }
 
-
 .headerPark {
   background: #d35721f5;
 }
@@ -1811,4 +1810,50 @@ h3.title {
 
 .color-white {
   color: #fff;
+}
+
+.soriaImag {
+  object-fit: cover;
+  height: 260px;
+  width: 100%;
+}
+
+@media screen and (max-width:1490px) {
+  .soriaImag {
+    height: 217px;
+  }
+}
+
+@media screen and (max-width:831px) {
+  .soriaImag {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width:632px) {
+  .soriaImag {
+    height: auto;
+  }
+}
+
+
+
+.soria {
+  background: #78b1a9;
+}
+
+.popupContents .soria .tegItem {
+  background: #1f664e
+}
+
+@media screen and (max-width: 768px) {
+  .soria .image {
+    bottom: -111px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .soria .image {
+    bottom: -58px;
+  }
 }
