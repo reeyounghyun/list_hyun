@@ -1260,6 +1260,7 @@ h3.title {
 @media screen and (max-width:768px) {
   .headerComm {
     min-height: 385px;
+    padding: 0 1rem;
   }
 }
 
@@ -1283,10 +1284,14 @@ h3.title {
 .headerComm .image {
   position: absolute;
   max-width: 695px;
-  bottom: -250px;
+  bottom: -266px;
   left: 21%;
   /* transform: translate(-50%, -50%); */
   background: transparent;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (max-width:1633px) {
@@ -1301,13 +1306,19 @@ h3.title {
 @media screen and (max-width:1200px) {
   .headerComm .image {
     width: 60%;
-    bottom: -45px;
+    bottom: -127px;
   }
 }
 
 @media screen and (max-width:990px) {
   .headerComm .image {
-    bottom: -49px;
+    bottom: -113px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerComm .image {
+    bottom: -44px;
   }
 }
 
@@ -1323,11 +1334,11 @@ h3.title {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .bodyComm {
     padding-top: 6rem;
   }
-}
+} */
 
 .itemComm .bodyTitle {
   display: block;
@@ -1431,15 +1442,9 @@ h3.title {
   }
 }
 
-@media screen and (max-width: 640px) {
-  .headerPark {
-    min-height: 340px;
-  }
-}
-
 @media screen and (max-width: 550px) {
   .headerPark {
-    min-height: 320px;
+    min-height: 446px;
   }
 }
 
@@ -1666,7 +1671,7 @@ h3.title {
 }
 
 @media screen and (max-width: 990px) {
-  .headerComm {
+  .headerMedif {
     min-height: 472px;
   }
 }
@@ -1689,7 +1694,7 @@ h3.title {
 @media screen and (max-width: 1200px) {
   .headerMedif .image {
     width: 60%;
-    bottom: -45px;
+    bottom: -93px;
   }
 }
 
