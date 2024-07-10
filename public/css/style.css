@@ -1265,7 +1265,7 @@ h3.title {
 
 .headerComm .headerTitle {
   font-family: 'GmarketSansMedium';
-  padding: 0 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 2.7rem;
   color: #e9e9e9;
 }
@@ -1448,9 +1448,12 @@ h3.title {
   background: #ff6a2a;
 }
 
+.headerPark .headerTitle {
+  padding: 0 0 1rem 0;
+}
 
 .headerPark .image {
-  bottom: -26%;
+  bottom: -33%;
   width: 100%;
   margin: 0 auto;
   left: 0;
@@ -1479,7 +1482,7 @@ h3.title {
 }
 
 .bodyPark {
-  padding-top: 13rem;
+  padding-top: 18rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1497,7 +1500,6 @@ h3.title {
 .headerSoribit {
   background: #d9b022;
 }
-
 
 @media screen and (max-width: 1200px) {
   .headerSoribit {
@@ -1527,6 +1529,10 @@ h3.title {
   .headerSoribit {
     min-height: 302px;
   }
+}
+
+.headerSoribit .headerTitle {
+  padding: 0 0 1rem 0;
 }
 
 .headerSoribit .image {
@@ -1596,6 +1602,7 @@ h3.title {
   margin: 0 auto;
   left: 0;
   right: 0;
+  bottom: -237px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1671,10 +1678,8 @@ h3.title {
   }
 }
 
-
-
 .headerMedif .image {
-  bottom: -31%;
+  bottom: -39%;
   width: 100%;
   margin: 0 auto;
   left: 0;
