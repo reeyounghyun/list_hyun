@@ -37,8 +37,20 @@ font-family: "GmarketSansMedium", sans-serif;
   }
 }
 
+.tagBg {
+  color: #333;
+  font-size: 15px;
+  padding: 42px 0 18px 0;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
 .color-white {
   color: #fff;
+}
+
+.padding-1 {
+  padding: 24px 0 18px 0;
 }
 
 .fontTitle {
@@ -1518,7 +1530,7 @@ h3.title {
 }
 
 .headerSoribit .image {
-  bottom: -32%;
+  bottom: -39%;
   width: 100%;
   margin: 0 auto;
   left: 0;
@@ -1699,12 +1711,4 @@ h3.title {
   text-decoration: underline;
   background: #ffe6e6;
   padding: 4px;
-}
-
-.tagBg {
-  color: #333;
-  font-size: 15px;
-  padding: 42px 0 18px 0;
-  font-weight: 700;
-  font-family: sans-serif;
 }
