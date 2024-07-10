@@ -54,7 +54,13 @@ font-family: "GmarketSansMedium", sans-serif;
   }
 }
 
-.color-white {
+@media screen and (max-width:426px) {
+  .tagBg {
+    display: block;
+  }
+}
+
+.sm-text .color-white {
   color: #fff;
 }
 
@@ -1443,6 +1449,19 @@ h3.title {
 
 .funday {
   background: #67b0d5;
+}
+
+
+@media screen and (max-width: 768px) {
+  .headerJaramc .image {
+    bottom: -111px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .headerJaramc .image {
+    bottom: -68px;
+  }
 }
 
 .popupContents .funday .tegItem {
