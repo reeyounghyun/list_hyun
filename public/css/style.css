@@ -1598,6 +1598,18 @@ h3.title {
   background: #004135;
 }
 
+@media screen and (max-width:768px) {
+  .headerSeouledc {
+    min-height: 469px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .headerSeouledc {
+    min-height: 438px;
+  }
+}
+
 .popupContents .headerSeouledc .tegItem {
   background: #46a768cf;
 }
@@ -1626,13 +1638,7 @@ h3.title {
 
 @media screen and (max-width: 640px) {
   .headerSeouledc .image {
-    bottom: -114px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .headerSeouledc .image {
-    bottom: -83px;
+    bottom: -59px;
   }
 }
 
@@ -1701,6 +1707,12 @@ h3.title {
 .popupContents .headerMedif .tegItem {
   border: 1px solid rgb(199 199 199 / 19%);
   background: #031b6b;
+}
+
+@media screen and (max-width: 768px) {
+  .bodyMedif {
+    padding-top: 8rem;
+  }
 }
 
 .headerLotte {
