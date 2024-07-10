@@ -169,6 +169,87 @@
             </div>
             <div class="wrapContent">
               <div id="tab1" class="flex flex-wrap All tab-content active">
+                <!-- 카드 2 펀데이코리아 -->
+                <div class="wrap" onclick="togglePopup('popup2')">
+                  <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
+                    <img src="./public/images/pc/enter_img21.png" alt="Image 2"
+                      class="object-cover w-full h-40 mb-4 rounded">
+                    <div class="project-text">
+                      <div class="txt-box">
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">펀데이 코리아</h2>
+                        <p class="mb-4 text-base cradTitle-basic">외국인을 대상으로 패키지 예약/ 여행 리뷰/ 체험단 모집 반응형 웹 페이지
+                        </p>
+                      </div>
+                      <div class="flex gap-3 tagLlist">
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
+                        <span class="text-white bg-gray-600 tegItem">React</span>
+                        <span class="text-white bg-gray-600 tegItem">반응형</span>
+                        <span class="text-white bg-gray-600 tegItem">구축</span>
+                      </div>
+                    </div>
+                    <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
+                      <button type="button"
+                        class="px-4 py-2 text-center text-white rounded hover:bg-gray-500 btn moerBtn">자세히
+                        보기</button>
+                      <a href="https://fundaykorea.com/" target="_blank" rel="noopener"
+                        class="px-4 py-2 mt-2 text-center text-white rounded hover:bg-gray-500 btn gitHub">바로가기</a>
+                    </div>
+                  </div>
+                  <!-- 팝업내용 -->
+                  <div id="popup2" class="popup">
+                    <span class="close" onclick="closePopup()">
+                      <img src="./public/images/icons/close.png" alt="닫기">
+                    </span>
+                    <div class="popupContents">
+                      <div class="headerComm funday">
+                        <div class="flex gap-3 tagLlist">
+                          <span class="text-white bg-gray-600 tegItem">협업</span>
+                          <span class="text-white bg-gray-600 tegItem">React</span>
+                          <span class="text-white bg-gray-600 tegItem">반응형</span>
+                          <span class="text-white bg-gray-600 tegItem">구축</span>
+                        </div>
+                        <span class="tagBg">프론트 2명 / 백앤드 1명 디자인 1명 기획 1명 (총 5명 참여)</span>
+                        <strong class="w-full font-black text-center headerTitle">펀데이코리아</strong>
+                        <div class="image">
+                          <img src="./public/images/pc/funday.png" alt="펀데이코리아">
+                        </div>
+                      </div>
+                      <div class="bodyComm">
+                        <div class="itemComm">
+                          <strong class="bodyTitle">
+                            <!-- <i class="tw tw-interrobang"></i> -->
+                            주요 기능 및 특징
+                          </strong>
+                          <p><span class="bg">다양한 이벤트</span> 문화, 역사, 축제 등 다양한 주제로 이벤트를 개최하여 참여 기회를 제공합니다.</p>
+                          <p><span class="bg">참여자 맞춤 서비스</span> 외국인 참가자들을 위한 맞춤형 서비스와 지원을 제공합니다.</p>
+                          <p><span class="bg">네트워킹 기회</span> 이벤트를 통해 다양한 사람들과의 네트워킹 기회를 제공합니다.</p>
+                          <p><span class="bg">온라인 플랫폼</span> 웹사이트를 통해 이벤트 정보를 제공하고 신청을 받을 수 있습니다.</p>
+                          <p><span class="bg">커뮤니티 형성</span> 참가자들이 소통하고 교류할 수 있는 커뮤니티를 제공합니다.</p>
+
+                        </div>
+                        <div class="itemComm">
+                          <strong class="bodyTitle">
+                            <!-- <i class="tw tw-interrobang"></i> -->
+                            사용 기술 및 언어
+                          </strong>
+                          <p><span class="bg">프론트엔드</span> React를 사용하여 동적이고 반응형 웹 애플리케이션을 구현했습니다.</p>
+                          <p><span class="bg">버전 관리</span>Git을 사용하여 코드의 버전 관리를 체계적으로 관리합니다.</p>
+                          <p><span class="bg">백엔드</span> Node.js를 사용하여 서버를 구축하고 API를 관리합니다.</p>
+                        </div>
+                        <div class="itemComm">
+                          <strong class="bodyTitle">
+                            <!-- <i class="tw tw-interrobang"></i> -->
+                            작업 기여도 <span class="sm-text">50% 참여했습니다.</span>
+                          </strong>
+                          <p><span class="bg">UI 디자인 및 구현</span> React를 사용하여 사용자 친화적인 UI를 설계하고 구현했습니다.</p>
+                          <p><span class="bg">스타일링 및 레이아웃</span> SCSS를 사용하여 페이지의 스타일링과 레이아웃을 구성했습니다.</p>
+                          <p><span class="bg">반응형 디자인</span> 다양한 디바이스에서 최적의 사용자 경험을 제공하기 위해 반응형 디자인을 적용했습니다.</p>
+                          <p><span class="bg">접근성 향상</span> 웹 접근성 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- 카드 1 자람콘텐츠 -->
                 <div class="wrap" onclick="togglePopup('popup1')">
                   <div id="card" class="bg-[#333] p-5 text-white flex-1 max-w-xs card">
@@ -250,61 +331,61 @@
                     </div>
                   </div>
                 </div>
-                <!-- 카드 2 펀데이코리아 -->
-                <div class="wrap" onclick="togglePopup('popup2')">
+                <!-- 카드 4 소리빛 -->
+                <div class="wrap" onclick="togglePopup('popup4')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
-                    <img src="./public/images/pc/enter_img21.png" alt="Image 2"
+                    <img src="./public/images/pc/enter_img18.png" alt="Image3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
                       <div class="txt-box">
-                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">펀데이 코리아</h2>
-                        <p class="mb-4 text-base cradTitle-basic">외국인을 대상으로 패키지 예약/ 여행 리뷰/ 체험단 모집 반응형 웹 페이지
-                        </p>
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">소리빛</h2>
+                        <p class="mb-4 text-base cradTitle-basic">청각 및 언어 발달에 관련된 프로그램과 서비스를
+                          제공하는 전문 기관의 반응형 웹 페이지</p>
                       </div>
                       <div class="flex gap-3 tagLlist">
-                        <span class="text-white bg-gray-600 tegItem">협업</span>
-                        <span class="text-white bg-gray-600 tegItem">React</span>
+                        <span class="text-white bg-gray-600 tegItem">개인</span>
+                        <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축</span>
+                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
                       <button type="button"
                         class="px-4 py-2 text-center text-white rounded hover:bg-gray-500 btn moerBtn">자세히
                         보기</button>
-                      <a href="https://fundaykorea.com/" target="_blank" rel="noopener"
+                      <a href="https://soribit.limefriends.com/" target="_blank" rel="noopener"
                         class="px-4 py-2 mt-2 text-center text-white rounded hover:bg-gray-500 btn gitHub">바로가기</a>
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup2" class="popup">
+                  <div id="popup4" class="popup">
                     <span class="close" onclick="closePopup()">
                       <img src="./public/images/icons/close.png" alt="닫기">
                     </span>
                     <div class="popupContents">
-                      <div class="headerComm funday">
+                      <div class="headerComm headerSoribit">
                         <div class="flex gap-3 tagLlist">
-                          <span class="text-white bg-gray-600 tegItem">협업</span>
-                          <span class="text-white bg-gray-600 tegItem">React</span>
+                          <span class="text-white bg-gray-600 tegItem">개인</span>
+                          <span class="text-white bg-gray-600 tegItem">html</span>
                           <span class="text-white bg-gray-600 tegItem">반응형</span>
-                          <span class="text-white bg-gray-600 tegItem">구축</span>
+                          <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                         </div>
-                        <strong class="w-full font-black text-center headerTitle">펀데이코리아</strong>
+                        <strong class="w-full font-black text-center headerTitle">소리빛</strong>
                         <div class="image">
-                          <img src="./public/images/pc/funday.png" alt="펀데이코리아">
+                          <img src="./public/images/pc/soribit.png" alt="소리빛">
                         </div>
                       </div>
-                      <div class="bodyComm">
+                      <div class="bodyComm bodySoribit">
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
                             주요 기능 및 특징
                           </strong>
-                          <p><span class="bg">다양한 이벤트</span> 문화, 역사, 축제 등 다양한 주제로 이벤트를 개최하여 참여 기회를 제공합니다.</p>
-                          <p><span class="bg">참여자 맞춤 서비스</span> 외국인 참가자들을 위한 맞춤형 서비스와 지원을 제공합니다.</p>
-                          <p><span class="bg">네트워킹 기회</span> 이벤트를 통해 다양한 사람들과의 네트워킹 기회를 제공합니다.</p>
-                          <p><span class="bg">온라인 플랫폼</span> 웹사이트를 통해 이벤트 정보를 제공하고 신청을 받을 수 있습니다.</p>
-                          <p><span class="bg">커뮤니티 형성</span> 참가자들이 소통하고 교류할 수 있는 커뮤니티를 제공합니다.</p>
+                          <p><span class="bg">청각 재활 서비스</span> 난청 아동과 성인을 위한 청각 재활 프로그램을 제공합니다.</p>
+                          <p><span class="bg">언어 치료</span> 언어 발달에 어려움을 겪는 아동과 성인을 위한 맞춤형 언어 치료를 제공합니다.</p>
+                          <p><span class="bg">통합 발달 모니터링</span> 아동의 종합적인 발달 상태를 모니터링하고 맞춤형 프로그램을 제공합니다.</p>
+                          <p><span class="bg">온라인 상담 예약</span> 웹사이트를 통해 전문가와의 상담을 쉽게 예약할 수 있습니다.</p>
+                          <p><span class="bg">연령별 맞춤 프로그램</span> 유소년부터 성인까지 다양한 연령대에 맞춘 프로그램을 제공합니다.</p>
 
                         </div>
                         <div class="itemComm">
@@ -312,19 +393,21 @@
                             <!-- <i class="tw tw-interrobang"></i> -->
                             사용 기술 및 언어
                           </strong>
-                          <p><span class="bg">프론트엔드</span> React를 사용하여 동적이고 반응형 웹 애플리케이션을 구현했습니다.</p>
+                          <p><span class="bg">프론트엔드</span> HTML5와 CSS3를 사용하여 웹 페이지의 구조와 스타일을 설계했습니다.</p>
+                          <p><span class="bg">백엔드</span> PHP를 사용하여 서버 로직을 구현하고 데이터베이스와 상호작용했습니다.</p>
                           <p><span class="bg">버전 관리</span>Git을 사용하여 코드의 버전 관리를 체계적으로 관리합니다.</p>
-                          <p><span class="bg">백엔드</span> Node.js를 사용하여 서버를 구축하고 API를 관리합니다.</p>
+                          <p><span class="bg">스타일링</span> SCSS를 사용하여 모듈화된 스타일을 적용하고 유지보수성을 높였습니다.</p>
                         </div>
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
-                            작업 기여도 <span class="sm-text">50% 참여했습니다.</span>
+                            작업 기여도 <span class="sm-text">오로지 혼자서 100% 작업했습니다.</span>
                           </strong>
-                          <p><span class="bg">UI 디자인 및 구현</span> React를 사용하여 사용자 친화적인 UI를 설계하고 구현했습니다.</p>
-                          <p><span class="bg">스타일링 및 레이아웃</span> SCSS를 사용하여 페이지의 스타일링과 레이아웃을 구성했습니다.</p>
-                          <p><span class="bg">반응형 디자인</span> 다양한 디바이스에서 최적의 사용자 경험을 제공하기 위해 반응형 디자인을 적용했습니다.</p>
-                          <p><span class="bg">접근성 향상</span> 웹 접근성 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
+                          <p><span class="bg">웹 페이지 레이아웃 설계</span> 사용자 경험을 최적화하기 위해 반응형 웹 디자인을 구현했습니다.</p>
+                          <p><span class="bg">애니메이션 효과</span> 사용자 인터랙션을 향상시키기 위해 CSS 애니메이션을 구현했습니다.</p>
+                          <p><span class="bg">접근성 개선</span> 웹 접근성 표준을 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
+                          <p><span class="bg">크로스 브라우저 호환성 테스트</span> 다양한 브라우저에서 일관된 사용자 경험을 제공하기 위해 호환성 테스트를 진행했습니다.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -412,19 +495,19 @@
                     </div>
                   </div>
                 </div>
-                <!-- 카드 4 소리빛 -->
-                <div class="wrap" onclick="togglePopup('popup4')">
+                <!-- 카드 6 메디프 -->
+                <div class="wrap" onclick="togglePopup('popup7')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
-                    <img src="./public/images/pc/enter_img18.png" alt="Image3"
+                    <img src="./public/images/pc/enter_img10.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
                       <div class="txt-box">
-                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">소리빛</h2>
-                        <p class="mb-4 text-base cradTitle-basic">청각 및 언어 발달에 관련된 프로그램과 서비스를
-                          제공하는 전문 기관의 반응형 웹 페이지</p>
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">메디프</h2>
+                        <p class="mb-4 text-base cradTitle-basic">병원, 전문가, 연구자 등이 자유롭게 네트워킹할 수 있는 반응형 웹 페이지
+                        </p>
                       </div>
                       <div class="flex gap-3 tagLlist">
-                        <span class="text-white bg-gray-600 tegItem">개인</span>
+                        <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
                         <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
@@ -434,61 +517,60 @@
                       <button type="button"
                         class="px-4 py-2 text-center text-white rounded hover:bg-gray-500 btn moerBtn">자세히
                         보기</button>
-                      <a href="https://soribit.limefriends.com/" target="_blank" rel="noopener"
+                      <a href="https://winwin.medif.or.kr/" target="_blank" rel="noopener"
                         class="px-4 py-2 mt-2 text-center text-white rounded hover:bg-gray-500 btn gitHub">바로가기</a>
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup4" class="popup">
+                  <div id="popup7" class="popup">
                     <span class="close" onclick="closePopup()">
                       <img src="./public/images/icons/close.png" alt="닫기">
                     </span>
                     <div class="popupContents">
-                      <div class="headerComm headerSoribit">
+                      <div class="headerComm headerMedif">
                         <div class="flex gap-3 tagLlist">
-                          <span class="text-white bg-gray-600 tegItem">개인</span>
-                          <span class="text-white bg-gray-600 tegItem">html</span>
+                          <span class="text-white bg-gray-600 tegItem">협업</span>
+                          <span class="text-white bg-gray-600 tegItem">React</span>
                           <span class="text-white bg-gray-600 tegItem">반응형</span>
                           <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
                         </div>
-                        <strong class="w-full font-black text-center headerTitle">소리빛</strong>
+                        <strong class="w-full font-black text-center headerTitle">메디프</strong>
                         <div class="image">
-                          <img src="./public/images/pc/soribit.png" alt="소리빛">
+                          <img src="./public/images/pc/medif.png" alt="메디프">
                         </div>
                       </div>
-                      <div class="bodyComm bodySoribit">
+                      <div class="bodyComm bodyPark">
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
                             주요 기능 및 특징
                           </strong>
-                          <p><span class="bg">청각 재활 서비스</span> 난청 아동과 성인을 위한 청각 재활 프로그램을 제공합니다.</p>
-                          <p><span class="bg">언어 치료</span> 언어 발달에 어려움을 겪는 아동과 성인을 위한 맞춤형 언어 치료를 제공합니다.</p>
-                          <p><span class="bg">통합 발달 모니터링</span> 아동의 종합적인 발달 상태를 모니터링하고 맞춤형 프로그램을 제공합니다.</p>
-                          <p><span class="bg">온라인 상담 예약</span> 웹사이트를 통해 전문가와의 상담을 쉽게 예약할 수 있습니다.</p>
-                          <p><span class="bg">연령별 맞춤 프로그램</span> 유소년부터 성인까지 다양한 연령대에 맞춘 프로그램을 제공합니다.</p>
-
+                          <p><span class="bg">의료기기 검색</span> 다양한 의료기기를 쉽게 검색할 수 있는 기능을 제공합니다.</p>
+                          <p><span class="bg">전문가 검색</span> 다양한 분야의 전문가를 검색하고 협업할 수 있는 기능을 제공합니다.</p>
+                          <p><span class="bg">협업 매칭</span> 의료기기 기업과 전문가, 임상의를 연결하여 협업 기회를 제공합니다.</p>
+                          <p><span class="bg">상생포럼</span> 의료기기 산업 관련 정보와 네트워킹 기회를 제공하는 포럼을 운영합니다.</p>
+                          <p><span class="bg">온라인 상담</span> 전문가와의 온라인 상담을 통해 의료기기 관련 지원을 받을 수 있습니다.</p>
                         </div>
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
                             사용 기술 및 언어
                           </strong>
-                          <p><span class="bg">프론트엔드</span> HTML5와 CSS3를 사용하여 웹 페이지의 구조와 스타일을 설계했습니다.</p>
-                          <p><span class="bg">백엔드</span> PHP를 사용하여 서버 로직을 구현하고 데이터베이스와 상호작용했습니다.</p>
-                          <p><span class="bg">데이터베이스</span> MySQL을 사용하여 데이터를 저장하고 관리했습니다.</p>
-                          <p><span class="bg">스타일링</span> SCSS를 사용하여 모듈화된 스타일을 적용하고 유지보수성을 높였습니다.</p>
-                          <p><span class="bg">호스팅</span> Apache 서버를 사용하여 웹사이트를 호스팅하고 안정적인 서비스를 제공합니다.</p>
+                          <p><span class="bg">프론트엔드 마크업</span> HTML5를 사용하여 웹 페이지의 구조를 설계하고 작성했습니다.</p>
+                          <p><span class="bg">버전 관리</span> Git을 사용하여 코드의 버전 관리를 체계적으로 수행했습니다.</p>
+                          <p><span class="bg">스타일링</span> CSS3를 활용하여 웹 페이지의 디자인과 레이아웃을 구현했습니다.</p>
+                          <p><span class="bg">인터랙티브 요소</span> JavaScript를 사용하여 웹 페이지에 동적인 기능과 사용자 인터랙션을 추가했습니다.</p>
+                          <p><span class="bg">이미지 최적화</span> 웹 페이지 로딩 속도를 개선하기 위해 이미지 파일을 최적화하고 압축했습니다.</p>
                         </div>
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
-                            작업 기여도
+                            작업 기여도 <span class="sm-text">메인 페이지 100% 작업, 서브페이지 60% 작업 참여했습니다.</span>
                           </strong>
                           <p><span class="bg">웹 페이지 레이아웃 설계</span> 사용자 경험을 최적화하기 위해 반응형 웹 디자인을 구현했습니다.</p>
-                          <p><span class="bg">애니메이션 효과</span> 사용자 인터랙션을 향상시키기 위해 CSS 애니메이션을 구현했습니다.</p>
-                          <p><span class="bg">스타일 가이드 작성</span> CSS를 사용하여 일관된 디자인 스타일 가이드를 작성하고 적용했습니다.</p>
+                          <p><span class="bg">스타일 가이드 작성</span> CSS3를 사용하여 일관된 디자인 스타일 가이드를 작성하고 적용했습니다.</p>
                           <p><span class="bg">접근성 개선</span> 웹 접근성 표준을 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
+                          <p><span class="bg">UI/UX 개선</span> 사용자 피드백을 반영하여 UI/UX를 지속적으로 개선했습니다.</p>
                           <p><span class="bg">크로스 브라우저 호환성 테스트</span> 다양한 브라우저에서 일관된 사용자 경험을 제공하기 위해 호환성 테스트를 진행했습니다.
                           </p>
                         </div>
@@ -596,80 +678,100 @@
                     </div>
                   </div>
                 </div>
-                <!-- 카드 6 메디프 -->
-                <div class="wrap" onclick="togglePopup('popup7')">
+              </div>
+              <div id="tab2" class="html&php tab-content">
+                <!-- 카드 5 롯데 -->
+                <div class="wrap" onclick="togglePopup('popup10')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
-                    <img src="./public/images/pc/enter_img10.png" alt="Image 3"
+                    <img src="./public/images/pc/enter_img3.png" alt="Image 3"
                       class="object-cover w-full h-40 mb-4 rounded">
                     <div class="project-text">
                       <div class="txt-box">
-                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">메디프</h2>
-                        <p class="mb-4 text-base cradTitle-basic">병원, 전문가, 연구자 등이 자유롭게 네트워킹할 수 있는 반응형 웹 페이지
+                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">롯데</h2>
+                        <p class="mb-4 text-base cradTitle-basic">롯데 계열사(리조트,스카이힐,어드벤처) 반응형 웹 페이지
+                        </p>
                         </p>
                       </div>
                       <div class="flex gap-3 tagLlist">
                         <span class="text-white bg-gray-600 tegItem">협업</span>
                         <span class="text-white bg-gray-600 tegItem">html</span>
                         <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
+                        <span class="text-white bg-gray-600 tegItem">유지보수</span>
                       </div>
                     </div>
                     <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
                       <button type="button"
                         class="px-4 py-2 text-center text-white rounded hover:bg-gray-500 btn moerBtn">자세히
                         보기</button>
-                      <a href="https://winwin.medif.or.kr/" target="_blank" rel="noopener"
+                      <a href="https://adventure.lotteworld.com/kor/main/index.do" target="_blank" rel="noopener"
                         class="px-4 py-2 mt-2 text-center text-white rounded hover:bg-gray-500 btn gitHub">바로가기</a>
                     </div>
                   </div>
                   <!-- 팝업내용 -->
-                  <div id="popup7" class="popup">
+                  <div id="popup10" class="popup">
                     <span class="close" onclick="closePopup()">
                       <img src="./public/images/icons/close.png" alt="닫기">
                     </span>
                     <div class="popupContents">
-                      <div class="headerComm headerMedif">
+                      <div class="headerComm headerLotte">
                         <div class="flex gap-3 tagLlist">
                           <span class="text-white bg-gray-600 tegItem">협업</span>
-                          <span class="text-white bg-gray-600 tegItem">React</span>
+                          <span class="text-white bg-gray-600 tegItem">html</span>
                           <span class="text-white bg-gray-600 tegItem">반응형</span>
-                          <span class="text-white bg-gray-600 tegItem">구축&유지보수</span>
+                          <span class="text-white bg-gray-600 tegItem">유지보수</span>
                         </div>
-                        <strong class="w-full font-black text-center headerTitle">메디프</strong>
-                        <div class="image">
-                          <img src="./public/images/pc/medif.png" alt="메디프">
-                        </div>
+                        <strong class="w-full font-black text-center headerTitle">롯데</strong>
                       </div>
-                      <div class="bodyComm bodyPark">
+                      <div class="bodyComm bodyLottom">
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
                             주요 기능 및 특징
                           </strong>
-                          <p><span class="bg">의료기기 검색</span> 다양한 의료기기를 쉽게 검색할 수 있는 기능을 제공합니다.</p>
-                          <p><span class="bg">전문가 검색</span> 다양한 분야의 전문가를 검색하고 협업할 수 있는 기능을 제공합니다.</p>
-                          <p><span class="bg">협업 매칭</span> 의료기기 기업과 전문가, 임상의를 연결하여 협업 기회를 제공합니다.</p>
-                          <p><span class="bg">상생포럼</span> 의료기기 산업 관련 정보와 네트워킹 기회를 제공하는 포럼을 운영합니다.</p>
-                          <p><span class="bg">온라인 상담</span> 전문가와의 온라인 상담을 통해 의료기기 관련 지원을 받을 수 있습니다.</p>
+                          <strong>롯데리조트</strong>
+                          <p><span class="bg">예약 시스템 유지보수</span> 객실 예약 시스템의 성능을 최적화하고, 오류를 신속히 수정했습니다.</p>
+                          <p><span class="bg">콘텐츠 업데이트</span> 리조트 시설 정보, 이벤트, 패키지 상품 등의 콘텐츠를 정기적으로 업데이트했습니다.</p>
+                          <p><span class="bg">스타일 가이드 적용</span> HTML에 스타일 가이드를 준수하여 클레스를 적용하여 일관된 디자인을 유지했습니다.</p>
+
+                          <strong>롯데월드(잠실&동부산)</strong>
+                          <p><span class="bg">놀이기구 유지보수</span> 놀이기구의 안전성과 성능을 보장하기 위해 정기적인 점검 및 유지보수를 수행했습니다.</p>
+                          <p><span class="bg">웹사이트 콘텐츠 업데이트</span> 새로운 이벤트 및 공지사항을 웹사이트에 신속하게 반영했습니다.</p>
+                          <p><span class="bg">고객 피드백 반영</span> 고객의 의견을 수집하고 이를 바탕으로 웹사이트와 서비스를 개선했습니다.</p>
+
+                          <strong>웰푸드</strong>
+                          <p><span class="bg">메뉴 업데이트</span> 신메뉴 출시 및 가격 변동에 따라 웹사이트의 메뉴 정보를 신속하게 업데이트했습니다.</p>
+                          <p><span class="bg">주문 시스템 개선</span> 웹사이트의 온라인 주문 기능을 개선하여 사용자 경험을 향상시켰습니다.</p>
+                          <p><span class="bg">회원 혜택 제공</span> 회원 전용 혜택과 쿠폰 시스템을 운영하여 고객 충성도를 높였습니다.</p>
+
+                          <strong>스카이힐</strong>
+                          <p><span class="bg">골프장 정보 관리</span> 코스 정보, 예약 현황, 이벤트 등의 콘텐츠를 정기적으로 업데이트했습니다.</p>
+                          <p><span class="bg">스타일 가이드 적용</span> HTML에 스타일 가이드를 준수하여 클레스를 적용하여 일관된 디자인을 유지했습니다.</p>
+                          <p><span class="bg">사용자 인터페이스 개선</span> 사용자 편의성을 높이기 위해 UI를 지속적으로 개선했습니다.</p>
+                          <p><span class="bg">예약 시스템 최적화</span> 예약 시스템의 성능을 최적화하고, 사용자 경험을 개선했습니다.</p>
+
+                          <strong>세븐일레븐</strong>
+                          <p><span class="bg">제품 정보 업데이트</span> 새로운 제품 출시 및 가격 변동에 따라 웹사이트의 제품 정보를 신속하게 업데이트했습니다.</p>
+                          <p><span class="bg">프로모션 페이지 관리</span> 다양한 프로모션 페이지를 생성하고 관리하여 마케팅 효과를 극대화했습니다.</p>
+                          <p><span class="bg">지역별 매장 정보 제공</span> 지역별 매장 검색 기능을 개선하여 사용자가 가까운 매장을 쉽게 찾을 수 있도록 했습니다.</p>
                         </div>
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
                             사용 기술 및 언어
                           </strong>
-                          <p><span class="bg">프론트엔드 마크업</span> HTML5를 사용하여 웹 페이지의 구조를 설계하고 작성했습니다.</p>
-                          <p><span class="bg">버전 관리</span> Git을 사용하여 코드의 버전 관리를 체계적으로 수행했습니다.</p>
-                          <p><span class="bg">스타일링</span> CSS3를 활용하여 웹 페이지의 디자인과 레이아웃을 구현했습니다.</p>
-                          <p><span class="bg">인터랙티브 요소</span> JavaScript를 사용하여 웹 페이지에 동적인 기능과 사용자 인터랙션을 추가했습니다.</p>
-                          <p><span class="bg">이미지 최적화</span> 웹 페이지 로딩 속도를 개선하기 위해 이미지 파일을 최적화하고 압축했습니다.</p>
+                          <p><span class="bg">HTML5</span> 웹 페이지의 구조를 설계하고 콘텐츠를 마크업하는 데 사용했습니다.</p>
+                          <p><span class="bg">CSS3/SCSS</span> 스타일링과 레이아웃을 구현하고, SCSS를 사용하여 모듈화된 스타일을 적용했습니다.</p>
+                          <p><span class="bg">JavaScript</span> 동적 기능과 사용자 인터랙션을 추가하여 웹 페이지의 기능성을 향상시켰습니다.</p>
+                          <p><span class="bg">Jira</span> 프로젝트 관리와 이슈 추적을 위해 Jira를 사용하여 효율적으로 작업을 관리했습니다.</p>
+                          <p><span class="bg">Photoshop</span> 디자인팀원과 커뮤니케이션 및 협업을 위해 Photoshop을 사용했습니다.</p>
                         </div>
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
                             작업 기여도
                           </strong>
-                          <p><span class="bg">웹 페이지 레이아웃 설계</span> 사용자 경험을 최적화하기 위해 반응형 웹 디자인을 구현했습니다.</p>
-                          <p><span class="bg">스타일 가이드 작성</span> CSS3를 사용하여 일관된 디자인 스타일 가이드를 작성하고 적용했습니다.</p>
+                          <p><span class="bg">콘텐츠 업데이트</span> 웹사이트의 텍스트와 이미지를 정기적으로 업데이트하여 최신 정보를 제공했습니다.</p>
+                          <p><span class="bg">스타일 가이드 적용</span>HTML에 스타일 가이드를 준수하여 클레스를 적용하고 일관된 디자인을 유지했습니다.</p>
                           <p><span class="bg">접근성 개선</span> 웹 접근성 표준을 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
                           <p><span class="bg">UI/UX 개선</span> 사용자 피드백을 반영하여 UI/UX를 지속적으로 개선했습니다.</p>
                           <p><span class="bg">크로스 브라우저 호환성 테스트</span> 다양한 브라우저에서 일관된 사용자 경험을 제공하기 위해 호환성 테스트를 진행했습니다.
@@ -679,8 +781,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div id="tab2" class="html&php tab-content">
                 <!-- 카드 3 박피디와황배우-->
                 <div class="wrap" onclick="togglePopup('popup8')">
                   <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
@@ -826,120 +926,17 @@
                           </strong>
                           <p><span class="bg">프론트엔드</span> HTML5와 CSS3를 사용하여 웹 페이지의 구조와 스타일을 설계했습니다.</p>
                           <p><span class="bg">백엔드</span> PHP를 사용하여 서버 로직을 구현하고 데이터베이스와 상호작용했습니다.</p>
-                          <p><span class="bg">데이터베이스</span> MySQL을 사용하여 데이터를 저장하고 관리했습니다.</p>
+                          <p><span class="bg">버전 관리</span>Git을 사용하여 코드의 버전 관리를 체계적으로 관리합니다.</p>
                           <p><span class="bg">스타일링</span> SCSS를 사용하여 모듈화된 스타일을 적용하고 유지보수성을 높였습니다.</p>
-                          <p><span class="bg">호스팅</span> Apache 서버를 사용하여 웹사이트를 호스팅하고 안정적인 서비스를 제공합니다.</p>
                         </div>
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
-                            작업 기여도
+                            작업 기여도 <span class="sm-text">오로지 혼자서 100% 작업했습니다.</span>
                           </strong>
                           <p><span class="bg">웹 페이지 레이아웃 설계</span> 사용자 경험을 최적화하기 위해 반응형 웹 디자인을 구현했습니다.</p>
                           <p><span class="bg">애니메이션 효과</span> 사용자 인터랙션을 향상시키기 위해 CSS 애니메이션을 구현했습니다.</p>
-                          <p><span class="bg">스타일 가이드 작성</span> CSS를 사용하여 일관된 디자인 스타일 가이드를 작성하고 적용했습니다.</p>
                           <p><span class="bg">접근성 개선</span> 웹 접근성 표준을 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
-                          <p><span class="bg">크로스 브라우저 호환성 테스트</span> 다양한 브라우저에서 일관된 사용자 경험을 제공하기 위해 호환성 테스트를 진행했습니다.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 카드 5 롯데 -->
-                <div class="wrap" onclick="togglePopup('popup10')">
-                  <div id="card" class="bg-[#333] p-5 rounded-lg text-white flex-1 max-w-xs card">
-                    <img src="./public/images/pc/enter_img3.png" alt="Image 3"
-                      class="object-cover w-full h-40 mb-4 rounded">
-                    <div class="project-text">
-                      <div class="txt-box">
-                        <h2 class="mb-2 text-2xl font-bold cardTitle-lg">롯데</h2>
-                        <p class="mb-4 text-base cradTitle-basic">롯데 계열사(리조트,스카이힐,어드벤처) 반응형 웹 페이지
-                        </p>
-                        </p>
-                      </div>
-                      <div class="flex gap-3 tagLlist">
-                        <span class="text-white bg-gray-600 tegItem">협업</span>
-                        <span class="text-white bg-gray-600 tegItem">html</span>
-                        <span class="text-white bg-gray-600 tegItem">반응형</span>
-                        <span class="text-white bg-gray-600 tegItem">유지보수</span>
-                      </div>
-                    </div>
-                    <div class="flex flex-col content-center mt-4 space-y-2 hoverItme">
-                      <button type="button"
-                        class="px-4 py-2 text-center text-white rounded hover:bg-gray-500 btn moerBtn">자세히
-                        보기</button>
-                      <a href="https://adventure.lotteworld.com/kor/main/index.do" target="_blank" rel="noopener"
-                        class="px-4 py-2 mt-2 text-center text-white rounded hover:bg-gray-500 btn gitHub">바로가기</a>
-                    </div>
-                  </div>
-                  <!-- 팝업내용 -->
-                  <div id="popup10" class="popup">
-                    <span class="close" onclick="closePopup()">
-                      <img src="./public/images/icons/close.png" alt="닫기">
-                    </span>
-                    <div class="popupContents">
-                      <div class="headerComm headerLotte">
-                        <div class="flex gap-3 tagLlist">
-                          <span class="text-white bg-gray-600 tegItem">협업</span>
-                          <span class="text-white bg-gray-600 tegItem">html</span>
-                          <span class="text-white bg-gray-600 tegItem">반응형</span>
-                          <span class="text-white bg-gray-600 tegItem">유지보수</span>
-                        </div>
-                        <strong class="w-full font-black text-center headerTitle">롯데</strong>
-                      </div>
-                      <div class="bodyComm bodyLottom">
-                        <div class="itemComm">
-                          <strong class="bodyTitle">
-                            <!-- <i class="tw tw-interrobang"></i> -->
-                            주요 기능 및 특징
-                          </strong>
-                          <strong>롯데리조트</strong>
-                          <p><span class="bg">예약 시스템 유지보수</span> 객실 예약 시스템의 성능을 최적화하고, 오류를 신속히 수정했습니다.</p>
-                          <p><span class="bg">콘텐츠 업데이트</span> 리조트 시설 정보, 이벤트, 패키지 상품 등의 콘텐츠를 정기적으로 업데이트했습니다.</p>
-                          <p><span class="bg">스타일 가이드 적용</span> HTML에 스타일 가이드를 준수하여 클레스를 적용하여 일관된 디자인을 유지했습니다.</p>
-
-                          <strong>롯데월드(잠실&동부산)</strong>
-                          <p><span class="bg">놀이기구 유지보수</span> 놀이기구의 안전성과 성능을 보장하기 위해 정기적인 점검 및 유지보수를 수행했습니다.</p>
-                          <p><span class="bg">웹사이트 콘텐츠 업데이트</span> 새로운 이벤트 및 공지사항을 웹사이트에 신속하게 반영했습니다.</p>
-                          <p><span class="bg">고객 피드백 반영</span> 고객의 의견을 수집하고 이를 바탕으로 웹사이트와 서비스를 개선했습니다.</p>
-
-                          <strong>웰푸드</strong>
-                          <p><span class="bg">메뉴 업데이트</span> 신메뉴 출시 및 가격 변동에 따라 웹사이트의 메뉴 정보를 신속하게 업데이트했습니다.</p>
-                          <p><span class="bg">주문 시스템 개선</span> 웹사이트의 온라인 주문 기능을 개선하여 사용자 경험을 향상시켰습니다.</p>
-                          <p><span class="bg">회원 혜택 제공</span> 회원 전용 혜택과 쿠폰 시스템을 운영하여 고객 충성도를 높였습니다.</p>
-
-                          <strong>스카이힐</strong>
-                          <p><span class="bg">골프장 정보 관리</span> 코스 정보, 예약 현황, 이벤트 등의 콘텐츠를 정기적으로 업데이트했습니다.</p>
-                          <p><span class="bg">스타일 가이드 적용</span> HTML에 스타일 가이드를 준수하여 클레스를 적용하여 일관된 디자인을 유지했습니다.</p>
-                          <p><span class="bg">사용자 인터페이스 개선</span> 사용자 편의성을 높이기 위해 UI를 지속적으로 개선했습니다.</p>
-                          <p><span class="bg">예약 시스템 최적화</span> 예약 시스템의 성능을 최적화하고, 사용자 경험을 개선했습니다.</p>
-
-                          <strong>세븐일레븐</strong>
-                          <p><span class="bg">제품 정보 업데이트</span> 새로운 제품 출시 및 가격 변동에 따라 웹사이트의 제품 정보를 신속하게 업데이트했습니다.</p>
-                          <p><span class="bg">프로모션 페이지 관리</span> 다양한 프로모션 페이지를 생성하고 관리하여 마케팅 효과를 극대화했습니다.</p>
-                          <p><span class="bg">지역별 매장 정보 제공</span> 지역별 매장 검색 기능을 개선하여 사용자가 가까운 매장을 쉽게 찾을 수 있도록 했습니다.</p>
-                        </div>
-                        <div class="itemComm">
-                          <strong class="bodyTitle">
-                            <!-- <i class="tw tw-interrobang"></i> -->
-                            사용 기술 및 언어
-                          </strong>
-                          <p><span class="bg">HTML5</span> 웹 페이지의 구조를 설계하고 콘텐츠를 마크업하는 데 사용했습니다.</p>
-                          <p><span class="bg">CSS3/SCSS</span> 스타일링과 레이아웃을 구현하고, SCSS를 사용하여 모듈화된 스타일을 적용했습니다.</p>
-                          <p><span class="bg">JavaScript</span> 동적 기능과 사용자 인터랙션을 추가하여 웹 페이지의 기능성을 향상시켰습니다.</p>
-                          <p><span class="bg">Jira</span> 프로젝트 관리와 이슈 추적을 위해 Jira를 사용하여 효율적으로 작업을 관리했습니다.</p>
-                          <p><span class="bg">Photoshop</span> 디자인팀원과 커뮤니케이션 및 협업을 위해 Photoshop을 사용했습니다.</p>
-                        </div>
-                        <div class="itemComm">
-                          <strong class="bodyTitle">
-                            <!-- <i class="tw tw-interrobang"></i> -->
-                            작업 기여도
-                          </strong>
-                          <p><span class="bg">콘텐츠 업데이트</span> 웹사이트의 텍스트와 이미지를 정기적으로 업데이트하여 최신 정보를 제공했습니다.</p>
-                          <p><span class="bg">스타일 가이드 적용</span>HTML에 스타일 가이드를 준수하여 클레스를 적용하고 일관된 디자인을 유지했습니다.</p>
-                          <p><span class="bg">접근성 개선</span> 웹 접근성 표준을 준수하여 모든 사용자가 쉽게 접근할 수 있도록 구현했습니다.</p>
-                          <p><span class="bg">UI/UX 개선</span> 사용자 피드백을 반영하여 UI/UX를 지속적으로 개선했습니다.</p>
                           <p><span class="bg">크로스 브라우저 호환성 테스트</span> 다양한 브라우저에서 일관된 사용자 경험을 제공하기 위해 호환성 테스트를 진행했습니다.
                           </p>
                         </div>
@@ -1102,7 +1099,7 @@
                         <div class="itemComm">
                           <strong class="bodyTitle">
                             <!-- <i class="tw tw-interrobang"></i> -->
-                            작업 기여도
+                            작업 기여도 <span class="sm-text">메인 페이지 100% 작업, 서브페이지 60% 작업 참여했습니다.</span>
                           </strong>
                           <p><span class="bg">웹 페이지 레이아웃 설계</span> 사용자 경험을 최적화하기 위해 반응형 웹 디자인을 구현했습니다.</p>
                           <p><span class="bg">스타일 가이드 작성</span> CSS3를 사용하여 일관된 디자인 스타일 가이드를 작성하고 적용했습니다.</p>
@@ -1237,6 +1234,7 @@
                           <span class="text-white bg-gray-600 tegItem">반응형</span>
                           <span class="text-white bg-gray-600 tegItem">구축</span>
                         </div>
+                        <span class="tagBg">프론트 2명 / 백앤드 1명 디자인 1명 기획 1명 (총 5명 참여)</span>
                         <strong class="w-full font-black text-center headerTitle">펀데이코리아</strong>
                         <div class="image">
                           <img src="./public/images/pc/funday.png" alt="펀데이코리아">
