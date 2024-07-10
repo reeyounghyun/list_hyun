@@ -1469,6 +1469,18 @@ h3.title {
   background: #3083ad;
 }
 
+@media screen and (max-width: 768px) {
+  .funday .image {
+    bottom: -129px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .funday .image {
+    bottom: -56px;
+  }
+}
+
 
 .headerPark {
   background: #d35721f5;
@@ -1580,12 +1592,6 @@ h3.title {
   }
 }
 
-@media screen and (max-width: 550px) {
-  .headerSoribit {
-    min-height: 302px;
-  }
-}
-
 .headerSoribit .headerTitle {
   padding: 0 0 1rem 0;
 }
@@ -1608,7 +1614,7 @@ h3.title {
 @media screen and (max-width: 768px) {
   .headerSoribit .image {
     width: 77%;
-    bottom: -63px;
+    bottom: -131px;
   }
 }
 
@@ -1620,7 +1626,13 @@ h3.title {
 
 @media screen and (max-width: 550px) {
   .headerSoribit .image {
-    bottom: -83px;
+    bottom: -184px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .headerSoribit .image {
+    bottom: -115px;
   }
 }
 
@@ -1631,6 +1643,12 @@ h3.title {
 @media screen and (max-width: 1200px) {
   .bodySoribit {
     padding-top: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bodySoribit {
+    padding-top: 12rem;
   }
 }
 
@@ -1754,6 +1772,12 @@ h3.title {
   }
 }
 
+@media screen and (max-width: 370px) {
+  .headerMedif .image {
+    bottom: -44px;
+  }
+}
+
 .popupContents .headerMedif .tegItem {
   border: 1px solid rgb(199 199 199 / 19%);
   background: #031b6b;
@@ -1783,4 +1807,8 @@ h3.title {
   text-decoration: underline;
   background: #ffe6e6;
   padding: 4px;
+}
+
+.color-white {
+  color: #fff;
 }
