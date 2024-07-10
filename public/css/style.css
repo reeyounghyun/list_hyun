@@ -1693,3 +1693,10 @@ h3.title {
 .bodyLottom {
   padding-top: 5rem;
 }
+
+.sm-text {
+  font-size: 13px;
+  text-decoration: underline;
+  background: #ffe6e6;
+  padding: 4px;
+}
