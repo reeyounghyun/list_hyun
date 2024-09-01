@@ -251,14 +251,6 @@ h3.title {
   } 
 }
 
-.image-mo {
-  padding-top: 12rem;
-  @media screen and (max-width:990px) {
-    padding-top: 6rem;
-  }
-}
-
-
 .mainSubTitle {
   font-family: "GmarketSansMedium", sans-serif;
   width: 100%;
@@ -883,7 +875,7 @@ h3.title {
   font-family: sans-serif;
 }
 
-.section0 {
+.fixed-icon {
   position: fixed;
   bottom: 20px;
   right: 40px;
@@ -893,14 +885,14 @@ h3.title {
   }
 }
 
-.section0 .btn img {
+.fixed-icon .btn img {
   max-width: 40px;
   width: 100%;
   background: #fff;
   border-radius: 30px;
 }
 
-.section0 .btn a {
+.fixed-icon .btn a {
   font-size: 11px;
   position: relative;
   padding: 0 5px;
@@ -908,7 +900,7 @@ h3.title {
   font-family: sans-serif;
 }
 
-.section0 .btn:hover a::before {
+.fixed-icon .btn:hover a::before {
   content: "Github";
   clear: both;
   position: absolute;

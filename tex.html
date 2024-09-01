@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이영현의 포트폴리오</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section1 {
+            min-height: 100vh;
+            background-color: #1a202c;
+            position: relative;
+        }
+        .content-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+        }
+        .mainTitle, .title, .mainSubTitle {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .image-mo {
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .tag span {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+    </style>
+</head>
+<body class="text-white bg-gray-900">
+    <main>
+        <section id="section1" class="flex flex-col items-center justify-center px-4 section1 parallax__item">
+            <div class="content-wrapper parallax__item__num">
+                <div class="mb-8">
+                    <span class="text-xl mainTitle md:text-4xl">Welcome to my homepage</span>
+                    <p class="text-xl mainSubTitle md:text-2xl">UI 개발자 <strong class="font-bold">이영현</strong>입니다.</p>
+                </div>
+                <figure class="image-mo">
+                    <img src="./public/images/emojimoviegif-converter.gif" alt="프로필 이미지" class="w-64 mx-auto rounded-full shadow-lg md:w-80">
+                </figure>
+                <div class="flex flex-wrap justify-center gap-4 tag">
+                    <span class="text-sm">#꼼꼼함</span>
+                    <span class="text-sm">#끊임없이 배움</span>
+                    <span class="text-sm">#책임감 있는</span>
+                    <span class="text-sm">#수용적인</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+            tl.from(".mainTitle", { y: 50, opacity: 0, duration: 1 })
+              .from(".title", { y: 30, opacity: 0, duration: 0.8 }, "-=0.5")
+              .from(".mainSubTitle", { y: 30, opacity: 0, duration: 0.8 }, "-=0.5")
+              .from(".image-mo", { scale: 0.8, opacity: 0, duration: 1 }, "-=0.3")
+              .from(".tag span", { opacity: 0, y: 20, stagger: 0.2, duration: 0.5 }, "-=0.5");
+
+            gsap.to(".content-wrapper", {
+                scrollTrigger: {
+                    trigger: ".section1",
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true,
+                },
+                y: 100,
+                opacity: 0.5
+            });
+
+            gsap.to(".image-mo", {
+                scrollTrigger: {
+                    trigger: ".section1",
+                    start: "top top",
+                    end: "bottom center",
+                    scrub: true,
+                },
+                scale: 1.1,
+                y: -30
+            });
+        });
+    </script>
+</body>
+</html>
