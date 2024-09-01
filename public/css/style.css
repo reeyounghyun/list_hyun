@@ -1942,12 +1942,6 @@ body {
     display: inline-block;
     margin: 0.25rem;
 }
-.section2 {
-  min-height: 100vh;
-  background-color: #1a202c;
-  position: relative;
-}
-
 /* .section2 .sec2Title,
 .section2 .titleSm,
 .section2 .skill-images > div {
