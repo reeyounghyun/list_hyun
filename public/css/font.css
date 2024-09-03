@@ -1,0 +1,117 @@
+/*common font style flie */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.titleBlod{
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+@media screen and (max-width:1280px) {
+  .titleBlod{
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: left;
+  }
+}
+
+.title-blod-mb{
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size:22px;
+  font-weight: 800;
+}
+@media screen and (max-width:1280px) {
+  .title-blod-mb{
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+  }
+}
+
+.titleBlod-sm1{
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.titleBlod-sm{
+  font-family: "GmarketSansMedium", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.titleBlod-m{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+@media screen and (max-width:768px) {
+  .titleBlod-m{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.titleBasic{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width:768px) {
+  .titleBasic{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.titleMedium{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media screen and (max-width:768px) {
+  .titleMedium{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+.titleLight{
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+@media screen and (max-width:1024px) {
+  .titleLight{
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: left;
+  }
+}
+
+.titleNormal{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+@media screen and (max-width:368px) {
+  .titleNormal{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+}
+
+.titleLight-100{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+}
