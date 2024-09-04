@@ -1,3 +1,11 @@
+/* 
+font-family: "Song Myung", serif;
+font-family: "GmarketSansMedium", sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -12,14 +20,31 @@
   font-style: normal;
 }
 
-* {
-  font-family: "Montserrat", sans-serif;
+
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* 
-font-family: "Song Myung", serif;
-font-family: "GmarketSansMedium", sans-serif;
-*/
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  font-family: "NexonLv1Gothic";
+  font-weight: 300;
+  background-color: #333;
+}
 
 .mainTitle {
   font-weight: bold;
@@ -1205,30 +1230,22 @@ h3.title {
 ::-webkit-scrollbar {
   width: 12px;
   /* 너비 설정 */
-  height: 10px;
+  height: 20px;
   /* 높이 설정 */
 }
 
 /* 스크롤바 트랙 */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #c4c4c4;
   /* 트랙 배경색 */
-  border-radius: 10px;
-  /* 둥근 모서리 */
 }
 
 /* 스크롤바 핸들 */
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #fff;
   /* 핸들 색상 */
-  border-radius: 10px;
+  border-radius: 5px;
   /* 둥근 모서리 */
-}
-
-/* 스크롤바 핸들 호버 */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  /* 호버 시 핸들 색상 */
 }
 
 .project-text {
@@ -1238,6 +1255,11 @@ h3.title {
   justify-content: space-between;
 }
 
+.project-text-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /* 팝업 내용 */
 .headerComm {
@@ -1718,7 +1740,6 @@ h3.title {
   }
 }
 
-
 .headerMedif {
   background: #02144f;
 }
@@ -1948,3 +1969,253 @@ body {
   opacity: 0;
   transform: translateY(30px);
 } */
+
+.parallax__item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax__item__num {
+  font-size: 5vw;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-family: "Lato";
+  font-weight: 100;
+  z-index: 100;
+  line-height: 1;
+}
+
+.parallax__item__imgWrap {
+  width: 30%;
+  padding-bottom: 18%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#section1{
+  background-color: #0B1A2E;
+}
+
+#section1 .parallax__item__text {
+  font-size: 5vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#section1 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section2{
+  background-color: #111;
+}
+
+#section2 .parallax__item__text {
+  font-size: 5vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #111;
+  color: #E3E3E3;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#section2 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section3{
+  background-color: #424242;
+  color: #fff;
+}
+
+#section3 .parallax__item__img {
+  background-image: url(/public/images/sc3-bg.png);
+}
+
+#section3 .parallax__item__img {
+  position: inherit;
+    width: 10vw;
+    height: 10vw;
+    margin: 1vw;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#section4{
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+#section4 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section4.parallax__item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10rem;
+}
+
+#section5{
+  background-color: #111;
+  color: #fff;
+}
+
+#section5 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section6{
+  background-color: #111;
+  color: #fff;
+}
+
+#section6 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section7{
+  background-color: #FFF;
+  color: #000;
+}
+
+#section7 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section8{
+  background-color: #294774;
+  color: #000;
+  border-radius: 30px 30px 0 0;
+}
+
+#section8 .parallax__item__img {
+  position: absolute;
+  left: -5%; 
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0%);
+  transition: all 1s;
+}
+
+#section9 {
+  background-color: #111;
+  color: #fff;
+}
+
+#section9 .parallax__item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section9 .parallax__item__img {
+  width: 10vw;
+  height: 10vw;
+  margin: 1vw;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+#section9 .parallax__item__img {
+  width: auto;
+  height: 100px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+
+#parallax__cont {
+  overflow: hidden;
+}
+
+#horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500%;
+}
+
+#horizontal > section {
+  width: 100%;
+}
