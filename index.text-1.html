@@ -34,7 +34,7 @@
 </head>
 <body>
     <main id="parallax__cont">
-        <section id="section1" class="parallax__item" >
+        <section id=" " class="parallax__item" >
             <span class="parallax__item__num">01</span>
             <div class="parallax__item__text" style="text-align: center;">Welcome to my <br/> projects</div>
         </section>
@@ -63,17 +63,16 @@
             <div class="parallax__item__text t17">JQuery</div>
             <div class="parallax__item__text t18">javaScript</div>
             <div class="parallax__item__text t19">React+GSAP</div>
-
         </section>
         <!-- //section2 -->
 
-        <section id="section3" class="parallax__item">
+        <!-- <section id="section3" class="parallax__item">
           <span class="parallax__item__num">03</span>
           <div class="parallax__item__img flex items-center justify-center"><span>프로젝트 시작!</span></div>
-        </section>
+        </section> -->
       
         <main id="horizontal">
-          <section id="section4" class="parallax__item">
+          <section id="section3" class="parallax__item">
             <span class="parallax__item__num">03</span>
             <div class="flex items-center justify-around gap-72">
               <div class="flex items-start justify-between gap-40 w-100">
@@ -634,8 +633,8 @@
         //09 : 이미지를 랜덤으로 나오기
         const ani3 = gsap.timeline();
         ani3.from("#section9 .parallax__item__img", {
-            autoAlpha: 0,
             y: -100,
+            autoAlpha: 0,
             ease: "back.out(4)",
             // stagger: 0.1
             stagger: {

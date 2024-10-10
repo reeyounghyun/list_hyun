@@ -1990,13 +1990,6 @@ body {
   line-height: 1;
 }
 
-.parallax__item__imgWrap {
-  width: 30%;
-  padding-bottom: 18%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
 
 #section1{
   background-color: #0B1A2E;
